@@ -25,6 +25,7 @@ public class SpectrumManager : MonoBehaviour
 
     public float _hueValue = 0f;
     public Color _shiftedHue;
+    public float _calculatedHueValue;
 
     public void Awake()
     {
@@ -47,6 +48,7 @@ public class SpectrumManager : MonoBehaviour
             _hueValue -= ScrollSpeed * Time.deltaTime;
             _hueValue = Mathf.Repeat(_hueValue, 1f);
             _shiftedHue = ColorUtilities.HueToRBG(_hueValue);
+            _calculatedHueValue = ColorUtilities.RGBtoHue(_shiftedHue);
         } 
         else if (Keyboard.current.rightArrowKey.isPressed)
         {
@@ -54,6 +56,7 @@ public class SpectrumManager : MonoBehaviour
             _hueValue += ScrollSpeed * Time.deltaTime;
             _hueValue = Mathf.Repeat(_hueValue, 1f);
             _shiftedHue = ColorUtilities.HueToRBG(_hueValue);
+            _calculatedHueValue = ColorUtilities.RGBtoHue(_shiftedHue);
         }
     
         _spectrumIndex = ((_spectrumIndex % 1) + 1) % 1;

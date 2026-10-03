@@ -68,6 +68,28 @@ public static class ColorUtilities
         float r = color.r;
         float g = color.g;
         float b = color.b;
+
+        float colorMax = Mathf.Max(r, g, b);
+        float colorMin = Mathf.Min(r, g, b);
+        float colorDelta = colorMax - colorMin;
+
+        float hue;
+
+        if (colorMax == r)
+        {
+            hue = 60 * (((g - b) / colorDelta) % 6);
+        }
+        else if (colorMax == g)
+        {
+            hue = 60 * (((b - r) / colorDelta) + 2);
+        }
+        else
+        {
+            hue = 60 * (((r - g) / colorDelta) + 4);
+        }
+
+        hue = Mathf.Repeat(hue, 360f);
+        return hue / 360f;
     }
 
     public static float Visibility(float dial, float center)
