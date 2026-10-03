@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FlatKitOutline
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::FlatKit.FlatKitOutline
   m_Active: 1
-  settings: {fileID: 11400000, guid: 6a9ce4523839c4a44a17d8d1334b16d2, type: 2}
+  settings: {fileID: 11400000, guid: 87da4bb43360cf141a8b1230be85c31d, type: 2}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Name: FlatKitFog
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::FlatKit.FlatKitFog
   m_Active: 1
-  settings: {fileID: 11400000, guid: d18dac82fe9b0473289115b2531228d9, type: 2}
+  settings: {fileID: 11400000, guid: 09a2919094b57e24a8a07f7f8bbd5de7, type: 2}
 --- !u!114 &7833122117494664109
 MonoBehaviour:
   m_ObjectHideFlags: 0
