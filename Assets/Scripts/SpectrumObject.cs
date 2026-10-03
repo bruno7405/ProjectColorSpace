@@ -6,10 +6,16 @@ public class SpectrumObject : MonoBehaviour
     [SerializeField] private SpectrumColor _spectrumColor;
     [SerializeField] private Gradient _gradient;
 
+    public float value = 1f;
+    public float saturation = 1f;
+
     private MeshRenderer _renderer;
     private Material _material;
     private Color _baseColor;
     private Collider _coll;
+
+    private float _leftBound;
+    private float _rightBound;
 
     public void Awake()
     {
@@ -28,6 +34,8 @@ public class SpectrumObject : MonoBehaviour
         _renderer.material.color = _spectrumColor.ToColor();
         _baseColor = _spectrumColor.ToColor();
         _coll = GetComponent<Collider>();
+        _leftBound = ColorUtilities.RGBtoHue(_gradient.Evaluate(0.0f));
+        _rightBound = ColorUtilities.RGBtoHue(_gradient.Evaluate(1f));
     }
 
     private void HandleColorUpdate(float dial)
@@ -37,9 +45,10 @@ public class SpectrumObject : MonoBehaviour
 
     private void Apply(float dial)
     {
-        float v = ColorUtilities.Visibility(dial, _spectrumColor.Center());
+        float _currentHue = SpectrumManager.Instance._hueValue;
+        float v = 1f;
 
-        Color c = _baseColor;
+        Color c = SpectrumManager.Instance.GLOBAL_GRADIENT.Evaluate(_currentHue);
         c.a = v;
         _material.color = c;
 
@@ -54,4 +63,5 @@ public class SpectrumObject : MonoBehaviour
             _coll.enabled = true;
         }
     }
+
 }

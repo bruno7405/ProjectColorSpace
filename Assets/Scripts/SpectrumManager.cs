@@ -18,13 +18,14 @@ public class SpectrumManager : MonoBehaviour
     public static SpectrumManager Instance;
     public static event Action<float> OnColorUpdate;
     private static float _spectrumIndex = SpectrumColor.Red.Center();
+    public static float HUE_BOUND_SIZE = 0.025f;
+    public Gradient GLOBAL_GRADIENT;
 
     public Color RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET;
 
     public float ScrollSpeed;
 
     public float _hueValue = 0f;
-    public Color _shiftedHue;
     public float _calculatedHueValue;
 
     public void Awake()
@@ -47,16 +48,12 @@ public class SpectrumManager : MonoBehaviour
             _spectrumIndex -= ScrollSpeed * Time.deltaTime;
             _hueValue -= ScrollSpeed * Time.deltaTime;
             _hueValue = Mathf.Repeat(_hueValue, 1f);
-            _shiftedHue = ColorUtilities.HueToRBG(_hueValue);
-            _calculatedHueValue = ColorUtilities.RGBtoHue(_shiftedHue);
         } 
         else if (Keyboard.current.rightArrowKey.isPressed)
         {
             _spectrumIndex += ScrollSpeed * Time.deltaTime;
             _hueValue += ScrollSpeed * Time.deltaTime;
             _hueValue = Mathf.Repeat(_hueValue, 1f);
-            _shiftedHue = ColorUtilities.HueToRBG(_hueValue);
-            _calculatedHueValue = ColorUtilities.RGBtoHue(_shiftedHue);
         }
     
         _spectrumIndex = ((_spectrumIndex % 1) + 1) % 1;

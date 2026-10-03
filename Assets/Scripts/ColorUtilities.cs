@@ -26,38 +26,39 @@ public static class ColorUtilities
         return Color.Lerp(((SpectrumColor)a).ToColor(), ((SpectrumColor)b).ToColor(), frac);
     }
 
-    public static Color HueToRBG(float hue)
+    public static Color HueToRBG(float hue, float saturation, float value)
     {
         float hueSector = hue * 6;
-        float secondaryChroma = GLOBAL_SATURATION * GLOBAL_VALUE * (1 - Mathf.Abs((hueSector % 2) - 1));
+        float chroma = saturation * value;
+        float secondaryChroma = chroma * (1 - Mathf.Abs((hueSector % 2) - 1));
         Vector3 rgbColor = Vector3.zero;
 
         if (hueSector < 1)
         {
-            rgbColor = new Vector3(1, secondaryChroma, 0);
+            rgbColor = new Vector3(chroma, secondaryChroma, 0);
         }
         else if (hueSector < 2)
         {
-            rgbColor = new Vector3(secondaryChroma, 1, 0);
+            rgbColor = new Vector3(secondaryChroma, chroma, 0);
         }
         else if (hueSector < 3)
         {
-            rgbColor = new Vector3(0, 1, secondaryChroma);
+            rgbColor = new Vector3(0, chroma, secondaryChroma);
         }
         else if (hueSector < 4)
         {
-            rgbColor = new Vector3(0, secondaryChroma, 1);
+            rgbColor = new Vector3(0, secondaryChroma, chroma);
         }
         else if (hueSector < 5)
         {
-            rgbColor = new Vector3(secondaryChroma, 0, 1);
+            rgbColor = new Vector3(secondaryChroma, 0, chroma);
         }
         else
         {
-            rgbColor = new Vector3(1, 0, secondaryChroma);
+            rgbColor = new Vector3(chroma, 0, secondaryChroma);
         }
 
-        float m = GLOBAL_VALUE - (GLOBAL_VALUE * GLOBAL_SATURATION);
+        float m = value - (value * saturation);
         rgbColor = new Vector3(rgbColor.x + m, rgbColor.y + m, rgbColor.z + m);
 
         return new Color(rgbColor.x, rgbColor.y, rgbColor.z);
@@ -98,5 +99,10 @@ public static class ColorUtilities
         d = Mathf.Min(d, 1f - d);
 
         return 1f - Mathf.Clamp01((d - BANDWIDTH) / FADEWIDTH);
+    }
+
+    public static float HueDifference(float to, float from)
+    {
+        return Mathf.Repeat(to - from + 0.5f, 1f) - 0.5f;
     }
 }
