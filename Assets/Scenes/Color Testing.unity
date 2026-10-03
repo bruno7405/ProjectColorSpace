@@ -1390,6 +1390,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55d3628713a4d7c418ac8be0e4a15e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  RED: {r: 1, g: 0, b: 0, a: 1}
+  ORANGE: {r: 1, g: 0.64705884, b: 0, a: 1}
+  YELLOW: {r: 1, g: 1, b: 0, a: 1}
+  GREEN: {r: 0, g: 1, b: 0, a: 1}
+  BLUE: {r: 0, g: 0, b: 1, a: 1}
+  INDIGO: {r: 0.29411766, g: 0, b: 0.50980395, a: 1}
+  VIOLET: {r: 0.5019608, g: 0, b: 0.5019608, a: 1}
   ScrollSpeed: 0.1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
