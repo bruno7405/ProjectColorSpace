@@ -4,7 +4,6 @@ using UnityEngine;
 public class SpectrumObject : MonoBehaviour
 {
     [SerializeField] private SpectrumColor _spectrumColor;
-    [SerializeField] private Gradient _gradient;
 
     public float value = 1f;
     public float saturation = 1f;
@@ -13,6 +12,7 @@ public class SpectrumObject : MonoBehaviour
     private Material _material;
     private Color _baseColor;
     private Collider _coll;
+    private Rigidbody _rb;
 
     public void Awake()
     {
@@ -31,6 +31,7 @@ public class SpectrumObject : MonoBehaviour
         _renderer.material.color = _spectrumColor.ToColor();
         _baseColor = _spectrumColor.ToColor();
         _coll = GetComponent<Collider>();
+        _rb = GetComponent<Rigidbody>();
     }
 
     private void HandleColorUpdate(float dial)
@@ -52,10 +53,18 @@ public class SpectrumObject : MonoBehaviour
         if (v < 1f)
         {
             _coll.enabled = false;
+            if (_rb != null)
+            {
+                _rb.isKinematic = true;
+            }
         }
         else
         {
             _coll.enabled = true;
+            if (_rb != null)
+            {
+                _rb.isKinematic = false;
+            }
         }
     }
     
