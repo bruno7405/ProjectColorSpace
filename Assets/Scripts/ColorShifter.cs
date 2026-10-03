@@ -7,6 +7,7 @@ public class ColorShifter : MonoBehaviour
     public void Awake()
     {
         SpectrumManager.OnColorUpdate += HandleColorUpdate;
+
     }
 
     public void OnDestroy()
