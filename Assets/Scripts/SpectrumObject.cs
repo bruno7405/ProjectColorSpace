@@ -41,7 +41,7 @@ public class SpectrumObject : MonoBehaviour
     private void Apply(float dial)
     {
         float _currentHue = SpectrumManager.Instance._hueValue;
-        float v = 1f;
+        float v = ColorUtilities.Visibility(dial, _spectrumColor.Center());
 
         Color c = SpectrumManager.Instance.GLOBAL_GRADIENT.Evaluate(_currentHue);
         c.a = v;
@@ -58,5 +58,6 @@ public class SpectrumObject : MonoBehaviour
             _coll.enabled = true;
         }
     }
+    
 
 }
