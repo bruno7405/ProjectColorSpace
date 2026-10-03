@@ -14,9 +14,6 @@ public class SpectrumObject : MonoBehaviour
     private Color _baseColor;
     private Collider _coll;
 
-    private float _leftBound;
-    private float _rightBound;
-
     public void Awake()
     {
         SpectrumManager.OnColorUpdate += HandleColorUpdate;
@@ -34,8 +31,6 @@ public class SpectrumObject : MonoBehaviour
         _renderer.material.color = _spectrumColor.ToColor();
         _baseColor = _spectrumColor.ToColor();
         _coll = GetComponent<Collider>();
-        _leftBound = ColorUtilities.RGBtoHue(_gradient.Evaluate(0.0f));
-        _rightBound = ColorUtilities.RGBtoHue(_gradient.Evaluate(1f));
     }
 
     private void HandleColorUpdate(float dial)
