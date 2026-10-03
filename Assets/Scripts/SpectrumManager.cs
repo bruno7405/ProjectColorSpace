@@ -23,6 +23,9 @@ public class SpectrumManager : MonoBehaviour
 
     public float ScrollSpeed;
 
+    public float _hueValue = 0f;
+    public Color _shiftedHue;
+
     public void Awake()
     {
         if (Instance == null) Instance = this;
@@ -41,10 +44,16 @@ public class SpectrumManager : MonoBehaviour
         if (Keyboard.current.leftArrowKey.isPressed)
         {
             _spectrumIndex -= ScrollSpeed * Time.deltaTime;
+            _hueValue -= ScrollSpeed * Time.deltaTime;
+            _hueValue = Mathf.Repeat(_hueValue, 1f);
+            _shiftedHue = ColorUtilities.HueToRBG(_hueValue);
         } 
         else if (Keyboard.current.rightArrowKey.isPressed)
         {
             _spectrumIndex += ScrollSpeed * Time.deltaTime;
+            _hueValue += ScrollSpeed * Time.deltaTime;
+            _hueValue = Mathf.Repeat(_hueValue, 1f);
+            _shiftedHue = ColorUtilities.HueToRBG(_hueValue);
         }
     
         _spectrumIndex = ((_spectrumIndex % 1) + 1) % 1;

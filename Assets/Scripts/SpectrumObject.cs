@@ -1,12 +1,15 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class SpectrumObject : MonoBehaviour
 {
     [SerializeField] private SpectrumColor _spectrumColor;
+    [SerializeField] private Gradient _gradient;
 
     private MeshRenderer _renderer;
     private Material _material;
     private Color _baseColor;
+    private Collider _coll;
 
     public void Awake()
     {
@@ -24,6 +27,7 @@ public class SpectrumObject : MonoBehaviour
         _material = _renderer.material;
         _renderer.material.color = _spectrumColor.ToColor();
         _baseColor = _spectrumColor.ToColor();
+        _coll = GetComponent<Collider>();
     }
 
     private void HandleColorUpdate(float dial)
@@ -40,5 +44,14 @@ public class SpectrumObject : MonoBehaviour
         _material.color = c;
 
         _renderer.enabled = v > 0.001f;
+
+        if (v < 1f)
+        {
+            _coll.enabled = false;
+        }
+        else
+        {
+            _coll.enabled = true;
+        }
     }
 }
