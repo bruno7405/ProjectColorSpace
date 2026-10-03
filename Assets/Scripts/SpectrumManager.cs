@@ -60,14 +60,9 @@ public class SpectrumManager : MonoBehaviour
 
 public static class SpectrumColorExtensions
 {
-    public const int BANDCOUNT = 7;
-
-    public const float BANDWIDTH = .05f;
-    public const float FADEWIDTH = .05f;
-    
     public static float Center(this SpectrumColor color)
     {
-        return ((int) color + 0.5f) / BANDCOUNT;
+        return ((int) color + 0.5f) / ColorUtilities.BANDCOUNT;
     }
 
     public static Color ToColor(this SpectrumColor color)
