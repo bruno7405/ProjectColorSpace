@@ -29,6 +29,11 @@ public class SpectrumManager : MonoBehaviour
         else { Destroy(gameObject); return; }
     }
 
+    void Start()
+    {
+        OnColorUpdate?.Invoke(_spectrumIndex);
+    }
+
     public void Update()
     {
         float lastIndex = _spectrumIndex;
@@ -55,7 +60,7 @@ public class SpectrumManager : MonoBehaviour
 
 public static class SpectrumColorExtensions
 {
-    private const int BANDCOUNT = 7;
+    public const int BANDCOUNT = 7;
 
     public const float BANDWIDTH = .05f;
     public const float FADEWIDTH = .05f;

@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class SpectrumObject : MonoBehaviour
+public class ColorShifter : MonoBehaviour
 {
-    [SerializeField] private SpectrumColor _spectrumColor;
-
+    private MeshRenderer _meshRenderer;
+    
     public void Awake()
     {
         SpectrumManager.OnColorUpdate += HandleColorUpdate;
@@ -16,12 +16,11 @@ public class SpectrumObject : MonoBehaviour
 
     public void Start()
     {
-        MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
-        meshRenderer.material.color = _spectrumColor.ToColor();
+       _meshRenderer = GetComponent<MeshRenderer>();
     }
 
     private void HandleColorUpdate(float color)
     {
-        
+        _meshRenderer.material.color = ColorUtilities.FloatToColor(color);
     }
 }
