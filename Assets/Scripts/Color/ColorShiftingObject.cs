@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(MeshRenderer))]
-public class ColorShifter : MonoBehaviour
+public class ColorShiftingObject : MonoBehaviour
 {
     private MeshRenderer _meshRenderer;
     
