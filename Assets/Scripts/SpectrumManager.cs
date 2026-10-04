@@ -26,12 +26,14 @@ public class SpectrumManager : MonoBehaviour
 
     public float ScrollSpeed;
 
-    public float _hueValue = 0f;
-
+    [NonSerialized] public float _hueValue;
+    
     public void Awake()
     {
         if (Instance == null) Instance = this;
         else { Destroy(gameObject); return; }
+
+        _hueValue = SpectrumColor.Red.ToValue();
     }
 
     void Start()
@@ -80,5 +82,20 @@ public static class SpectrumColorExtensions
         if (color.HasFlag(SpectrumColor.Violet))    return SpectrumManager.Instance.VIOLET;
         
         return Color.black;
+    }
+
+    public static float ToValue(this SpectrumColor color)
+    {
+        int c = 0;
+
+        if (color.HasFlag(SpectrumColor.Red))            c = 0;
+        else if (color.HasFlag(SpectrumColor.Orange))    c = 1;
+        else if (color.HasFlag(SpectrumColor.Yellow))    c = 2;
+        else if (color.HasFlag(SpectrumColor.Green))     c = 3;
+        else if (color.HasFlag(SpectrumColor.Blue))      c = 4;
+        else if (color.HasFlag(SpectrumColor.Indigo))    c = 5;
+        else if (color.HasFlag(SpectrumColor.Violet))    c = 6;
+        
+        return (c + 0.5f) / ColorUtilities.BANDCOUNT;
     }
 }

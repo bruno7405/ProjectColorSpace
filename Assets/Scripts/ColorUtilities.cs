@@ -113,21 +113,6 @@ public static class ColorUtilities
         return 1f - Mathf.Clamp01((d - BANDWIDTH) / FADEWIDTH);
     }
 
-    public static float ColorToValue(this SpectrumColor color)
-    {
-        int c = 0;
-
-        if (color.HasFlag(SpectrumColor.Red))            c = 0;
-        else if (color.HasFlag(SpectrumColor.Orange))    c = 1;
-        else if (color.HasFlag(SpectrumColor.Yellow))    c = 2;
-        else if (color.HasFlag(SpectrumColor.Green))     c = 3;
-        else if (color.HasFlag(SpectrumColor.Blue))      c = 4;
-        else if (color.HasFlag(SpectrumColor.Indigo))    c = 5;
-        else if (color.HasFlag(SpectrumColor.Violet))    c = 6;
-        
-        return (c + 0.5f) / BANDCOUNT;
-    }
-
     public static float HueDifference(float to, float from)
     {
         return Mathf.Repeat(to - from + 0.5f, 1f) - 0.5f;
