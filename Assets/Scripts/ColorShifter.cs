@@ -8,6 +8,7 @@ public class ColorShifter : MonoBehaviour
     {
         SpectrumManager.OnColorUpdate += HandleColorUpdate;
 
+        _meshRenderer = GetComponent<MeshRenderer>();
     }
 
     public void OnDestroy()
@@ -17,7 +18,7 @@ public class ColorShifter : MonoBehaviour
 
     public void Start()
     {
-       _meshRenderer = GetComponent<MeshRenderer>();
+        
     }
 
     private void HandleColorUpdate(float hue)

@@ -18,6 +18,12 @@ public class SpectrumObject : MonoBehaviour
     public void Awake()
     {
         SpectrumManager.OnColorUpdate += HandleColorUpdate;
+
+        _renderer = GetComponent<MeshRenderer>();
+        _material = _renderer.material;
+        _renderer.material.color = _spectrumColor.ToColor();
+        _coll = GetComponent<Collider>();
+        _rb = GetComponent<Rigidbody>();
     }
 
     public void OnDestroy()
@@ -27,11 +33,7 @@ public class SpectrumObject : MonoBehaviour
 
     public void Start()
     {
-        _renderer = GetComponent<MeshRenderer>();
-        _material = _renderer.material;
-        _renderer.material.color = _spectrumColor.ToColor();
-        _coll = GetComponent<Collider>();
-        _rb = GetComponent<Rigidbody>();
+        
     }
 
     private void HandleColorUpdate(float dial)

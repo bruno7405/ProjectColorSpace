@@ -44,6 +44,7 @@ public class SpectrumManager : MonoBehaviour
     void Start()
     {
         OnColorUpdate?.Invoke(_hueValue);
+        Debug.Log("Hue: " + _hueValue);
     }
 
     public void UnlockNextColor()
@@ -69,8 +70,6 @@ public class SpectrumManager : MonoBehaviour
         {
             OnColorUpdate?.Invoke(_hueValue);
         }
-
-        Debug.Log("Hue: " + _hueValue);
     }
 
 }

@@ -113,4 +113,5 @@ MonoBehaviour:
   BLUE: {r: 0, g: 0.69411767, b: 1, a: 1}
   INDIGO: {r: 0.16862746, g: 0, b: 1, a: 1}
   VIOLET: {r: 0.46666667, g: 0, b: 1, a: 1}
+  ObtainedCount: 2
   ScrollSpeed: 0.2

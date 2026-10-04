@@ -511,6 +511,7 @@ MonoBehaviour:
   _spectrumColor: 32
   value: 1
   saturation: 1
+  StrictCollision: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,6 +689,7 @@ MonoBehaviour:
   _spectrumColor: 2
   value: 1
   saturation: 10
+  StrictCollision: 0
 --- !u!1 &1314407064
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,6 +818,7 @@ MonoBehaviour:
   _spectrumColor: 8
   value: 1
   saturation: 1
+  StrictCollision: 0
 --- !u!1 &1339844581
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,6 +947,7 @@ MonoBehaviour:
   _spectrumColor: 64
   value: 1
   saturation: 1
+  StrictCollision: 0
 --- !u!1 &1404898409
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,6 +1377,7 @@ MonoBehaviour:
   _spectrumColor: 1
   value: 1
   saturation: 1
+  StrictCollision: 0
 --- !u!1 &1714040983
 GameObject:
   m_ObjectHideFlags: 0
@@ -1501,6 +1506,7 @@ MonoBehaviour:
   _spectrumColor: 4
   value: 1
   saturation: 1
+  StrictCollision: 0
 --- !u!1 &1990415230
 GameObject:
   m_ObjectHideFlags: 0
@@ -1754,6 +1760,7 @@ MonoBehaviour:
   _spectrumColor: 16
   value: 1
   saturation: 1
+  StrictCollision: 0
 --- !u!1001 &6875442930558142552
 PrefabInstance:
   m_ObjectHideFlags: 0
