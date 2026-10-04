@@ -15,6 +15,8 @@ public class SpectrumObject : MonoBehaviour
     private Collider _coll;
     private Rigidbody _rb;
 
+    private GrabbableObject _grabbableObject;
+
     public void Awake()
     {
         SpectrumManager.OnColorUpdate += HandleColorUpdate;
@@ -53,17 +55,17 @@ public class SpectrumObject : MonoBehaviour
         if ((!StrictCollision && v < 1f) || (StrictCollision && v < 0.001f))
         {
             _coll.enabled = false;
-            if (_rb != null)
+            if (_rb != null && _grabbableObject == null)
             {
-                _rb.isKinematic = true;
+                //_rb.isKinematic = true;
             }
         }
         else
         {
             _coll.enabled = true;
-            if (_rb != null)
+            if (_rb != null && _grabbableObject == null)
             {
-                _rb.isKinematic = false;
+                //_rb.isKinematic = false;
             }
         }
     }
