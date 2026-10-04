@@ -22,11 +22,11 @@ public static class ColorUtilities
     {
         const int n = BANDCOUNT;
 
-        float x = Mathf.Repeat(f, 1f) * n;
+        float x = Mathf.Repeat(f * n - 0.5f, n);
         int i0 = Mathf.FloorToInt(x);
         float frac = x - i0;
 
-        int a = ((i0 % n) + n) % n;
+        int a = i0 % n;
         int b = (a + 1) % n;
 
         return Color.Lerp(IndexToColor(a), IndexToColor(b), frac);
