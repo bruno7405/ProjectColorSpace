@@ -1,6 +1,7 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
+[RequireComponent(typeof(MeshRenderer), typeof(Collider))]
 public class SpectrumObject : MonoBehaviour
 {
     [SerializeField] private SpectrumColor _spectrumColor;
@@ -23,7 +24,6 @@ public class SpectrumObject : MonoBehaviour
 
         _renderer = GetComponent<MeshRenderer>();
         _material = _renderer.material;
-        _renderer.material.color = _spectrumColor.ToColor();
         _coll = GetComponent<Collider>();
         _rb = GetComponent<Rigidbody>();
     }
