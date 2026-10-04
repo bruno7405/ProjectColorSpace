@@ -64,9 +64,9 @@ public class WorldColorShifter : MonoBehaviour
         RestoreOriginalColors();
     }
 
-    private void HandleColorUpdate(float value)
+    private void HandleColorUpdate(float hueValue)
     {
-        Color color = ColorUtilities.FloatToColor(value);
+        Color color = SpectrumManager.Instance.GLOBAL_GRADIENT.Evaluate(hueValue);
 
         if (driveBaseColor)
             _material.SetColor(BaseColorId, color);
