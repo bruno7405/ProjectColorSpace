@@ -49,10 +49,10 @@ public class SpectrumObject : MonoBehaviour
         
         if (_inverted) v = 1f - v;
 
-        c.a = v;
+        //c.a = v;
         _material.color = c;
 
-        _renderer.enabled = v > 0.001f;
+        //_renderer.enabled = v > 0.001f;
 
         if (v < 1f)
         {

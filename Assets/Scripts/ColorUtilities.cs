@@ -16,7 +16,7 @@ public static class ColorUtilities
     {
         const int n = BANDCOUNT;
 
-        float x = Mathf.Repeat(f, 1f) * n - 0.5f;
+        float x = Mathf.Repeat(f, 1f) * n;
         int i0 = Mathf.FloorToInt(x);
         float frac = x - i0;
 
