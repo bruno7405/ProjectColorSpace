@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public float MouseSensitivity = 0.25f;
     public float Speed = 10f;
     public float Gravity = -20f;
-    public float JumpHeight = 1.5f;
+    public float JumpHeight = 0f;
     public float CrouchScale = 0.5f;
 
     private CharacterController m_CharacterController;

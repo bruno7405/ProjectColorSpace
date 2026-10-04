@@ -4,6 +4,7 @@ using UnityEngine;
 public class SpectrumObject : MonoBehaviour
 {
     [SerializeField] private SpectrumColor _spectrumColor;
+    [SerializeField] private bool _inverted;
 
     public float value = 1f;
     public float saturation = 1f;
@@ -45,6 +46,9 @@ public class SpectrumObject : MonoBehaviour
         float v = ColorUtilities.Visibility(dial, _spectrumColor.Center());
 
         Color c = SpectrumManager.Instance.GLOBAL_GRADIENT.Evaluate(_currentHue);
+        
+        if (_inverted) v = 1f - v;
+
         c.a = v;
         _material.color = c;
 
