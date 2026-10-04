@@ -29,6 +29,8 @@ public class SpectrumObject : MonoBehaviour
     {
         _renderer = GetComponent<MeshRenderer>();
         _material = _renderer.material;
+        _renderer.material.color = _spectrumColor.ToColor();
+        _baseColor = _spectrumColor.ToColor();
         _coll = GetComponent<Collider>();
         _rb = GetComponent<Rigidbody>();
     }
@@ -38,11 +40,12 @@ public class SpectrumObject : MonoBehaviour
         Apply(dial);
     }
 
-    private void Apply(float hueValue)
+    private void Apply(float dial)
     {
-        float v = 1; //ColorUtilities.Visibility(dial, _spectrumColor.Center());
+        float _currentHue = SpectrumManager.Instance._hueValue;
+        float v = ColorUtilities.Visibility(dial, _spectrumColor.Center());
 
-        Color c = SpectrumManager.Instance.GLOBAL_GRADIENT.Evaluate(hueValue);
+        Color c = SpectrumManager.Instance.GLOBAL_GRADIENT.Evaluate(_currentHue);
         
         if (_inverted) v = 1f - v;
 
