@@ -4,7 +4,6 @@ using UnityEngine;
 public class SpectrumObject : MonoBehaviour
 {
     [SerializeField] private SpectrumColor _spectrumColor;
-    [SerializeField] private bool _inverted;
 
     public float value = 1f;
     public float saturation = 1f;
@@ -40,19 +39,16 @@ public class SpectrumObject : MonoBehaviour
         Apply(dial);
     }
 
-    private void Apply(float dial)
+    private void Apply(float hue)
     {
-        float _currentHue = SpectrumManager.Instance._hueValue;
-        float v = ColorUtilities.Visibility(dial, _spectrumColor.Center());
+        Color c = ColorUtilities.FloatToColor(hue);
 
-        Color c = SpectrumManager.Instance.GLOBAL_GRADIENT.Evaluate(_currentHue);
+        float v = CalculateVisibility(hue);
         
-        if (_inverted) v = 1f - v;
-
-        //c.a = v;
+        c.a = v;
         _material.color = c;
 
-        //_renderer.enabled = v > 0.001f;
+        _renderer.enabled = v > 0.001f;
 
         if (v < 1f)
         {
@@ -72,5 +68,18 @@ public class SpectrumObject : MonoBehaviour
         }
     }
     
+    private float CalculateVisibility(float hue)
+    {
+        float visibility = 0;
+        
+        for (int i = 0; i < ColorUtilities.Bands.Length; i++)
+        {
+            if ((_spectrumColor & ColorUtilities.Bands[i]) == 0) continue;
 
+            float center = (i + 0.5f) / ColorUtilities.BANDCOUNT;
+            visibility += ColorUtilities.Visibility(hue, center);
+        }
+
+        return Mathf.Clamp01(visibility);
+    }
 }

@@ -11,6 +11,13 @@ public static class ColorUtilities
 
     public const float GLOBAL_SATURATION = 1f;
     public const float GLOBAL_VALUE = 0.9f;
+
+    public static readonly SpectrumColor[] Bands =
+    {
+      SpectrumColor.Red, SpectrumColor.Orange, SpectrumColor.Yellow,
+      SpectrumColor.Green, SpectrumColor.Blue, SpectrumColor.Indigo,
+      SpectrumColor.Violet  
+    };
     
     public static Color FloatToColor(float f)
     {
@@ -23,7 +30,12 @@ public static class ColorUtilities
         int a = ((i0 % n) + n) % n;
         int b = (a + 1) % n;
 
-        return Color.Lerp(((SpectrumColor)a).ToColor(), ((SpectrumColor)b).ToColor(), frac);
+        return Color.Lerp(IndexToColor(a), IndexToColor(b), frac);
+    }
+
+    static Color IndexToColor(int index)
+    {
+        return ((SpectrumColor)(1 << index)).ToColor();
     }
 
     public static Color HueToRBG(float hue, float saturation, float value)
@@ -99,6 +111,21 @@ public static class ColorUtilities
         d = Mathf.Min(d, 1f - d);
 
         return 1f - Mathf.Clamp01((d - BANDWIDTH) / FADEWIDTH);
+    }
+
+    public static float ColorToValue(this SpectrumColor color)
+    {
+        int c = 0;
+
+        if (color.HasFlag(SpectrumColor.Red))            c = 0;
+        else if (color.HasFlag(SpectrumColor.Orange))    c = 1;
+        else if (color.HasFlag(SpectrumColor.Yellow))    c = 2;
+        else if (color.HasFlag(SpectrumColor.Green))     c = 3;
+        else if (color.HasFlag(SpectrumColor.Blue))      c = 4;
+        else if (color.HasFlag(SpectrumColor.Indigo))    c = 5;
+        else if (color.HasFlag(SpectrumColor.Violet))    c = 6;
+        
+        return (c + 0.5f) / BANDCOUNT;
     }
 
     public static float HueDifference(float to, float from)

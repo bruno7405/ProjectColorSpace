@@ -20,8 +20,8 @@ public class ColorShifter : MonoBehaviour
        _meshRenderer = GetComponent<MeshRenderer>();
     }
 
-    private void HandleColorUpdate(float color)
+    private void HandleColorUpdate(float hue)
     {
-        _meshRenderer.material.color = ColorUtilities.FloatToColor(color);
+        _meshRenderer.material.color = ColorUtilities.FloatToColor(hue);
     }
 }
