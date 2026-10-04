@@ -24,6 +24,11 @@ public class SpectrumManager : MonoBehaviour
 
     public Color RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET;
 
+    public int ObtainedCount = 1;
+
+    public float MinHue => 0.5f / ColorUtilities.BANDCOUNT;
+    public float MaxHue => (ObtainedCount - 0.5f) / ColorUtilities.BANDCOUNT;
+
     public float ScrollSpeed;
 
     [NonSerialized] public float _hueValue;
@@ -41,24 +46,24 @@ public class SpectrumManager : MonoBehaviour
         OnColorUpdate?.Invoke(_hueValue);
     }
 
+    public void UnlockNextColor()
+    {
+        ObtainedCount = Mathf.Min(ObtainedCount + 1, ColorUtilities.BANDCOUNT);
+    }
+
     public void Update()
     {
         float lastHue = _hueValue;
         
-        if (Keyboard.current.leftArrowKey.isPressed)
-        {
-            _hueValue -= ScrollSpeed * Time.deltaTime;
-            _hueValue -= ScrollSpeed * Time.deltaTime;
-            _hueValue = Mathf.Repeat(_hueValue, 1f);
-        } 
-        else if (Keyboard.current.rightArrowKey.isPressed)
-        {
-            _hueValue += ScrollSpeed * Time.deltaTime;
-            _hueValue += ScrollSpeed * Time.deltaTime;
-            _hueValue = Mathf.Repeat(_hueValue, 1f);
-        }
-    
-        _hueValue = ((_hueValue % 1) + 1) % 1;
+        float input = 0f;
+        if (Keyboard.current.leftArrowKey.isPressed) input -= 1f;
+        if (Keyboard.current.rightArrowKey.isPressed) input += 1f;
+
+        float next = _hueValue + input * ScrollSpeed * Time.deltaTime;
+
+        _hueValue = ObtainedCount < ColorUtilities.BANDCOUNT
+            ? Mathf.Clamp(next, MinHue, MaxHue)
+            : Mathf.Repeat(next, 1f);
 
         if (_hueValue != lastHue)
         {
@@ -67,6 +72,7 @@ public class SpectrumManager : MonoBehaviour
 
         Debug.Log("Hue: " + _hueValue);
     }
+
 }
 
 public static class SpectrumColorExtensions

@@ -8,9 +8,10 @@ public class SpectrumObject : MonoBehaviour
     public float value = 1f;
     public float saturation = 1f;
 
+    public bool StrictCollision = false;
+
     private MeshRenderer _renderer;
     private Material _material;
-    private Color _baseColor;
     private Collider _coll;
     private Rigidbody _rb;
 
@@ -29,7 +30,6 @@ public class SpectrumObject : MonoBehaviour
         _renderer = GetComponent<MeshRenderer>();
         _material = _renderer.material;
         _renderer.material.color = _spectrumColor.ToColor();
-        _baseColor = _spectrumColor.ToColor();
         _coll = GetComponent<Collider>();
         _rb = GetComponent<Rigidbody>();
     }
@@ -42,15 +42,13 @@ public class SpectrumObject : MonoBehaviour
     private void Apply(float hue)
     {
         Color c = ColorUtilities.FloatToColor(hue);
-
         float v = CalculateVisibility(hue);
-        
         c.a = v;
-        _material.color = c;
 
+        _material.color = c;
         _renderer.enabled = v > 0.001f;
 
-        if (v < 1f)
+        if ((!StrictCollision && v < 1f) || (StrictCollision && v < 0.001f))
         {
             _coll.enabled = false;
             if (_rb != null)
