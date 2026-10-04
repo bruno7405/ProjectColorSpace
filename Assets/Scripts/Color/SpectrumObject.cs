@@ -10,6 +10,7 @@ public class SpectrumObject : MonoBehaviour
     public float saturation = 1f;
 
     public bool StrictCollision = false;
+    public bool IsSolid { get; private set; } = true;
 
     private MeshRenderer _renderer;
     private Material _material;
@@ -26,6 +27,7 @@ public class SpectrumObject : MonoBehaviour
         _material = _renderer.material;
         _coll = GetComponent<Collider>();
         _rb = GetComponent<Rigidbody>();
+        _grabbableObject = GetComponent<GrabbableObject>();
     }
 
     public void OnDestroy()
@@ -52,24 +54,15 @@ public class SpectrumObject : MonoBehaviour
         _material.color = c;
         _renderer.enabled = v > 0.001f;
 
-        if ((!StrictCollision && v < 1f) || (StrictCollision && v < 0.001f))
-        {
-            _coll.enabled = false;
-            if (_rb != null && _grabbableObject == null)
-            {
-                //_rb.isKinematic = true;
-            }
-        }
-        else
-        {
-            _coll.enabled = true;
-            if (_rb != null && _grabbableObject == null)
-            {
-                //_rb.isKinematic = false;
-            }
-        }
+        IsSolid = StrictCollision ? v >= 0.001f : v >= 1f;
+        _coll.enabled = IsSolid;
+
+        if (_rb == null) return;
+
+        bool held = _grabbableObject != null && _grabbableObject.IsGrabbed();
+        _rb.isKinematic = held || !IsSolid;
     }
-    
+
     private float CalculateVisibility(float hue)
     {
         float visibility = 0;
