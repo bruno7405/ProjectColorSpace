@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(MeshRenderer), typeof(Collider))]
@@ -11,6 +11,8 @@ public class SpectrumObject : MonoBehaviour
 
     public bool StrictCollision = false;
     public bool IsSolid { get; private set; } = true;
+
+    public Action<bool> OnSolidChanged;
 
     private MeshRenderer _renderer;
     private Material _material;
@@ -35,11 +37,6 @@ public class SpectrumObject : MonoBehaviour
         SpectrumManager.OnColorUpdate -= HandleColorUpdate;
     }
 
-    public void Start()
-    {
-        
-    }
-
     private void HandleColorUpdate(float dial)
     {
         Apply(dial);
@@ -54,19 +51,28 @@ public class SpectrumObject : MonoBehaviour
         _material.color = c;
         _renderer.enabled = v > 0.001f;
 
-        IsSolid = StrictCollision ? v >= 0.001f : v >= 1f;
+        bool newSolid = StrictCollision ? v >= 0.001f : v >= 1f;
+        bool solidChanged = newSolid != IsSolid;
+
+        IsSolid = newSolid;
         _coll.enabled = IsSolid;
 
-        if (_rb == null) return;
+        if (_rb != null)
+        {
+            bool held = _grabbableObject != null && _grabbableObject.IsGrabbed();
+            _rb.isKinematic = held || !IsSolid;
+        }
 
-        bool held = _grabbableObject != null && _grabbableObject.IsGrabbed();
-        _rb.isKinematic = held || !IsSolid;
+        if (solidChanged)
+        {
+            OnSolidChanged?.Invoke(IsSolid);
+        }
     }
 
     private float CalculateVisibility(float hue)
     {
         float visibility = 0;
-        
+
         for (int i = 0; i < ColorUtilities.Bands.Length; i++)
         {
             if ((_spectrumColor & ColorUtilities.Bands[i]) == 0) continue;

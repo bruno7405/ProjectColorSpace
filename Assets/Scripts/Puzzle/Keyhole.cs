@@ -47,4 +47,9 @@ public class Keyhole : MonoBehaviour
         _currentKey = null;
         OnKeyExit.Invoke();
     }
+
+    public void DetachCurrentKey()
+    {
+        DetachKey(_currentKey);
+    }
 }
