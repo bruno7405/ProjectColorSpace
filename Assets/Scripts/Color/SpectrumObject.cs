@@ -12,24 +12,27 @@ public class SpectrumObject : MonoBehaviour
     public bool StrictCollision = false;
     public bool IsSolid { get; private set; } = true;
 
+    // Set by external systems (e.g. Keyhole) that need the body to stay kinematic
+    public bool ForceKinematic { get; set; }
+
     public Action<bool> OnSolidChanged;
 
     private MeshRenderer _renderer;
     private Material _material;
     private Collider _coll;
     private Rigidbody _rb;
-
     private GrabbableObject _grabbableObject;
 
     public void Awake()
     {
-        SpectrumManager.OnColorUpdate += HandleColorUpdate;
-
         _renderer = GetComponent<MeshRenderer>();
         _material = _renderer.material;
         _coll = GetComponent<Collider>();
         _rb = GetComponent<Rigidbody>();
         _grabbableObject = GetComponent<GrabbableObject>();
+
+        // Subscribe only after references are assigned
+        SpectrumManager.OnColorUpdate += HandleColorUpdate;
     }
 
     public void OnDestroy()
@@ -52,21 +55,21 @@ public class SpectrumObject : MonoBehaviour
         _renderer.enabled = v > 0.001f;
 
         bool newSolid = StrictCollision ? v >= 0.001f : v >= 1f;
-        bool solidChanged = newSolid != IsSolid;
+        if (newSolid == IsSolid) return; // only touch physics on a real transition
 
         IsSolid = newSolid;
         _coll.enabled = IsSolid;
+        RefreshKinematic();
 
-        if (_rb != null)
-        {
-            bool held = _grabbableObject != null && _grabbableObject.IsGrabbed();
-            _rb.isKinematic = held || !IsSolid;
-        }
+        OnSolidChanged?.Invoke(IsSolid);
+    }
 
-        if (solidChanged)
-        {
-            OnSolidChanged?.Invoke(IsSolid);
-        }
+    public void RefreshKinematic()
+    {
+        if (_rb == null) return;
+
+        bool held = _grabbableObject != null && _grabbableObject.IsGrabbed();
+        _rb.isKinematic = held || ForceKinematic || !IsSolid;
     }
 
     private float CalculateVisibility(float hue)

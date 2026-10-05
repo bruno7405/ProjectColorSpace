@@ -24,6 +24,11 @@ public class Key : GrabbableObject
         _spectrumObject.OnSolidChanged += UpdateAttachState;
     }
 
+    private void OnDestroy()
+    {
+        if (_spectrumObject != null) _spectrumObject.OnSolidChanged -= UpdateAttachState;
+    }
+
     // Attach only once the key is released inside the keyhole's trigger
     private void OnTriggerStay(Collider other)
     {
@@ -52,7 +57,7 @@ public class Key : GrabbableObject
 
     private void UpdateAttachState(bool isSolid)
     {
-        if (!isSolid)
+        if (!isSolid && _currentKeyhole != null)
         {
             _currentKeyhole.DetachKey(this);
         }

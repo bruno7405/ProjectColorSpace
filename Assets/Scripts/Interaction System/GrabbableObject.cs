@@ -25,17 +25,20 @@ public class GrabbableObject : MonoBehaviour
     public void Grabbed()
     {
         OnGrabbed.Invoke();
-        _rb.isKinematic = true;
-        gameObject.layer = _heldLayer;
         _isGrabbed = true;
+        gameObject.layer = _heldLayer;
+
+        if (_rb != null) _rb.isKinematic = true;
     }
 
     public void Dropped()
     {
         OnDropped.Invoke();
-        _rb.isKinematic = _spectrumObject != null && !_spectrumObject.IsSolid;
+        _isGrabbed = false; // must be false before refreshing kinematic state
         gameObject.layer = _grabbableLayer;
-        _isGrabbed = false;
+
+        if (_spectrumObject != null) _spectrumObject.RefreshKinematic();
+        else if (_rb != null) _rb.isKinematic = false;
     }
 
     public void HoverExit()

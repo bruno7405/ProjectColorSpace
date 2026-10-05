@@ -29,6 +29,12 @@ public class Keyhole : MonoBehaviour
             rb.isKinematic = true;
         }
 
+        // Stop SpectrumObject from un-kinematic-ing the key while attached
+        if (key.TryGetComponent(out SpectrumObject so))
+        {
+            so.ForceKinematic = true;
+        }
+
         key.transform.SetPositionAndRotation(attachPoint.position, attachPoint.rotation);
         key.transform.SetParent(transform, true);
 
@@ -45,11 +51,18 @@ public class Keyhole : MonoBehaviour
         key.transform.SetParent(null, true);
         key.SetKeyhole(null);
         _currentKey = null;
+
+        if (key.TryGetComponent(out SpectrumObject so))
+        {
+            so.ForceKinematic = false;
+            so.RefreshKinematic();
+        }
+
         OnKeyExit.Invoke();
     }
 
     public void DetachCurrentKey()
     {
-        DetachKey(_currentKey);
+        if (_currentKey != null) DetachKey(_currentKey);
     }
 }
