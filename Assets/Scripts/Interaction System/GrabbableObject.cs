@@ -14,7 +14,7 @@ public class GrabbableObject : MonoBehaviour
     private Rigidbody _rb;
     private bool _isGrabbed;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         _spectrumObject = GetComponent<SpectrumObject>();
         _rb = GetComponent<Rigidbody>();
