@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3832222665455058405}
   - component: {fileID: 696491607223571622}
   m_Layer: 0
-  m_Name: BasicSlope
+  m_Name: Terrain Slope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
-  _spectrumColor: 1
-  value: 1
-  saturation: 0.85
+  _spectrumColor: -1
+  value: 0.8
+  saturation: 0.75
   StrictCollision: 0
