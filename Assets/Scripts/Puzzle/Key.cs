@@ -3,13 +3,12 @@ using UnityEngine;
 [RequireComponent(typeof(SpectrumObject))]
 public class Key : GrabbableObject
 {
-    [SerializeField] private string keyId = "default";
-
+    [SerializeField] private SpectrumColor _keyColor;
     private SpectrumObject _spectrumObject;
     private Collider _collider;
     private Keyhole _currentKeyhole;
 
-    public string KeyId => keyId;
+    public SpectrumColor KeycColor => _keyColor;
     public bool IsAttached => _currentKeyhole != null;
 
     protected override void Awake()

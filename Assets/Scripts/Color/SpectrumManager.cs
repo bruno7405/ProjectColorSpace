@@ -57,8 +57,8 @@ public class SpectrumManager : MonoBehaviour
         float lastHue = _hueValue;
         
         float input = 0f;
-        if (Keyboard.current.leftArrowKey.isPressed) input -= 1f;
-        if (Keyboard.current.rightArrowKey.isPressed) input += 1f;
+        if (Keyboard.current.qKey.isPressed) input -= 1f;
+        if (Keyboard.current.eKey.isPressed) input += 1f;
 
         float next = _hueValue + input * ScrollSpeed * Time.deltaTime;
 
