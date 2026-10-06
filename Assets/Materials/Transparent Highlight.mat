@@ -28,8 +28,8 @@ Material:
   - MOTIONVECTORS
   - DepthOnly
   - SHADOWCASTER
-  - Outline
   - SRPDEFAULTUNLIT
+  - Outline
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -181,7 +181,7 @@ Material:
     - _XRMotionVectorsPass: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 0}
+    - _BaseColor: {r: 0, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 0}
     - _ColorDim: {r: 1, g: 1, b: 1, a: 0}
     - _ColorDimCurve: {r: 0.85023, g: 0.85034, b: 0.8504499, a: 0.85056}
