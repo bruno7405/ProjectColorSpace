@@ -103,7 +103,7 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _Clipping_Threshold: 0
+    - _Clipping_Threshold: 0.01
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
@@ -113,7 +113,7 @@ Material:
     - _EnvironmentReflections: 1
     - _Fresnel_Power: 2
     - _Gas_Speed: 0.15
-    - _Ghost_Progress: 0.256
+    - _Ghost_Progress: 0
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
