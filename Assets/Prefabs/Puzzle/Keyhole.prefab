@@ -178,6 +178,7 @@ Transform:
   - {fileID: 5800791778406263705}
   - {fileID: 3488443584826118793}
   - {fileID: 1913237429770888984}
+  - {fileID: 702056580232698218}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 15, z: 0}
 --- !u!33 &2436118867293231902
@@ -217,12 +218,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 8626886047025424417}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   OnKeyExit:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Door, Assembly-CSharp
         m_MethodName: Close
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8626886047025424417}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Stop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -478,3 +503,78 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &6201699643964943491
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2056096865230749514}
+    m_Modifications:
+    - target: {fileID: 2425196992839484578, guid: 58d69bc7c4a7bb249a83249ec6939c4d, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6894703487008683497, guid: 58d69bc7c4a7bb249a83249ec6939c4d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6894703487008683497, guid: 58d69bc7c4a7bb249a83249ec6939c4d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.42756534
+      objectReference: {fileID: 0}
+    - target: {fileID: 6894703487008683497, guid: 58d69bc7c4a7bb249a83249ec6939c4d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6894703487008683497, guid: 58d69bc7c4a7bb249a83249ec6939c4d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6894703487008683497, guid: 58d69bc7c4a7bb249a83249ec6939c4d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6894703487008683497, guid: 58d69bc7c4a7bb249a83249ec6939c4d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.000000010536713
+      objectReference: {fileID: 0}
+    - target: {fileID: 6894703487008683497, guid: 58d69bc7c4a7bb249a83249ec6939c4d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000010536713
+      objectReference: {fileID: 0}
+    - target: {fileID: 6894703487008683497, guid: 58d69bc7c4a7bb249a83249ec6939c4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6894703487008683497, guid: 58d69bc7c4a7bb249a83249ec6939c4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6894703487008683497, guid: 58d69bc7c4a7bb249a83249ec6939c4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119275413369676182, guid: 58d69bc7c4a7bb249a83249ec6939c4d, type: 3}
+      propertyPath: m_Name
+      value: ColorCubeAura Particles
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119275413369676182, guid: 58d69bc7c4a7bb249a83249ec6939c4d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 58d69bc7c4a7bb249a83249ec6939c4d, type: 3}
+--- !u!4 &702056580232698218 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6894703487008683497, guid: 58d69bc7c4a7bb249a83249ec6939c4d, type: 3}
+  m_PrefabInstance: {fileID: 6201699643964943491}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8626886047025424417 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2425196992839484578, guid: 58d69bc7c4a7bb249a83249ec6939c4d, type: 3}
+  m_PrefabInstance: {fileID: 6201699643964943491}
+  m_PrefabAsset: {fileID: 0}
