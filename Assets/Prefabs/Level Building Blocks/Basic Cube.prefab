@@ -68,7 +68,6 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8b8bee7d7101f784e812b83e0218e150, type: 2}
   - {fileID: 2100000, guid: 289cd66a4eed67c4a94f075df1c90c97, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -130,4 +129,3 @@ MonoBehaviour:
   value: 1
   saturation: 0.8
   StrictCollision: 0
-  _spectrum_material: {fileID: 2100000, guid: 289cd66a4eed67c4a94f075df1c90c97, type: 2}

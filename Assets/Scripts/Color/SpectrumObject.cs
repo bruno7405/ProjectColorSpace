@@ -18,8 +18,8 @@ public class SpectrumObject : MonoBehaviour
     public Action<bool> OnSolidChanged;
 
     private MeshRenderer _renderer;
-    public Material _spectrum_material;
-    public Material _outline_material;
+    private Material _spectrum_material;
+    private Material _outline_material;
     private Collider _coll;
     private Rigidbody _rb;
     private GrabbableObject _grabbableObject;
@@ -31,10 +31,10 @@ public class SpectrumObject : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
         _grabbableObject = GetComponent<GrabbableObject>();
 
+        _spectrum_material = _renderer.materials[0];
+
         // Subscribe only after references are assigned
         SpectrumManager.OnColorUpdate += HandleColorUpdate;
-
-        if (_material == null) _material = GetComponent<Material>();
     }
 
     public void OnDestroy()
@@ -67,7 +67,7 @@ public class SpectrumObject : MonoBehaviour
         if (_outline_material != null)
         {
             Color color = new Color(0, 0, 0);
-            color.a = v;
+            color.a = 1 - v;
             _outline_material.color = color;
         }
 
