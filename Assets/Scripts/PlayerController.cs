@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     public float JumpHeight = 0f;
     public float CrouchScale = 0.5f;
 
+    private Vector3 velocity;
+
     private GameObject currentGround;
 
     private CharacterController m_CharacterController;
@@ -82,9 +84,17 @@ public class PlayerController : MonoBehaviour
         if (!grounded)
         {
             verticalVelocity += Gravity * Time.deltaTime;
+            transform.SetParent(null);
         }
 
-        Vector3 velocity = move * Speed;
+        if (grounded && currentGround != null && currentGround.layer == LayerMask.NameToLayer("Moving Platform"))
+        {
+            Vector3 groundVelocity = currentGround.GetComponent<Door>().CalculatedVelocity;
+            velocity = (move * Speed) + groundVelocity;
+            velocity.y = verticalVelocity + groundVelocity.y;
+        }
+
+        velocity = move * Speed;
         velocity.y = verticalVelocity;
 
         m_CharacterController.Move(velocity * Time.deltaTime);
