@@ -33,8 +33,6 @@ public class SpectrumObject : MonoBehaviour
 
         // Subscribe only after references are assigned
         SpectrumManager.OnColorUpdate += HandleColorUpdate;
-
-        if (_material == null) _material = GetComponent<Material>();
     }
 
     public void OnDestroy()
