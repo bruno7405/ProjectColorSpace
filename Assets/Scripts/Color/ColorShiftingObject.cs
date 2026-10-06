@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public class ColorShifter : MonoBehaviour
+[RequireComponent(typeof(MeshRenderer))]
+public class ColorShiftingObject : MonoBehaviour
 {
     private MeshRenderer _meshRenderer;
     
@@ -8,6 +9,7 @@ public class ColorShifter : MonoBehaviour
     {
         SpectrumManager.OnColorUpdate += HandleColorUpdate;
 
+        _meshRenderer = GetComponent<MeshRenderer>();
     }
 
     public void OnDestroy()
@@ -17,11 +19,11 @@ public class ColorShifter : MonoBehaviour
 
     public void Start()
     {
-       _meshRenderer = GetComponent<MeshRenderer>();
+        
     }
 
-    private void HandleColorUpdate(float color)
+    private void HandleColorUpdate(float hue)
     {
-        _meshRenderer.material.color = ColorUtilities.FloatToColor(color);
+        _meshRenderer.material.color = ColorUtilities.FloatToColor(hue);
     }
 }
