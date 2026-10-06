@@ -51,7 +51,7 @@ public class PlayerGrabController : MonoBehaviour
     {
         
 
-        if (Keyboard.current.eKey.wasPressedThisFrame) ToggleGrab();
+        if (Keyboard.current.fKey.wasPressedThisFrame) ToggleGrab();
     }
 
     private void LateUpdate()
