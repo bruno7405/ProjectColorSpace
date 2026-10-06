@@ -18,6 +18,8 @@ public static class AutoSnapNewObjects
 {
     private const string EnabledKey = "AutoSnapNewObjects.Enabled";
     private const string MenuPath = "Tools/Auto Snap New Objects";
+    private const string BoundsKey = "AutoSnapNewObjects.SnapByBounds";
+    private const string BoundsMenuPath = "Tools/Auto Snap By Bounds (not Pivot)";
 
     // Object-creation events can land a moment after the drag state clears,
     // so a creation counts as "from a drag" if a drag was seen very recently.
@@ -48,6 +50,37 @@ public static class AutoSnapNewObjects
     {
         Menu.SetChecked(MenuPath, Enabled);
         return true;
+    }
+
+    // When true, the object's bounding box (its min corner) is snapped to the grid instead
+    // of its pivot. This keeps faces on the grid even when the pivot sits at a half step
+    // (e.g. a 0.5-wide object centered on a 0.5 grid line has its faces off-grid by half a step).
+    private static bool SnapByBounds
+    {
+        get => EditorPrefs.GetBool(BoundsKey, true);
+        set => EditorPrefs.SetBool(BoundsKey, value);
+    }
+
+    [MenuItem(BoundsMenuPath)]
+    private static void ToggleSnapByBounds() => SnapByBounds = !SnapByBounds;
+
+    [MenuItem(BoundsMenuPath, true)]
+    private static bool ToggleSnapByBoundsValidate()
+    {
+        Menu.SetChecked(BoundsMenuPath, SnapByBounds);
+        return true;
+    }
+
+    // Fixes objects that are already half a step off the grid.
+    [MenuItem("Tools/Snap Selection To Grid")]
+    private static void SnapSelectionToGrid()
+    {
+        Transform[] selected = Selection.GetTransforms(SelectionMode.TopLevel | SelectionMode.Editable);
+        if (selected.Length == 0) return;
+
+        Undo.RecordObjects(selected, "Snap Selection To Grid");
+        foreach (Transform t in selected)
+            t.position += GetSnapOffset(t);
     }
 
     private static void OnChangesPublished(ref ObjectChangeEventStream stream)
@@ -117,21 +150,46 @@ public static class AutoSnapNewObjects
         bool directChildOfPrefabRoot = inCurrentStage && go.transform.parent == stage.prefabContentsRoot.transform;
         if (!topLevel && !directChildOfPrefabRoot) return;
 
-        Vector3 pos = go.transform.position;
-        Vector3 snapped = SnapToGrid(pos);
-        if ((snapped - pos).sqrMagnitude < 1e-12f) return;
+        Vector3 offset = GetSnapOffset(go.transform);
+        if (offset.sqrMagnitude < 1e-12f) return;
 
         Undo.RecordObject(go.transform, "Snap New Object to Grid");
-        go.transform.position = snapped;
+        go.transform.position += offset;
 
         // Fold the snap into the same undo step as the object's creation.
         Undo.CollapseUndoOperations(undoGroup);
     }
 
-    private static Vector3 SnapToGrid(Vector3 p)
+    // World-space movement needed to put the object on the grid.
+    internal static Vector3 GetSnapOffset(Transform t)
     {
         Vector3 step = EditorSnapSettings.move;
-        return new Vector3(SnapAxis(p.x, step.x), SnapAxis(p.y, step.y), SnapAxis(p.z, step.z));
+
+        // Reference point: the bounds' min corner (faces on grid) or, as a fallback, the pivot.
+        Vector3 reference = t.position;
+        if (SnapByBounds && TryGetWorldBounds(t, out Bounds b))
+            reference = b.min;
+
+        return new Vector3(
+            SnapAxis(reference.x, step.x) - reference.x,
+            SnapAxis(reference.y, step.y) - reference.y,
+            SnapAxis(reference.z, step.z) - reference.z);
+    }
+
+    private static bool TryGetWorldBounds(Transform t, out Bounds bounds)
+    {
+        bounds = default;
+        bool found = false;
+
+        foreach (Renderer r in t.GetComponentsInChildren<Renderer>())
+        {
+            if (!(r is MeshRenderer || r is SkinnedMeshRenderer || r is SpriteRenderer)) continue;
+
+            if (!found) { bounds = r.bounds; found = true; }
+            else bounds.Encapsulate(r.bounds);
+        }
+
+        return found;
     }
 
     private static float SnapAxis(float value, float step)
