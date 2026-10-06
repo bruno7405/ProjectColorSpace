@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1157209708179949340}
   - component: {fileID: 6007009898688083259}
   m_Layer: 0
-  m_Name: Basic Cube
+  m_Name: Shifter Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
