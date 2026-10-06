@@ -46,7 +46,8 @@ public class SaveManager : MonoBehaviour
                 CurrentSave = new SaveData
                 {
                     // setup defaults here
-                    uuid = System.Guid.NewGuid().ToString() 
+                    uuid = System.Guid.NewGuid().ToString(), 
+                    unlockedColors = 2
                 };
             } else
             {

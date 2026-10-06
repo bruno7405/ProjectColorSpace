@@ -8,12 +8,14 @@ using UnityEngine;
 public class SaveDataAsset : ScriptableObject
 {
     public string uuid;
+    public int unlockedColors;
 
     public SaveData ToSaveData()
     {
         return new SaveData
         {
-            uuid = uuid
+            uuid = uuid,
+            unlockedColors = unlockedColors
         };
         // expand as needed
     }
