@@ -18,7 +18,7 @@ public class SpectrumObject : MonoBehaviour
     public Action<bool> OnSolidChanged;
 
     private MeshRenderer _renderer;
-    private Material _material;
+    public Material _material;
     private Collider _coll;
     private Rigidbody _rb;
     private GrabbableObject _grabbableObject;
@@ -26,7 +26,6 @@ public class SpectrumObject : MonoBehaviour
     public void Awake()
     {
         _renderer = GetComponent<MeshRenderer>();
-        _material = _renderer.material;
         _coll = GetComponent<Collider>();
         _rb = GetComponent<Rigidbody>();
         _grabbableObject = GetComponent<GrabbableObject>();
@@ -47,11 +46,20 @@ public class SpectrumObject : MonoBehaviour
 
     private void Apply(float hue)
     {
+        
         Color c = ColorUtilities.FloatToColor(hue);
         float v = CalculateVisibility(hue);
-        c.a = v;
+        _material.SetFloat("_Ghost_Progress", 1 - v);
 
-        _material.color = c;
+        if (_material.HasProperty("_Object_Color"))
+        {
+            _material.SetColor("_Object_Color", c);
+        }
+        else
+        {
+            _material.color = c;
+        }
+
         _renderer.enabled = v > 0.001f;
 
         bool newSolid = StrictCollision ? v >= 0.001f : v >= 1f;
