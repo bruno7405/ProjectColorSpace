@@ -177,7 +177,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1752743679712038533, guid: bd1591e02bae70a4da656559dde6d7db, type: 3}
       propertyPath: m_Name
-      value: UI
+      value: Game UI
       objectReference: {fileID: 0}
     - target: {fileID: 8140820421202382605, guid: bd1591e02bae70a4da656559dde6d7db, type: 3}
       propertyPath: m_Pivot.x
