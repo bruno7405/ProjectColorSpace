@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.15396
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.50000006
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.5036399
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: m_LocalRotation.w
@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: saturation
-      value: 0.6
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor

@@ -357,7 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   CameraAnchor: {fileID: 5331047686722155419}
   MouseSensitivity: 0.25
-  Speed: 10
+  Speed: 7
   Gravity: -20
   JumpHeight: 1.5
   CrouchScale: 0.5
