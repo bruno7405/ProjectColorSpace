@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class AudioBus : MonoBehaviour
 {
@@ -27,12 +28,15 @@ public class AudioBus : MonoBehaviour
     
     // Audio source references
     private AudioSource musicSource;
+    private List<AudioSource> musicSourceLayers;
     private AudioSource sfxSource;
     
     void Start()
     {
         // Create and configure audio sources
         SetupAudioSources();
+
+        SpectrumManager.OnColorUpdate += LayerScroll;
     }
     
     void SetupAudioSources()
@@ -142,5 +146,22 @@ public class AudioBus : MonoBehaviour
         }
         
         musicSource.volume = targetVolume;
+    }
+
+    /// MUSIC LAYERS
+    /// 
+    
+    public void InitMusicLayer(AudioClip layer) {
+        GameObject layerObject = new GameObject(layer.name);
+        AudioSource layerSource = layerObject.AddComponent<AudioSource>();
+        layerSource.loop = true;        // Music usually loops
+        layerSource.volume = defaultMusicVolume;      // Lower volume for background music
+        layerSource.priority = 1;     
+        musicSourceLayers.Add(layerSource);
+    }
+
+    public void LayerScroll(float _hueValue) {
+
+
     }
 }
