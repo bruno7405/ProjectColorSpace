@@ -18,7 +18,7 @@ public class SpectrumObject : MonoBehaviour
     public Action<bool> OnSolidChanged;
 
     private MeshRenderer _renderer;
-    private Material _material;
+    public Material _material;
     private Collider _coll;
     private Rigidbody _rb;
     private GrabbableObject _grabbableObject;
@@ -26,7 +26,6 @@ public class SpectrumObject : MonoBehaviour
     public void Awake()
     {
         _renderer = GetComponent<MeshRenderer>();
-        _material = _renderer.material;
         _coll = GetComponent<Collider>();
         _rb = GetComponent<Rigidbody>();
         _grabbableObject = GetComponent<GrabbableObject>();
