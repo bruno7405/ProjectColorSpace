@@ -201,7 +201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Keyhole
   attachPoint: {fileID: 5549790985974164281}
-  requiredKeyId: default
+  _requiredColor: 1
   OnKeyEnter:
     m_PersistentCalls:
       m_Calls:

@@ -681,6 +681,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2344539623522707750, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344539623522707750, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3391697912374542190, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
       propertyPath: m_Name
       value: === Core Systems ===
@@ -799,6 +807,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 1db1195fa86f57a40a330490bb1a12d8, type: 2}
+    - target: {fileID: 4196122606366003813, guid: 4d8ce4a93d068414e91a89d6a353dad5, type: 3}
+      propertyPath: _requiredColor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4196122606366003813, guid: 4d8ce4a93d068414e91a89d6a353dad5, type: 3}
       propertyPath: OnKeyExit.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1043,6 +1055,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1807752953426993558, guid: a35cde56cee87f44b90ee4c6c239b13b, type: 3}
       propertyPath: _spectrumColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3868727088536313054, guid: a35cde56cee87f44b90ee4c6c239b13b, type: 3}
+      propertyPath: _keyColor
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5697232768794830780, guid: a35cde56cee87f44b90ee4c6c239b13b, type: 3}
@@ -3070,6 +3086,10 @@ PrefabInstance:
       propertyPath: keyId
       value: red
       objectReference: {fileID: 0}
+    - target: {fileID: 3868727088536313054, guid: a35cde56cee87f44b90ee4c6c239b13b, type: 3}
+      propertyPath: _keyColor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5697232768794830780, guid: a35cde56cee87f44b90ee4c6c239b13b, type: 3}
       propertyPath: m_Name
       value: Red Grabbable Key
@@ -3276,10 +3296,6 @@ PrefabInstance:
     - target: {fileID: 2056096865230749514, guid: 4d8ce4a93d068414e91a89d6a353dad5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4196122606366003813, guid: 4d8ce4a93d068414e91a89d6a353dad5, type: 3}
-      propertyPath: requiredKeyId
-      value: red
       objectReference: {fileID: 0}
     - target: {fileID: 4196122606366003813, guid: 4d8ce4a93d068414e91a89d6a353dad5, type: 3}
       propertyPath: OnKeyExit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
