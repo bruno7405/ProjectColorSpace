@@ -163,6 +163,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1ad62329aa21a10f942f9a38957dbff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  MainLoopMusic: {fileID: 8300000, guid: b407bb681c1f2c4aebf682a291fbc44b, type: 3}
+  LoopMusicLayers:
+  - {fileID: 8300000, guid: 445cfce431cfd7ca2b5e771dcf3efc35, type: 3}
+  - {fileID: 8300000, guid: 3f8b829eee017da5593d9e336c61c82e, type: 3}
+  - {fileID: 8300000, guid: 429ea13603c14c02fa334fe4e49e8026, type: 3}
 --- !u!1 &135401766
 GameObject:
   m_ObjectHideFlags: 0

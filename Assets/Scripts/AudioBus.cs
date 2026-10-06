@@ -28,7 +28,7 @@ public class AudioBus : MonoBehaviour
     
     // Audio source references
     private AudioSource musicSource;
-    private List<AudioSource> musicSourceLayers;
+    private List<AudioSource> musicSourceLayers = new List<AudioSource>();
     private AudioSource sfxSource;
     
     void Start()
@@ -148,20 +148,40 @@ public class AudioBus : MonoBehaviour
         musicSource.volume = targetVolume;
     }
 
+    ///
     /// MUSIC LAYERS
     /// 
     
     public void InitMusicLayer(AudioClip layer) {
         GameObject layerObject = new GameObject(layer.name);
         AudioSource layerSource = layerObject.AddComponent<AudioSource>();
+        layerSource.clip = layer;
         layerSource.loop = true;        // Music usually loops
-        layerSource.volume = defaultMusicVolume;      // Lower volume for background music
+        layerSource.volume = 0.0f;
         layerSource.priority = 1;     
         musicSourceLayers.Add(layerSource);
+        layerSource.Play();
     }
 
     public void LayerScroll(float _hueValue) {
+        // _hueValue is between 0,1
+        // so we need 7 layers, with an additional 8th for violet->red
 
+        const float numLayers = 7.0f;
+        const float colorPoint = 1.0f/numLayers;
 
+        float scaledHue = _hueValue * numLayers - 0.5f;
+        print(scaledHue);
+        int lowerIndex = (int)scaledHue;
+        int upperIndex = (int)scaledHue + 1;
+
+        if (upperIndex >= musicSourceLayers.Count) { return; }
+
+        print("Hello");
+
+        musicSourceLayers[lowerIndex].volume = (scaledHue - lowerIndex);
+        print(musicSourceLayers[lowerIndex].isPlaying);
+        print(musicSourceLayers[lowerIndex].volume);
+        musicSourceLayers[upperIndex].volume = -(scaledHue - upperIndex);
     }
 }
