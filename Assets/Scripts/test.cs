@@ -10,6 +10,6 @@ public class test : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(rend.material.color.a);
+        
     }
 }
