@@ -32,6 +32,13 @@ public static class ColorUtilities
         return Color.Lerp(IndexToColor(a), IndexToColor(b), frac);
     }
 
+    public static Color Shade(Color c, float saturation, float value)
+    {
+        Color result = Color.Lerp(Color.white, c, saturation) * value;
+        result.a = 1f;
+        return result;
+    }
+
     static Color IndexToColor(int index)
     {
         return ((SpectrumColor)(1 << index)).ToColor();

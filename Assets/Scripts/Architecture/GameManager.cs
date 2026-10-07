@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -20,6 +21,14 @@ public class GameManager : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else { Destroy(gameObject); return; }
+    }
+
+    void Start()
+    {
+        if (SceneManager.GetActiveScene().name == LevelScene)
+        {
+            ChangeState(GameState.Playing);
+        }
     }
 
     public void ChangeState(GameState newState)
@@ -81,6 +90,7 @@ public class GameManager : MonoBehaviour
     public void QuitGame()
     {
         Debug.Log("Quitting Game...");
+        SignalBus.Invoke(SaveSignal.SaveGame);
         Application.Quit();
     }
 

@@ -1,19 +1,13 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class SettingsManager : MonoBehaviour
 {
-    public Slider MouseSensitivitySlider;
-    
-    void Start()
-    {
-        MouseSensitivitySlider.value = GameSettings.MouseSensitivity;
-        
-        MouseSensitivitySlider.onValueChanged.AddListener(HandleMouseSlider);
-    }
+    public SettingsSlider MouseSense, Music, SFX;
 
-    public void HandleMouseSlider(float value)
+    public void HandleCloseSettings()
     {
-        GameSettings.MouseSensitivity = value;
+        gameObject.SetActive(false);
     }
 }

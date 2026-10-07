@@ -16,6 +16,7 @@ public class PlayerGrabController : MonoBehaviour
     [Header("Clipping Prevention")]
     [SerializeField] LayerMask _obstacleMask; // everything NOT player or grabbable layers
     [SerializeField] float _dropPadding = 0.3f; // roughly half the object's size
+    [SerializeField] float _minHoldDistance = 0.6f;
 
 
     public static Action OnObjectHoverEntered;
@@ -66,17 +67,27 @@ public class PlayerGrabController : MonoBehaviour
     /// </summary>
     private void MoveHeldObject()
     {
-
         Transform heldTransform = _heldGrabbable.transform;
 
-        if (Vector3.Distance(heldTransform.position, _grabTarget.position) < 0.05f) return;
+        Vector3 origin = _cam.position;
+        Vector3 desiredPos = _grabTarget.position;
+        Vector3 toTarget = desiredPos - origin;
+        float desiredDist = toTarget.magnitude;
+        if (desiredDist < 0.001f) return;
+
+        Vector3 dir = toTarget / desiredDist;
+        Vector3 targetPos = desiredPos;
+
+        if (Physics.SphereCast(origin, _dropPadding, dir, out RaycastHit hit, desiredDist,
+                _obstacleMask, QueryTriggerInteraction.Ignore))
+        {
+            targetPos = origin + dir * Mathf.Max(hit.distance, _minHoldDistance);
+        }
+
+        if (Vector3.Distance(heldTransform.position, targetPos) < 0.05f) return;
 
         float t = 1f - Mathf.Exp(-_followSpeed * Time.deltaTime);
-
-
-        heldTransform.position = Vector3.Lerp(heldTransform.position, _grabTarget.position, t);
-
-        // held.rotation = Quaternion.Slerp(held.rotation, grabPosition.rotation, t);
+        heldTransform.position = Vector3.Lerp(heldTransform.position, targetPos, t);
     }
 
     /// <summary>
