@@ -19,6 +19,7 @@ public class SpectrumManager : MonoBehaviour
 {
     public static SpectrumManager Instance;
     public static event Action<float> OnColorUpdate;
+    public static event Action<int> OnColorUnlocked;
     public static float HUE_BOUND_SIZE = 0.025f;
     public Gradient GLOBAL_GRADIENT;
 
@@ -50,6 +51,7 @@ public class SpectrumManager : MonoBehaviour
     public void UnlockNextColor()
     {
         ObtainedCount = Mathf.Min(ObtainedCount + 1, ColorUtilities.BANDCOUNT);
+        OnColorUnlocked?.Invoke(ObtainedCount);
     }
 
     public void Update()
@@ -69,6 +71,7 @@ public class SpectrumManager : MonoBehaviour
         if (_hueValue != lastHue)
         {
             OnColorUpdate?.Invoke(_hueValue);
+            Debug.Log(next + " " + _hueValue);
         }
     }
 

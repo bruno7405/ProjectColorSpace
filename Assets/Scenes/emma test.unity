@@ -1221,7 +1221,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ArmsScript
   watchBone: {fileID: 1631330068}
   watchLockedColorBlockers:
-  - {fileID: 1631330067}
   - {fileID: 1631330066}
   - {fileID: 1631330065}
   - {fileID: 1631330064}
@@ -1397,6 +1396,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: === Core Systems ===
       objectReference: {fileID: 0}
+    - target: {fileID: 3492875650302489841, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
+      propertyPath: ObtainedCount
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1498,11 +1501,6 @@ GameObject:
 --- !u!1 &1631330066 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -9121122255442182994, guid: 4ca970b085e9efc44872ed967cb6c150, type: 3}
-  m_PrefabInstance: {fileID: 1631330060}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1631330067 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -8484172778455378349, guid: 4ca970b085e9efc44872ed967cb6c150, type: 3}
   m_PrefabInstance: {fileID: 1631330060}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1631330068 stripped

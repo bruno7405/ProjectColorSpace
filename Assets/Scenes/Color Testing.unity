@@ -1938,6 +1938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: === Core Systems ===
       objectReference: {fileID: 0}
+    - target: {fileID: 3492875650302489841, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
+      propertyPath: ObtainedCount
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

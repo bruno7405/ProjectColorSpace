@@ -4,10 +4,11 @@ using UnityEngine;
 public class ArmsScript : MonoBehaviour
 {
     [SerializeField] private Transform watchBone;
-    [SerializeField] private GameObject[] watchLockedColorBlockers = null;
+    [SerializeField] private GameObject[] watchLockedColorBlockers = new GameObject[5];
 
     // this is red. 0 is like halfway between red & violet.
     private readonly float HUE_OFFSET = 0.07142857f;
+    private Quaternion initialWatchBoneRotation;
 
     public void OnHueChanged(float h)
     {
@@ -21,19 +22,33 @@ public class ArmsScript : MonoBehaviour
         // update animation controller (??? todo whether this is needed)
 
         // set watchBone local rotation to match hue
+        // i hate quaternion
         float rotation = shiftedHue * 360f;
-        Vector3 euler = watchBone.localEulerAngles;
-        Debug.Log("angles before rotation: " + euler);
-        euler.x = rotation; // idk why it is x. this makes no sense to me
-        watchBone.localEulerAngles = euler;
-        Debug.Log("after rotation: " + euler);
+        watchBone.localRotation = initialWatchBoneRotation * Quaternion.Euler(0f, rotation, 0f);
+    }
+
+    public void OnColorUnlocked(int index)
+    {
+        Debug.Log("unlocked " + index);
+        // player has red & orange unlocked from the start
+        int shiftedIndex = index - 2;
+        // remove color blocker, if it still exists
+        if (shiftedIndex < 0 || shiftedIndex >= watchLockedColorBlockers.Length) return;
+        if (watchLockedColorBlockers[shiftedIndex] != null)
+        {
+            Destroy(watchLockedColorBlockers[shiftedIndex]);
+            watchLockedColorBlockers[shiftedIndex] = null;
+        }
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        initialWatchBoneRotation = watchBone.localRotation;
+
         // subscribe to hue update action
-        SpectrumManager.OnColorUpdate += OnHueChanged; // idk how to do this
+        SpectrumManager.OnColorUpdate += OnHueChanged;
+        SpectrumManager.OnColorUnlocked += OnColorUnlocked;
     }
 
     // Update is called once per frame
