@@ -112,7 +112,7 @@ Material:
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
     - _Fresnel_Power: 2
-    - _Gas_Speed: 0.15
+    - _Gas_Speed: 0.3
     - _Ghost_Progress: 0
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -120,7 +120,7 @@ Material:
     - _Metallic: 0
     - _Noise_Displacement: 0.15
     - _Noise_Scale: 10
-    - _Num_Bands: 5
+    - _Num_Bands: 4
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
