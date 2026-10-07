@@ -281,6 +281,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6559483833684625411}
   - component: {fileID: 3492875650302489841}
+  - component: {fileID: 6251785562472391125}
   m_Layer: 0
   m_Name: SpectrumManager
   m_TagString: Untagged
@@ -354,6 +355,21 @@ MonoBehaviour:
   VIOLET: {r: 0.46666667, g: 0, b: 1, a: 1}
   ObtainedCount: 2
   ScrollSpeed: 0.2
+--- !u!114 &6251785562472391125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6596770319301792887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a062a8d158a85ba43854b43a60ac26fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  _fog: {fileID: 11400000, guid: d18dac82fe9b0473289115b2531228d9, type: 2}
+  _saturationScale: 0.8
+  _smoothing: 3
 --- !u!1 &6862403920059117050
 GameObject:
   m_ObjectHideFlags: 0
