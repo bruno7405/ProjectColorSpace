@@ -8,15 +8,14 @@ public class ArmsScript : MonoBehaviour
     [SerializeField] private GameObject[] watchLockedColorBlockers = new GameObject[7];
 
     [SerializeField] private Animator armAnimator;
-    [SerializeField] private readonly float ANIMATION_SPEED = 0.005f;
-    [SerializeField] private readonly float TIMEOUT_SECONDS = 0.700f; // delta time is in seconds :(
-    [SerializeField] private readonly float TIMEOUT_WHILE_MOVING_SECONDS = 1.000f;
+    [SerializeField] private readonly float ANIMATION_SPEED_UP = 0.020f;
+    [SerializeField] private readonly float ANIMATION_SPEED_DOWN = 0.005f;
+    [SerializeField] private readonly float TIMEOUT_SECONDS = 1.200f; // delta time is in seconds :(
+    [SerializeField] private readonly float TIMEOUT_WHILE_MOVING_SECONDS = 0.800f;
 
     // this is red. 0 is like halfway between red & violet.
     private readonly float HUE_OFFSET = 0.07142857f;
     private Quaternion initialWatchBoneRotation;
-    private float currentHue = 0.07142857f;
-    private readonly float EPSILON = 0.0000001f;
 
     float positionInAnimation = 0f;
     float currTimeout = 0;
@@ -38,7 +37,6 @@ public class ArmsScript : MonoBehaviour
         watchBone.localRotation = initialWatchBoneRotation * Quaternion.Euler(0f, rotation, 0f);
 
         
-        if (!shouldRaiseArm) Debug.Log("Set shouldRaiseArm to true");
         shouldRaiseArm = true;
         if (isMoving) { currTimeout = TIMEOUT_WHILE_MOVING_SECONDS; } else { currTimeout = TIMEOUT_SECONDS; };
     }
@@ -80,10 +78,10 @@ public class ArmsScript : MonoBehaviour
         
         if(shouldRaiseArm)
         {
-            positionInAnimation += ANIMATION_SPEED;
+            positionInAnimation += ANIMATION_SPEED_UP;
         } else
         {
-            positionInAnimation -= ANIMATION_SPEED;
+            positionInAnimation -= ANIMATION_SPEED_DOWN;
         }
         positionInAnimation = Mathf.Clamp01(positionInAnimation);
 
@@ -114,15 +112,11 @@ public class ArmsScript : MonoBehaviour
             Keyboard.current.aKey.isPressed ||
             Keyboard.current.spaceKey.isPressed )
         {
-            if(!isMoving)
-            {
-                if (currTimeout <= 0)
-                {
-                    if (shouldRaiseArm) Debug.Log("Set shouldRaiseArm to false");
-                    shouldRaiseArm = false;
-                }
-            }
             isMoving = true;
+            if(currTimeout <= 0)
+            {
+                shouldRaiseArm = false;
+            }
         }
         else
         {
