@@ -1465,6 +1465,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: arms-watchbone
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 4ca970b085e9efc44872ed967cb6c150, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 81cb86a7619c20547bcf03d34fddf1d9, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -2653336062430620803, guid: 4ca970b085e9efc44872ed967cb6c150, type: 3}
