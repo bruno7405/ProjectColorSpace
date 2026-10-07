@@ -142,8 +142,7 @@ MonoBehaviour:
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
-  m_Cameras:
-  - {fileID: 2661790307288563260}
+  m_Cameras: []
   m_RendererIndex: 0
   m_VolumeLayerMask:
     serializedVersion: 2
@@ -399,6 +398,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 119
   _dropPadding: 0.3
+  _minHoldDistance: 0.6
 --- !u!1 &8001934595211458033
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,7 +416,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &283068380307476670
 Transform:
   m_ObjectHideFlags: 0
