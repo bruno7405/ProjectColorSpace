@@ -588,18 +588,18 @@ PrefabInstance:
     - target: {fileID: 7803779467282369194, guid: ee59a60f58785464f9c2d99302f94a53, type: 3}
       propertyPath: OnButtonClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 5949024258654915727}
+      objectReference: {fileID: 3025003467688443852}
     - target: {fileID: 7803779467282369194, guid: ee59a60f58785464f9c2d99302f94a53, type: 3}
       propertyPath: OnButtonClicked.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7803779467282369194, guid: ee59a60f58785464f9c2d99302f94a53, type: 3}
       propertyPath: OnButtonClicked.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayGame
+      value: UnPause
       objectReference: {fileID: 0}
     - target: {fileID: 7803779467282369194, guid: ee59a60f58785464f9c2d99302f94a53, type: 3}
       propertyPath: OnButtonClicked.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MenuPlay, Assembly-CSharp
+      value: PauseUIManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7803779467282369194, guid: ee59a60f58785464f9c2d99302f94a53, type: 3}
       propertyPath: OnButtonClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -620,28 +620,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1753806008889824333, guid: ee59a60f58785464f9c2d99302f94a53, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5949024258654915727}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee59a60f58785464f9c2d99302f94a53, type: 3}
---- !u!1 &499904634345836382 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1753806008889824333, guid: ee59a60f58785464f9c2d99302f94a53, type: 3}
-  m_PrefabInstance: {fileID: 2208665801317391123}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5949024258654915727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 499904634345836382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b376e88d72fb3e444917e33c7087c419, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!224 &5694971612329469360 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5885742206027267747, guid: ee59a60f58785464f9c2d99302f94a53, type: 3}

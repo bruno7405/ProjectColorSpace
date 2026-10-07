@@ -90,6 +90,7 @@ public class GameManager : MonoBehaviour
     public void QuitGame()
     {
         Debug.Log("Quitting Game...");
+        SignalBus.Invoke(SaveSignal.SaveGame);
         Application.Quit();
     }
 

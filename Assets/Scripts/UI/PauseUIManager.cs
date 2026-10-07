@@ -8,4 +8,9 @@ public class PauseUIManager : MonoBehaviour
     {
         SettingsPanel.gameObject.SetActive(true);
     }
+
+    public void UnPause()
+    {
+        
+    }
 }
