@@ -349,12 +349,13 @@ MonoBehaviour:
   RED: {r: 1, g: 0.28627455, b: 0.31932068, a: 1}
   ORANGE: {r: 1, g: 0.4509804, b: 0, a: 1}
   YELLOW: {r: 1, g: 0.91764706, b: 0, a: 1}
-  GREEN: {r: 0.25597462, g: 1, b: 0.1415093, a: 1}
+  GREEN: {r: 0.3105849, g: 1, b: 0.25471687, a: 1}
   BLUE: {r: 0, g: 0.69411767, b: 1, a: 1}
   INDIGO: {r: 0.35978997, g: 0.3215686, b: 1, a: 1}
   VIOLET: {r: 0.46666667, g: 0, b: 1, a: 1}
   ObtainedCount: 2
   ScrollSpeed: 0.2
+  SnapToBands: 0
 --- !u!114 &6251785562472391125
 MonoBehaviour:
   m_ObjectHideFlags: 0
