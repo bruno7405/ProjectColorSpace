@@ -11,8 +11,6 @@ public class ArmsScript : MonoBehaviour
     [SerializeField] private readonly float ANIMATION_SPEED = 0.75f;
     [SerializeField] private readonly float TIMEOUT_SECONDS = 0.200f; // delta time is in seconds :(
 
-    [SerializeField] private Animation ArmUp;
-
     // this is red. 0 is like halfway between red & violet.
     private readonly float HUE_OFFSET = 0.07142857f;
     private Quaternion initialWatchBoneRotation;
@@ -73,12 +71,21 @@ public class ArmsScript : MonoBehaviour
      * I am going to treat the arm-up animation like a pose slider from 0 to 1.
      * 0 is arm is completely down, 1 is arm is completely up.
      * When the player inputs a color shift, it will start moving towards 1, and stay there if it reaches it.
-     * It will not move towards 0 until it reaches the current color & the player moves.
+     * It will not move towards 0 until after a short timeout & the player moves.
      */
 
     void UpdateAnimation()
     {
+        if(shouldRaiseArm)
+        {
+            positionInAnimation += ANIMATION_SPEED;
+        } else
+        {
+            positionInAnimation -= ANIMATION_SPEED;
+        }
+        positionInAnimation = Mathf.Clamp01(positionInAnimation);
 
+        armAnimator.Update(positionInAnimation);
     }
 
     void UpdateAnimationState()
@@ -100,7 +107,7 @@ public class ArmsScript : MonoBehaviour
     void Start()
     {
         initialWatchBoneRotation = watchBone.localRotation;
-        armAnimator.Play(ArmUp.name, 0, positionInAnimation);
+        armAnimator.Play("ArmUp", 0, positionInAnimation);
 
         // subscribe to hue update actions
         SpectrumManager.OnColorUpdate += OnHueChanged;
@@ -111,7 +118,7 @@ public class ArmsScript : MonoBehaviour
     void Update()
     {
         currTimeout -= Time.deltaTime;
-        UpdateAnimation();
         UpdateAnimationState();
+        UpdateAnimation();
     }
 }
