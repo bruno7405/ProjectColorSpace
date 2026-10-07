@@ -4,7 +4,7 @@ using UnityEngine.Events;
 public class Keyhole : MonoBehaviour
 {
     [SerializeField] private Transform attachPoint;
-    [SerializeField] private string requiredKeyId = "default";
+    [SerializeField] private SpectrumColor _requiredColor;
 
     [SerializeField] private UnityEvent OnKeyEnter;
     [SerializeField] private UnityEvent OnKeyExit;
@@ -16,7 +16,7 @@ public class Keyhole : MonoBehaviour
     public bool TryAttachKey(Key key)
     {
         if (HasKey) return false;
-        if (key.KeyId != requiredKeyId) return false;
+        if (key.KeycColor != _requiredColor) return false;
 
         // Stop any physics motion, then lock the key in place
         if (key.TryGetComponent(out Rigidbody rb))

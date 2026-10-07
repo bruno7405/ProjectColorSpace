@@ -6,7 +6,7 @@ public static class ColorUtilities
     public const int BANDCOUNT = 7;
 
     public const float BANDWIDTH = .05f;
-    public const float FADEWIDTH = .05f;
+    public const float FADEWIDTH = .1f;
 
     public const float GLOBAL_SATURATION = 1f;
     public const float GLOBAL_VALUE = 0.9f;

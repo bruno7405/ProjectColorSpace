@@ -5,11 +5,15 @@ public class PlayerController : MonoBehaviour
 {
 
     public Transform CameraAnchor;
-    public float MouseSensitivity = 0.25f;
+    public float MaxMouseSensitivity = 0.25f;
     public float Speed = 10f;
     public float Gravity = -20f;
     public float JumpHeight = 0f;
     public float CrouchScale = 0.5f;
+
+    private Vector3 velocity;
+
+    private GameObject currentGround;
 
     private CharacterController m_CharacterController;
     float x, y;
@@ -19,12 +23,12 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         m_CharacterController = GetComponent<CharacterController>();
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
 
     void Update()
     {
+        if (GameManager.CurrentState != GameState.Playing) return;
+        
         MyInput();
         Look();
 
@@ -41,8 +45,8 @@ public class PlayerController : MonoBehaviour
         if (Keyboard.current.dKey.isPressed) x += 1f;
         if (Keyboard.current.aKey.isPressed) x -= 1f;
 
-        camY += Mouse.current.delta.x.ReadValue() * MouseSensitivity;
-        camX -= Mouse.current.delta.y.ReadValue() * MouseSensitivity;
+        camY += Mouse.current.delta.x.ReadValue() * MaxMouseSensitivity * GameSettings.MouseSensitivity;
+        camX -= Mouse.current.delta.y.ReadValue() * MaxMouseSensitivity * GameSettings.MouseSensitivity;
     }
 
     private void Look()
@@ -60,6 +64,13 @@ public class PlayerController : MonoBehaviour
 
         bool grounded = m_CharacterController.isGrounded;
 
+        if (grounded && currentGround != null && currentGround.GetComponent<BouncePad>() != null)
+        {
+            grounded = false;
+            BouncePad pad = currentGround.GetComponent<BouncePad>();
+            verticalVelocity = pad.bouncePower;
+        }
+
         if (grounded && verticalVelocity < 0)
         {
             verticalVelocity = -2f;
@@ -70,11 +81,30 @@ public class PlayerController : MonoBehaviour
             verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
         }
 
-        verticalVelocity += Gravity * Time.deltaTime;
+        if (!grounded)
+        {
+            verticalVelocity += Gravity * Time.deltaTime;
+            transform.SetParent(null);
+        }
 
-        Vector3 velocity = move * Speed;
+        if (grounded && currentGround != null && currentGround.layer == LayerMask.NameToLayer("Moving Platform"))
+        {
+            Vector3 groundVelocity = currentGround.GetComponent<Door>().CalculatedVelocity;
+            velocity = (move * Speed) + groundVelocity;
+            velocity.y = verticalVelocity + groundVelocity.y;
+        }
+
+        velocity = move * Speed;
         velocity.y = verticalVelocity;
 
         m_CharacterController.Move(velocity * Time.deltaTime);
+    }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.normal.y > 0.7f)
+        {
+            currentGround = hit.collider.gameObject;
+        }
     }
 }

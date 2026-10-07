@@ -32,20 +32,20 @@ public class SpectrumManager : MonoBehaviour
 
     public float ScrollSpeed;
 
-    [NonSerialized] public float _hueValue;
+    public float HueValue { get; private set; }
     
     public void Awake()
     {
         if (Instance == null) Instance = this;
         else { Destroy(gameObject); return; }
 
-        _hueValue = SpectrumColor.Red.ToValue();
+        HueValue = SpectrumColor.Red.ToValue();
     }
 
     void Start()
     {
-        OnColorUpdate?.Invoke(_hueValue);
-        Debug.Log("Hue: " + _hueValue);
+        OnColorUpdate?.Invoke(HueValue);
+        Debug.Log("Hue: " + HueValue);
     }
 
     public void UnlockNextColor()
@@ -56,23 +56,28 @@ public class SpectrumManager : MonoBehaviour
 
     public void Update()
     {
-        float lastHue = _hueValue;
+        float lastHue = HueValue;
         
         float input = 0f;
-        if (Keyboard.current.leftArrowKey.isPressed) input -= 1f;
-        if (Keyboard.current.rightArrowKey.isPressed) input += 1f;
+        if (Keyboard.current.qKey.isPressed) input -= 1f;
+        if (Keyboard.current.eKey.isPressed) input += 1f;
 
-        float next = _hueValue + input * ScrollSpeed * Time.deltaTime;
+        float next = HueValue + input * ScrollSpeed * Time.deltaTime;
 
-        _hueValue = ObtainedCount < ColorUtilities.BANDCOUNT
+        HueValue = ObtainedCount < ColorUtilities.BANDCOUNT
             ? Mathf.Clamp(next, MinHue, MaxHue)
             : Mathf.Repeat(next, 1f);
 
-        if (_hueValue != lastHue)
+        if (HueValue != lastHue)
         {
-            OnColorUpdate?.Invoke(_hueValue);
-            Debug.Log(next + " " + _hueValue);
+            OnColorUpdate?.Invoke(HueValue);
+            Debug.Log("Hue Value: " + HueValue);
         }
+    }
+
+    public void ForceColorUpdate()
+    {
+        OnColorUpdate?.Invoke(HueValue);
     }
 
 }
