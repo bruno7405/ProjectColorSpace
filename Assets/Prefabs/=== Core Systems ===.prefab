@@ -370,6 +370,7 @@ MonoBehaviour:
   _fog: {fileID: 11400000, guid: d18dac82fe9b0473289115b2531228d9, type: 2}
   _saturationScale: 0.8
   _smoothing: 3
+  HueOffset: 0.1
 --- !u!1 &6862403920059117050
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,21 +427,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5523985750692228596}
     m_Modifications:
-    - target: {fileID: 364090622389695363, guid: bd1591e02bae70a4da656559dde6d7db, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 490.51
-      objectReference: {fileID: 0}
-    - target: {fileID: 364090622389695363, guid: bd1591e02bae70a4da656559dde6d7db, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 55.65
-      objectReference: {fileID: 0}
     - target: {fileID: 1752743679712038533, guid: bd1591e02bae70a4da656559dde6d7db, type: 3}
       propertyPath: m_Name
       value: Game UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 1752743679712038533, guid: bd1591e02bae70a4da656559dde6d7db, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8140820421202382605, guid: bd1591e02bae70a4da656559dde6d7db, type: 3}
       propertyPath: m_Pivot.x
@@ -492,15 +481,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8140820421202382605, guid: bd1591e02bae70a4da656559dde6d7db, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8140820421202382605, guid: bd1591e02bae70a4da656559dde6d7db, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8140820421202382605, guid: bd1591e02bae70a4da656559dde6d7db, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8140820421202382605, guid: bd1591e02bae70a4da656559dde6d7db, type: 3}
       propertyPath: m_AnchoredPosition.x

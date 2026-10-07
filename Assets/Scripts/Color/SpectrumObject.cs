@@ -71,7 +71,8 @@ public class SpectrumObject : MonoBehaviour
     private void UpdateDial(float hue)
     {
         Color c = ColorUtilities.FloatToColor(hue);
-        _color = ColorUtilities.HueToRBG(ColorUtilities.RGBtoHue(c), saturation, value);
+        _color = ColorUtilities.Shade(c, saturation, value);
+        //_color = ColorUtilities.HueToRBG(ColorUtilities.RGBtoHue(c), saturation, value);
         _dialVisibility = CalculateVisibility(hue);
     }
 
