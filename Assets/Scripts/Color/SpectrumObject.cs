@@ -26,6 +26,14 @@ public class SpectrumObject : MonoBehaviour
 
     private bool _cacheHasProperty;
 
+    private float _fadeSpeed = 0.75f;
+    private float _heldMinVis = 0.7f;
+    private float _dialVisibility;
+    private float _actualV;
+    private bool _wasHeld;
+    private bool _dirty = true;
+    private Color _color;
+
     public void Awake()
     {
         _renderer = GetComponent<MeshRenderer>();
@@ -34,7 +42,6 @@ public class SpectrumObject : MonoBehaviour
         _grabbableObject = GetComponent<GrabbableObject>();
 
         _spectrum_material = _renderer.materials[0];
-
         _cacheHasProperty = _spectrum_material.HasProperty("_Object_Color");
 
         // Subscribe only after references are assigned
@@ -43,7 +50,10 @@ public class SpectrumObject : MonoBehaviour
 
     public void Start()
     {
-        Apply(SpectrumManager.Instance.HueValue);
+        UpdateDial(SpectrumManager.Instance.HueValue);
+        _actualV = GetTarget();
+        _wasHeld = IsHeld();
+        ApplyVisuals();
     }
 
     public void OnDestroy()
@@ -53,52 +63,68 @@ public class SpectrumObject : MonoBehaviour
 
     private void HandleColorUpdate(float dial)
     {
-        Apply(dial);
+        UpdateDial(dial);
+        _actualV = GetTarget();
+        _dirty = true;
     }
 
-    private void Apply(float hue)
+    private void UpdateDial(float hue)
     {
-        
         Color c = ColorUtilities.FloatToColor(hue);
-        c = ColorUtilities.HueToRBG(ColorUtilities.RGBtoHue(c), saturation, value);
-        float v = CalculateVisibility(hue);
+        _color = ColorUtilities.HueToRBG(ColorUtilities.RGBtoHue(c), saturation, value);
+        _dialVisibility = CalculateVisibility(hue);
+    }
 
-        // so h eld objects don't vanish
-        if (_grabbableObject != null)
+    private bool IsHeld() => _grabbableObject != null && _grabbableObject.IsGrabbed();
+
+    private float GetTarget()
+    {
+        return IsHeld() ? Mathf.Max(_heldMinVis, _dialVisibility) : _dialVisibility;
+    }
+
+    public void Update()
+    {
+        bool held = IsHeld();
+        if (held != _wasHeld)
         {
-            if (_grabbableObject.IsGrabbed())
-            {
-                v = Mathf.Max(0.7f, v);
-            }
+            _wasHeld = held;
+            RefreshKinematic();
         }
 
-        _spectrum_material.SetFloat("_Ghost_Progress", 1 - v);
+        float target = GetTarget();
+        if (!Mathf.Approximately(_actualV, target))
+        {
+            _actualV = Mathf.MoveTowards(_actualV, target, _fadeSpeed * Time.deltaTime);
+            _dirty = true;
+        }
 
-        if (_cacheHasProperty)
+        if (_dirty)
         {
-            _spectrum_material.SetColor("_Object_Color", c);
+            _dirty = false;
+            ApplyVisuals();
         }
-        else
-        {
-            _spectrum_material.color = c;
-        }
+    }
+
+    private void ApplyVisuals()
+    {
+        _spectrum_material.SetFloat("_Ghost_Progress", 1 - _actualV);
+
+        if (_cacheHasProperty) _spectrum_material.SetColor("_Object_Color", _color);
+        else _spectrum_material.color = _color;
 
         if (_outline_material != null)
         {
-            Color color = new Color(0, 0, 0);
-            color.a = 1 - v;
-            _outline_material.color = color;
+            _outline_material.color = new Color(0, 0, 0, 1 - _actualV);
         }
 
-        _renderer.enabled = v > 0.001f;
+        _renderer.enabled = _actualV > 0.001f;
 
-        bool newSolid = StrictCollision ? v >= 0.001f : v >= 0.99f;
-        if (newSolid == IsSolid) return; // only touch physics on a real transition
+        bool newSolid = StrictCollision ? _actualV >= 0.001f : _actualV >= 0.99f;
+        if (newSolid == IsSolid) return;
 
         IsSolid = newSolid;
         _coll.enabled = IsSolid;
         RefreshKinematic();
-
         OnSolidChanged?.Invoke(IsSolid);
     }
 

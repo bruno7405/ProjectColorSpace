@@ -122,7 +122,7 @@ Material:
     - _EnvironmentReflections: 1
     - _Falloff_Threshold: 2.98
     - _Fresnel_Power: 2
-    - _Gas_Speed: 0.1
+    - _Gas_Speed: 0.3
     - _Ghost_Progress: 0
     - _GlossMapScale: 0
     - _Glossiness: 0
