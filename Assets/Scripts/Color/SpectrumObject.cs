@@ -68,7 +68,7 @@ public class SpectrumObject : MonoBehaviour
         {
             if (_grabbableObject.IsGrabbed())
             {
-                v = Mathf.Max(0.5f, v);
+                v = Mathf.Max(0.7f, v);
             }
         }
 
