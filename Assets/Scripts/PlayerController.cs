@@ -23,12 +23,12 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         m_CharacterController = GetComponent<CharacterController>();
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
 
     void Update()
     {
+        if (GameManager.CurrentState != GameState.Playing) return;
+        
         MyInput();
         Look();
 
@@ -99,6 +99,7 @@ public class PlayerController : MonoBehaviour
 
         m_CharacterController.Move(velocity * Time.deltaTime);
     }
+    
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
         if (hit.normal.y > 0.7f)
