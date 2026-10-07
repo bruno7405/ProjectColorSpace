@@ -8,7 +8,7 @@ public class ArmsScript : MonoBehaviour
     [SerializeField] private GameObject[] watchLockedColorBlockers = new GameObject[7];
 
     [SerializeField] private Animator armAnimator;
-    [SerializeField] private readonly float ANIMATION_SPEED = 0.75f;
+    [SerializeField] private readonly float ANIMATION_SPEED = 0.75f; // really big for tests
     [SerializeField] private readonly float TIMEOUT_SECONDS = 0.200f; // delta time is in seconds :(
 
     // this is red. 0 is like halfway between red & violet.
@@ -76,6 +76,7 @@ public class ArmsScript : MonoBehaviour
 
     void UpdateAnimation()
     {
+        /*
         if(shouldRaiseArm)
         {
             positionInAnimation += ANIMATION_SPEED;
@@ -85,7 +86,15 @@ public class ArmsScript : MonoBehaviour
         }
         positionInAnimation = Mathf.Clamp01(positionInAnimation);
 
-        armAnimator.Update(positionInAnimation);
+        armAnimator.Update(positionInAnimation);*/
+
+        if(shouldRaiseArm)
+        {
+            armAnimator.Update(Mathf.Clamp01(ANIMATION_SPEED));
+        }else
+        {
+            armAnimator.Update(Mathf.Clamp01(-ANIMATION_SPEED));
+        }
     }
 
     void UpdateAnimationState()
