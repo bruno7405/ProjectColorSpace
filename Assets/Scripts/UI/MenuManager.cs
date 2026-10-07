@@ -5,23 +5,21 @@ public class MenuManager : MonoBehaviour
 {
     public GameObject SettingsPanel;
 
-    public Button SettingsButton, CloseButton;
+    public Button SettingsButton;
 
     void Start()
     {
-        SettingsButton.onClick.AddListener(() => OpenSettings(true));
-        CloseButton.onClick.AddListener(() => OpenSettings(false));
+        SettingsButton.onClick.AddListener(OpenSettings);
         SettingsPanel.SetActive(false);
     }
 
     void OnDestroy()
     {
         SettingsButton.onClick.RemoveAllListeners();
-        CloseButton.onClick.RemoveAllListeners();
     }
 
-    public void OpenSettings(bool open)
+    public void OpenSettings()
     {
-        SettingsPanel.SetActive(open);
+        SettingsPanel.SetActive(true);
     }
 }

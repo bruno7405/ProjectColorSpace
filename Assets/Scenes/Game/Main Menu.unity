@@ -717,7 +717,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   SettingsPanel: {fileID: 1046809969}
   SettingsButton: {fileID: 1321540318}
-  CloseButton: {fileID: 1817673515}
 --- !u!1 &1046809969 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5773749020939501865, guid: 0095613462ef71c4083c92d5d1be36a4, type: 3}
@@ -1302,17 +1301,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 600230ae9c3762d47ab904605af43dec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
---- !u!114 &1817673515 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5141473213927350117, guid: 0095613462ef71c4083c92d5d1be36a4, type: 3}
-  m_PrefabInstance: {fileID: 8346155698973954326}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1001 &7952057693233889918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1459,11 +1447,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2023052591069755860, guid: 0095613462ef71c4083c92d5d1be36a4, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2023052591069755860, guid: 0095613462ef71c4083c92d5d1be36a4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3720299079743546048, guid: 0095613462ef71c4083c92d5d1be36a4, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1559,19 +1547,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5773749020939501865, guid: 0095613462ef71c4083c92d5d1be36a4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6391532961532559381, guid: 0095613462ef71c4083c92d5d1be36a4, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6391532961532559381, guid: 0095613462ef71c4083c92d5d1be36a4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6391532961532559381, guid: 0095613462ef71c4083c92d5d1be36a4, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6391532961532559381, guid: 0095613462ef71c4083c92d5d1be36a4, type: 3}
       propertyPath: m_AnchoredPosition.x
