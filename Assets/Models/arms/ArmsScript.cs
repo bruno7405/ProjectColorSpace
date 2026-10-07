@@ -9,7 +9,7 @@ public class ArmsScript : MonoBehaviour
 
     [SerializeField] private Animator armAnimator;
     [SerializeField] private readonly float ANIMATION_SPEED = 0.75f;
-    [SerializeField] private readonly float TIMEOUT = 200; // miliseconds i think
+    [SerializeField] private readonly float TIMEOUT_SECONDS = 0.200f; // delta time is in seconds :(
 
     [SerializeField] private Animation ArmUp;
 
@@ -40,7 +40,7 @@ public class ArmsScript : MonoBehaviour
         if (Math.Abs(currentHue - h) <= EPSILON)
         {
             shouldRaiseArm = true;
-            currTimeout = TIMEOUT;
+            currTimeout = TIMEOUT_SECONDS;
         }
     }
 
@@ -81,7 +81,7 @@ public class ArmsScript : MonoBehaviour
 
     }
 
-    void UpdateAnimationState(float newHue)
+    void UpdateAnimationState()
     {
         if(Keyboard.current.wKey.isPressed || 
             Keyboard.current.sKey.isPressed ||
@@ -95,8 +95,6 @@ public class ArmsScript : MonoBehaviour
             }
         }
     }
-
-    void 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -114,5 +112,6 @@ public class ArmsScript : MonoBehaviour
     {
         currTimeout -= Time.deltaTime;
         UpdateAnimation();
+        UpdateAnimationState();
     }
 }
