@@ -4,7 +4,7 @@ using UnityEngine;
 public class ArmsScript : MonoBehaviour
 {
     [SerializeField] private Transform watchBone;
-    [SerializeField] private GameObject[] watchLockedColorBlockers = new GameObject[5];
+    [SerializeField] private GameObject[] watchLockedColorBlockers = new GameObject[7];
 
     // this is red. 0 is like halfway between red & violet.
     private readonly float HUE_OFFSET = 0.07142857f;
@@ -30,14 +30,23 @@ public class ArmsScript : MonoBehaviour
     public void OnColorUnlocked(int index)
     {
         Debug.Log("unlocked " + index);
-        // player has red & orange unlocked from the start
-        int shiftedIndex = index - 2;
+        // player has red unlocked from the start
+        // unlocking orange triggers actual watch functionality. with just red, it dont move
+        // orange should be 2nd, at index 1. our blockers, start at index 0.
+        int shiftedIndex = index - 1;
         // remove color blocker, if it still exists
         if (shiftedIndex < 0 || shiftedIndex >= watchLockedColorBlockers.Length) return;
         if (watchLockedColorBlockers[shiftedIndex] != null)
         {
             Destroy(watchLockedColorBlockers[shiftedIndex]);
             watchLockedColorBlockers[shiftedIndex] = null;
+
+            // unlocking violet removes final 2 blockers instead of just 1
+            if(index == 6 && watchLockedColorBlockers[index] != null)
+            {
+                Destroy(watchLockedColorBlockers[index]);
+                watchLockedColorBlockers[index] = null;
+            }
         }
     }
 
@@ -46,7 +55,7 @@ public class ArmsScript : MonoBehaviour
     {
         initialWatchBoneRotation = watchBone.localRotation;
 
-        // subscribe to hue update action
+        // subscribe to hue update actions
         SpectrumManager.OnColorUpdate += OnHueChanged;
         SpectrumManager.OnColorUnlocked += OnColorUnlocked;
     }
