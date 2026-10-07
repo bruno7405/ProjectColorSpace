@@ -11,6 +11,10 @@ public class PlayerController : MonoBehaviour
     public float JumpHeight = 0f;
     public float CrouchScale = 0.5f;
 
+    private Vector3 velocity;
+
+    private GameObject currentGround;
+
     private CharacterController m_CharacterController;
     float x, y;
     float camX, camY;
@@ -60,6 +64,13 @@ public class PlayerController : MonoBehaviour
 
         bool grounded = m_CharacterController.isGrounded;
 
+        if (grounded && currentGround != null && currentGround.GetComponent<BouncePad>() != null)
+        {
+            grounded = false;
+            BouncePad pad = currentGround.GetComponent<BouncePad>();
+            verticalVelocity = pad.bouncePower;
+        }
+
         if (grounded && verticalVelocity < 0)
         {
             verticalVelocity = -2f;
@@ -70,11 +81,29 @@ public class PlayerController : MonoBehaviour
             verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
         }
 
-        verticalVelocity += Gravity * Time.deltaTime;
+        if (!grounded)
+        {
+            verticalVelocity += Gravity * Time.deltaTime;
+            transform.SetParent(null);
+        }
 
-        Vector3 velocity = move * Speed;
+        if (grounded && currentGround != null && currentGround.layer == LayerMask.NameToLayer("Moving Platform"))
+        {
+            Vector3 groundVelocity = currentGround.GetComponent<Door>().CalculatedVelocity;
+            velocity = (move * Speed) + groundVelocity;
+            velocity.y = verticalVelocity + groundVelocity.y;
+        }
+
+        velocity = move * Speed;
         velocity.y = verticalVelocity;
 
         m_CharacterController.Move(velocity * Time.deltaTime);
+    }
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.normal.y > 0.7f)
+        {
+            currentGround = hit.collider.gameObject;
+        }
     }
 }
