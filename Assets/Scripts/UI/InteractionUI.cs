@@ -7,11 +7,24 @@ public class InteractionUI : MonoBehaviour
 
     private void Start()
     {
-        PlayerGrabController.OnObjectHoverEntered += () => { SetInteractionText("[F] Pickup"); };
-        PlayerGrabController.OnObjectHoverExited += () => HideInteractionText();
-        PlayerGrabController.OnObjectGrabbed += () => { SetInteractionText("[F] Drop"); };
-        PlayerGrabController.OnObjectDropped += () => HideInteractionText();
+        PlayerGrabController.OnObjectHoverEntered += HandleHoverEntered;
+        PlayerGrabController.OnObjectHoverExited += HandleHoverExited;
+        PlayerGrabController.OnObjectGrabbed += HandleGrabbed;
+        PlayerGrabController.OnObjectDropped += HandleDropped;
     }
+
+    private void OnDestroy()
+    {
+        PlayerGrabController.OnObjectHoverEntered -= HandleHoverEntered;
+        PlayerGrabController.OnObjectHoverExited -= HandleHoverExited;
+        PlayerGrabController.OnObjectGrabbed -= HandleGrabbed;
+        PlayerGrabController.OnObjectDropped -= HandleDropped;
+    }
+
+    private void HandleHoverEntered() => SetInteractionText("[F] Pickup");
+    private void HandleHoverExited() => HideInteractionText();
+    private void HandleGrabbed() => SetInteractionText("[F] Drop");
+    private void HandleDropped() => HideInteractionText();
 
     public void SetInteractionText(string text)
     {

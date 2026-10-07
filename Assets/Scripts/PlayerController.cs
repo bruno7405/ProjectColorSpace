@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public Transform CameraAnchor;
-    public float MouseSensitivity = 0.25f;
+    public float MaxMouseSensitivity = 0.25f;
     public float Speed = 10f;
     public float Gravity = -20f;
     public float JumpHeight = 0f;
@@ -23,12 +23,12 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         m_CharacterController = GetComponent<CharacterController>();
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
 
     void Update()
     {
+        if (GameManager.CurrentState != GameState.Playing) return;
+        
         MyInput();
         Look();
 
@@ -45,8 +45,8 @@ public class PlayerController : MonoBehaviour
         if (Keyboard.current.dKey.isPressed) x += 1f;
         if (Keyboard.current.aKey.isPressed) x -= 1f;
 
-        camY += Mouse.current.delta.x.ReadValue() * MouseSensitivity;
-        camX -= Mouse.current.delta.y.ReadValue() * MouseSensitivity;
+        camY += Mouse.current.delta.x.ReadValue() * MaxMouseSensitivity * GameSettings.MouseSensitivity;
+        camX -= Mouse.current.delta.y.ReadValue() * MaxMouseSensitivity * GameSettings.MouseSensitivity;
     }
 
     private void Look()
@@ -99,6 +99,7 @@ public class PlayerController : MonoBehaviour
 
         m_CharacterController.Move(velocity * Time.deltaTime);
     }
+
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
         if (hit.normal.y > 0.7f)

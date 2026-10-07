@@ -30,21 +30,24 @@ public class SpectrumManager : MonoBehaviour
     public float MaxHue => (ObtainedCount - 0.5f) / ColorUtilities.BANDCOUNT;
 
     public float ScrollSpeed;
+    public bool SnapToBands = false;
+    private float _targetHue;
 
-    [NonSerialized] public float _hueValue;
+    public float HueValue { get; private set; }
     
     public void Awake()
     {
         if (Instance == null) Instance = this;
         else { Destroy(gameObject); return; }
 
-        _hueValue = SpectrumColor.Red.ToValue();
+        HueValue = SpectrumColor.Red.ToValue();
+        _targetHue = HueValue;
     }
 
     void Start()
     {
-        OnColorUpdate?.Invoke(_hueValue);
-        Debug.Log("Hue: " + _hueValue);
+        OnColorUpdate?.Invoke(HueValue);
+        Debug.Log("Hue: " + HueValue);
     }
 
     public void UnlockNextColor()
@@ -54,22 +57,66 @@ public class SpectrumManager : MonoBehaviour
 
     public void Update()
     {
-        float lastHue = _hueValue;
+        if (SnapToBands)
+        {
+            SnapUpdate();
+            return;
+        }
+        
+        _targetHue = HueValue;
+        float lastHue = HueValue;
         
         float input = 0f;
         if (Keyboard.current.qKey.isPressed) input -= 1f;
         if (Keyboard.current.eKey.isPressed) input += 1f;
 
-        float next = _hueValue + input * ScrollSpeed * Time.deltaTime;
+        float next = HueValue + input * ScrollSpeed * Time.deltaTime;
 
-        _hueValue = ObtainedCount < ColorUtilities.BANDCOUNT
+        HueValue = ObtainedCount < ColorUtilities.BANDCOUNT
             ? Mathf.Clamp(next, MinHue, MaxHue)
             : Mathf.Repeat(next, 1f);
 
-        if (_hueValue != lastHue)
+        if (HueValue != lastHue)
         {
-            OnColorUpdate?.Invoke(_hueValue);
+            OnColorUpdate?.Invoke(HueValue);
         }
+    }
+
+    private void SnapUpdate()
+    {
+        int dir = 0;
+        if (Keyboard.current.qKey.wasPressedThisFrame) dir -= 1;
+        if (Keyboard.current.eKey.wasPressedThisFrame) dir += 1;
+
+        if (dir != 0)
+        {
+            int current = Mathf.RoundToInt(_targetHue * ColorUtilities.BANDCOUNT - 0.5f);
+            int next = current + dir;
+
+            if (ObtainedCount < ColorUtilities.BANDCOUNT)
+                next = Mathf.Clamp(next, 0, ObtainedCount - 1);
+            else
+                next = (next + ColorUtilities.BANDCOUNT) % ColorUtilities.BANDCOUNT;
+
+            _targetHue = (next + 0.5f) / ColorUtilities.BANDCOUNT;
+        }
+
+        float lastHue = HueValue;
+        float diff = ColorUtilities.HueDifference(_targetHue, HueValue);
+        float step = ScrollSpeed * Time.deltaTime;
+
+        if (Mathf.Abs(diff) <= step) HueValue = _targetHue;
+        else HueValue = Mathf.Repeat(HueValue + Mathf.Sign(diff) * step, 1f);
+
+        if (HueValue != lastHue)
+        {
+            OnColorUpdate?.Invoke(HueValue);
+        }
+    }
+
+    public void ForceColorUpdate()
+    {
+        OnColorUpdate?.Invoke(HueValue);
     }
 
 }
