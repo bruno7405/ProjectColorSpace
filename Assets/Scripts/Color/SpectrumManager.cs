@@ -30,6 +30,8 @@ public class SpectrumManager : MonoBehaviour
     public float MaxHue => (ObtainedCount - 0.5f) / ColorUtilities.BANDCOUNT;
 
     public float ScrollSpeed;
+    public bool SnapToBands = false;
+    private float _targetHue;
 
     public float HueValue { get; private set; }
     
@@ -39,6 +41,7 @@ public class SpectrumManager : MonoBehaviour
         else { Destroy(gameObject); return; }
 
         HueValue = SpectrumColor.Red.ToValue();
+        _targetHue = HueValue;
     }
 
     void Start()
@@ -54,6 +57,13 @@ public class SpectrumManager : MonoBehaviour
 
     public void Update()
     {
+        if (SnapToBands)
+        {
+            SnapUpdate();
+            return;
+        }
+        
+        _targetHue = HueValue;
         float lastHue = HueValue;
         
         float input = 0f;
@@ -65,6 +75,38 @@ public class SpectrumManager : MonoBehaviour
         HueValue = ObtainedCount < ColorUtilities.BANDCOUNT
             ? Mathf.Clamp(next, MinHue, MaxHue)
             : Mathf.Repeat(next, 1f);
+
+        if (HueValue != lastHue)
+        {
+            OnColorUpdate?.Invoke(HueValue);
+        }
+    }
+
+    private void SnapUpdate()
+    {
+        int dir = 0;
+        if (Keyboard.current.qKey.wasPressedThisFrame) dir -= 1;
+        if (Keyboard.current.eKey.wasPressedThisFrame) dir += 1;
+
+        if (dir != 0)
+        {
+            int current = Mathf.RoundToInt(_targetHue * ColorUtilities.BANDCOUNT - 0.5f);
+            int next = current + dir;
+
+            if (ObtainedCount < ColorUtilities.BANDCOUNT)
+                next = Mathf.Clamp(next, 0, ObtainedCount - 1);
+            else
+                next = (next + ColorUtilities.BANDCOUNT) % ColorUtilities.BANDCOUNT;
+
+            _targetHue = (next + 0.5f) / ColorUtilities.BANDCOUNT;
+        }
+
+        float lastHue = HueValue;
+        float diff = ColorUtilities.HueDifference(_targetHue, HueValue);
+        float step = ScrollSpeed * Time.deltaTime;
+
+        if (Mathf.Abs(diff) <= step) HueValue = _targetHue;
+        else HueValue = Mathf.Repeat(HueValue + Mathf.Sign(diff) * step, 1f);
 
         if (HueValue != lastHue)
         {

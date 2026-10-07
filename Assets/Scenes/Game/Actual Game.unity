@@ -17130,6 +17130,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: === Core Systems ===
       objectReference: {fileID: 0}
+    - target: {fileID: 3492875650302489841, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
+      propertyPath: SnapToBands
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3655412668755800489, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
