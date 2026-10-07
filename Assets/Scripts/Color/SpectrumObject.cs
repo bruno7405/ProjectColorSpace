@@ -37,6 +37,11 @@ public class SpectrumObject : MonoBehaviour
         SpectrumManager.OnColorUpdate += HandleColorUpdate;
     }
 
+    public void Start()
+    {
+        Apply(SpectrumManager.Instance.HueValue);
+    }
+
     public void OnDestroy()
     {
         SpectrumManager.OnColorUpdate -= HandleColorUpdate;
