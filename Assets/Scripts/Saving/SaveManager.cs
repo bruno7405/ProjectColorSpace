@@ -26,10 +26,21 @@ public class SaveManager : MonoBehaviour
         {
             Debug.LogWarning(">1 Save Manager in scene!");
             Destroy(gameObject);
+            return;
         }
+
+        InitialLoad();
     }
 
     void Start()
+    {
+        if (Instance != this) return;
+
+        SignalBus.Subscribe(SaveSignal.SaveGame, Save);
+        SignalBus.Subscribe(SaveSignal.LoadGame, Load);
+    } 
+
+    private void InitialLoad()
     {
         if (debugStartData != null)
         {
@@ -46,21 +57,32 @@ public class SaveManager : MonoBehaviour
                 CurrentSave = new SaveData
                 {
                     // setup defaults here
-                    uuid = System.Guid.NewGuid().ToString(), 
+                    uuid = System.Guid.NewGuid().ToString(),
+                    mouseSensitivity = 0.5f,
                     unlockedColors = 2
                 };
             } else
-            {
+            {    
                 Debug.Log("[SaveManager]: Loaded save data!");
             }
         }
 
-        SignalBus.Subscribe(SaveSignal.SaveGame, Save);
-        SignalBus.Subscribe(SaveSignal.LoadGame, Load);
-    } 
+        LoadData(CurrentSave);
+    }
+
+    private void LoadData(SaveData data)
+    {
+        GameSettings.MouseSensitivity = data.mouseSensitivity;
+    }
+
+    private void SaveData()
+    {
+        CurrentSave.mouseSensitivity = GameSettings.MouseSensitivity;
+    }
 
     void OnDestroy()
     {
+        if (Instance != this) return;
         if (!_debugMode) SaveGame(CurrentSave); 
         // to not override our saved games later on
         // also this doesn't work with webgl i'm suddenly realizing, uhh
@@ -74,6 +96,8 @@ public class SaveManager : MonoBehaviour
 
     public void SaveGame(SaveData data)
     {
+       SaveData();
+       
        string path = Path.Combine(Root, SaveFileName);
        
        string json = JsonConvert.SerializeObject(data, Formatting.Indented);
