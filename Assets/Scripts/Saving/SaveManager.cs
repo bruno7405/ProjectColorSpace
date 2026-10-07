@@ -59,6 +59,8 @@ public class SaveManager : MonoBehaviour
                     // setup defaults here
                     uuid = System.Guid.NewGuid().ToString(),
                     mouseSensitivity = 0.5f,
+                    musicVolume = 1f,
+                    sfxVolume = 1f,
                     unlockedColors = 2
                 };
             } else
@@ -73,11 +75,15 @@ public class SaveManager : MonoBehaviour
     private void LoadData(SaveData data)
     {
         GameSettings.MouseSensitivity = data.mouseSensitivity;
+        GameSettings.MusicVolume = data.musicVolume;
+        GameSettings.SFXVolume = data.sfxVolume;
     }
 
     private void SaveData()
     {
         CurrentSave.mouseSensitivity = GameSettings.MouseSensitivity;
+        CurrentSave.musicVolume = GameSettings.MusicVolume;
+        CurrentSave.sfxVolume = GameSettings.SFXVolume;
     }
 
     void OnDestroy()
