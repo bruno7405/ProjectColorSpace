@@ -62,6 +62,16 @@ public class SpectrumObject : MonoBehaviour
         Color c = ColorUtilities.FloatToColor(hue);
         c = ColorUtilities.HueToRBG(ColorUtilities.RGBtoHue(c), saturation, value);
         float v = CalculateVisibility(hue);
+
+        // so h eld objects don't vanish
+        if (_grabbableObject != null)
+        {
+            if (_grabbableObject.IsGrabbed())
+            {
+                v = Mathf.Max(0.5f, v);
+            }
+        }
+
         _spectrum_material.SetFloat("_Ghost_Progress", 1 - v);
 
         if (_cacheHasProperty)
@@ -82,7 +92,7 @@ public class SpectrumObject : MonoBehaviour
 
         _renderer.enabled = v > 0.001f;
 
-        bool newSolid = StrictCollision ? v >= 0.001f : v >= 1f;
+        bool newSolid = StrictCollision ? v >= 0.001f : v >= 0.99f;
         if (newSolid == IsSolid) return; // only touch physics on a real transition
 
         IsSolid = newSolid;
