@@ -2920,6 +2920,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 2928298463432088609, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 446690335c78b9a4c966566cc2b7643b, type: 2}
+    - target: {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: prismColor
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21
@@ -2960,6 +2968,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8910546813690547235, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 446690335c78b9a4c966566cc2b7643b, type: 2}
     - target: {fileID: 9066366376613723266, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_Name
       value: Prism Pickup (2)
@@ -3963,6 +3975,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: prismColor
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38
@@ -6917,6 +6933,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: prismColor
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.75
@@ -8166,6 +8186,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: prismColor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.5
@@ -8786,6 +8810,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: prismColor
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4
@@ -9019,6 +9047,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 2928298463432088609, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 757f1397d3c9ae9429d7cc1b8fc132d9, type: 2}
+    - target: {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: prismColor
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17
@@ -9059,6 +9095,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8910546813690547235, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 757f1397d3c9ae9429d7cc1b8fc132d9, type: 2}
     - target: {fileID: 9066366376613723266, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_Name
       value: Prism Pickup (6)
@@ -10532,6 +10572,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: prismColor
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -42.25
@@ -13797,6 +13841,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: prismColor
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25
@@ -13837,6 +13885,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8910546813690547235, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f7442d75fed8ed04aacb6917e1a0f11f, type: 2}
     - target: {fileID: 9066366376613723266, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_Name
       value: Prism Pickup
@@ -17436,6 +17488,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: prismColor
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19
@@ -17476,6 +17532,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8910546813690547235, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 815ec27c875e7734a9e27ab40558b346, type: 2}
     - target: {fileID: 9066366376613723266, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_Name
       value: Prism Pickup (5)
@@ -18911,6 +18971,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: prismColor
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23
@@ -18951,6 +19015,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8910546813690547235, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c459e87f5fe0f8e46aaf992477f33ffa, type: 2}
     - target: {fileID: 9066366376613723266, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_Name
       value: Prism Pickup (1)
