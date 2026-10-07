@@ -8,18 +8,20 @@ public class ArmsScript : MonoBehaviour
     [SerializeField] private GameObject[] watchLockedColorBlockers = new GameObject[7];
 
     [SerializeField] private Animator armAnimator;
-    [SerializeField] private readonly float ANIMATION_SPEED = 0.75f; // really big for tests
-    [SerializeField] private readonly float TIMEOUT_SECONDS = 0.200f; // delta time is in seconds :(
+    [SerializeField] private readonly float ANIMATION_SPEED = 0.005f;
+    [SerializeField] private readonly float TIMEOUT_SECONDS = 0.700f; // delta time is in seconds :(
+    [SerializeField] private readonly float TIMEOUT_WHILE_MOVING_SECONDS = 1.000f;
 
     // this is red. 0 is like halfway between red & violet.
     private readonly float HUE_OFFSET = 0.07142857f;
     private Quaternion initialWatchBoneRotation;
     private float currentHue = 0.07142857f;
-    private readonly float EPSILON = 0.000001f;
+    private readonly float EPSILON = 0.0000001f;
 
     float positionInAnimation = 0f;
     float currTimeout = 0;
     bool shouldRaiseArm = false;
+    bool isMoving = false;
 
     public void OnHueChanged(float h)
     {
@@ -35,11 +37,10 @@ public class ArmsScript : MonoBehaviour
         float rotation = 360 - (shiftedHue * 360f); // WHY DO IT GO BACKWARDS
         watchBone.localRotation = initialWatchBoneRotation * Quaternion.Euler(0f, rotation, 0f);
 
-        if (Math.Abs(currentHue - h) <= EPSILON)
-        {
-            shouldRaiseArm = true;
-            currTimeout = TIMEOUT_SECONDS;
-        }
+        
+        if (!shouldRaiseArm) Debug.Log("Set shouldRaiseArm to true");
+        shouldRaiseArm = true;
+        if (isMoving) { currTimeout = TIMEOUT_WHILE_MOVING_SECONDS; } else { currTimeout = TIMEOUT_SECONDS; };
     }
 
     public void OnColorUnlocked(int index)
@@ -76,7 +77,7 @@ public class ArmsScript : MonoBehaviour
 
     void UpdateAnimation()
     {
-        /*
+        
         if(shouldRaiseArm)
         {
             positionInAnimation += ANIMATION_SPEED;
@@ -86,16 +87,24 @@ public class ArmsScript : MonoBehaviour
         }
         positionInAnimation = Mathf.Clamp01(positionInAnimation);
 
-        armAnimator.Update(positionInAnimation);*/
+        armAnimator.Play("ArmUp", 0, positionInAnimation);
 
-        if(shouldRaiseArm)
+        /*if(shouldRaiseArm)
         {
-            armAnimator.Update(Mathf.Clamp01(ANIMATION_SPEED));
+            armAnimator.Play("ArmUp", 0, Mathf.Clamp01(ANIMATION_SPEED));
         }else
         {
-            armAnimator.Update(Mathf.Clamp01(-ANIMATION_SPEED));
-        }
+            armAnimator.Play("ArmUp", 0, Mathf.Clamp01(-ANIMATION_SPEED));
+        }*/
     }
+
+    /* TROUBLESHOOTING
+     * - shouldRaiseArm confirmed to be set to true/false when expected
+     * - setting speed back to 1 doesnt fix anything, just makes it behave like speed is set to 1
+     * - using Play instead of Update seems to work
+     * - but raising the arm is really inconsistent, whereas lowering it works perfectly
+     * - removing the has-changed check fixed this. now pausing seems to always raise the arm. weird but not high priority
+     */
 
     void UpdateAnimationState()
     {
@@ -105,10 +114,19 @@ public class ArmsScript : MonoBehaviour
             Keyboard.current.aKey.isPressed ||
             Keyboard.current.spaceKey.isPressed )
         {
-            if(currTimeout <= 0)
+            if(!isMoving)
             {
-                shouldRaiseArm = false;
+                if (currTimeout <= 0)
+                {
+                    if (shouldRaiseArm) Debug.Log("Set shouldRaiseArm to false");
+                    shouldRaiseArm = false;
+                }
             }
+            isMoving = true;
+        }
+        else
+        {
+            isMoving = false;
         }
     }
 
@@ -116,7 +134,7 @@ public class ArmsScript : MonoBehaviour
     void Start()
     {
         initialWatchBoneRotation = watchBone.localRotation;
-        armAnimator.Play("ArmUp", 0, positionInAnimation);
+        armAnimator.Play("ArmUp", 0, 0f);
 
         // subscribe to hue update actions
         SpectrumManager.OnColorUpdate += OnHueChanged;
