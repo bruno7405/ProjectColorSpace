@@ -579,15 +579,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2307178437447391145, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2307178437447391145, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2307178437447391145, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2307178437447391145, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -609,6 +609,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3025948940977091590, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025948940977091590, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5236631441276769825, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
       propertyPath: m_Name
       value: Pause Screen
@@ -616,6 +624,18 @@ PrefabInstance:
     - target: {fileID: 5236631441276769825, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880822461130116551, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880822461130116551, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880822461130116551, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
