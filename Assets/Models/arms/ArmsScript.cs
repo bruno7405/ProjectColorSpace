@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ArmsScript : MonoBehaviour
 {
@@ -18,8 +19,6 @@ public class ArmsScript : MonoBehaviour
         // ok also the watch needle starts in the middle of red so it needs to double
         float shiftedHue = h - 2*HUE_OFFSET;
         shiftedHue = Mathf.Repeat(shiftedHue, 1f); //wraparound
-
-        // update animation controller (??? todo whether this is needed)
 
         // set watchBone local rotation to match hue
         // i hate quaternion
@@ -50,6 +49,43 @@ public class ArmsScript : MonoBehaviour
         }
     }
 
+    // =============================================================================================================================================
+
+    /*
+     * I am going to treat the arm-up animation like a pose slider from 0 to 1.
+     * 0 is arm is completely down, 1 is arm is completely up.
+     * When the player inputs a color shift, it will start moving towards 1, and stay there if it reaches it.
+     * It will not move towards 0 until the player moves, but only while also NOT holding down a color shift input.
+     * (so moving while shifting color continues to show the watch.)
+     */
+
+    float ANIMATION_SPEED = 0.75f;
+    float positionInAnimation = 0f;
+    bool shouldRaiseArm = false;
+
+    void UpdateAnimation()
+    {
+
+    }
+
+    void UpdateAnimationState()
+    {
+        if (Keyboard.current.qKey.isPressed || Keyboard.current.eKey.isPressed) // TODO may not be the proper input check
+        {
+            shouldRaiseArm = true;
+        }
+        else if(Keyboard.current.wKey.isPressed || 
+            Keyboard.current.sKey.isPressed ||
+            Keyboard.current.dKey.isPressed ||
+            Keyboard.current.aKey.isPressed ||
+            Keyboard.current.spaceKey.isPressed )
+        {
+            // in this branch, we already know color switch is NOT being pressed
+            // AND we are moving, so lower arm
+            shouldRaiseArm = false;
+        }
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -63,6 +99,7 @@ public class ArmsScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        UpdateAnimationState();
+        UpdateAnimation();
     }
 }
