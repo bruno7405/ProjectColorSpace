@@ -45,11 +45,11 @@ Material:
     - _DepthThresholdMin: 1
     - _FadeRangeEnd: 50
     - _FadeRangeStart: 10
-    - _NormalThresholdMax: 0.75
+    - _NormalThresholdMax: 3
     - _NormalThresholdMin: 0.01
     - _Thickness: 1
     m_Colors:
-    - _EdgeColor: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
+    - _EdgeColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &11400000
@@ -64,7 +64,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 130791d3e20646d2b6d81688877b0909, type: 3}
   m_Name: OutlineSettings
   m_EditorClassIdentifier: 
-  edgeColor: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
+  edgeColor: {r: 0, g: 0, b: 0, a: 1}
   thickness: 1
   resolutionInvariant: 0
   fadeWithDistance: 0
@@ -75,7 +75,7 @@ MonoBehaviour:
   maxDepthThreshold: 10
   useNormals: 1
   minNormalsThreshold: 0.01
-  maxNormalsThreshold: 0.75
+  maxNormalsThreshold: 3
   useColor: 0
   minColorThreshold: 0
   maxColorThreshold: 0.25
