@@ -7,9 +7,21 @@ public class ArmsScript : MonoBehaviour
     [SerializeField] private Transform watchBone;
     [SerializeField] private GameObject[] watchLockedColorBlockers = new GameObject[7];
 
+    [SerializeField] private Animator armAnimator;
+    [SerializeField] private readonly float ANIMATION_SPEED = 0.75f;
+    [SerializeField] private readonly float TIMEOUT = 200; // miliseconds i think
+
+    [SerializeField] private Animation ArmUp;
+
     // this is red. 0 is like halfway between red & violet.
     private readonly float HUE_OFFSET = 0.07142857f;
     private Quaternion initialWatchBoneRotation;
+    private float currentHue = 0.07142857f;
+    private readonly float EPSILON = 0.000001f;
+
+    float positionInAnimation = 0f;
+    float currTimeout = 0;
+    bool shouldRaiseArm = false;
 
     public void OnHueChanged(float h)
     {
@@ -24,6 +36,12 @@ public class ArmsScript : MonoBehaviour
         // i hate quaternion
         float rotation = 360 - (shiftedHue * 360f); // WHY DO IT GO BACKWARDS
         watchBone.localRotation = initialWatchBoneRotation * Quaternion.Euler(0f, rotation, 0f);
+
+        if (Math.Abs(currentHue - h) <= EPSILON)
+        {
+            shouldRaiseArm = true;
+            currTimeout = TIMEOUT;
+        }
     }
 
     public void OnColorUnlocked(int index)
@@ -55,41 +73,36 @@ public class ArmsScript : MonoBehaviour
      * I am going to treat the arm-up animation like a pose slider from 0 to 1.
      * 0 is arm is completely down, 1 is arm is completely up.
      * When the player inputs a color shift, it will start moving towards 1, and stay there if it reaches it.
-     * It will not move towards 0 until the player moves, but only while also NOT holding down a color shift input.
-     * (so moving while shifting color continues to show the watch.)
+     * It will not move towards 0 until it reaches the current color & the player moves.
      */
-
-    float ANIMATION_SPEED = 0.75f;
-    float positionInAnimation = 0f;
-    bool shouldRaiseArm = false;
 
     void UpdateAnimation()
     {
 
     }
 
-    void UpdateAnimationState()
+    void UpdateAnimationState(float newHue)
     {
-        if (Keyboard.current.qKey.isPressed || Keyboard.current.eKey.isPressed) // TODO may not be the proper input check
-        {
-            shouldRaiseArm = true;
-        }
-        else if(Keyboard.current.wKey.isPressed || 
+        if(Keyboard.current.wKey.isPressed || 
             Keyboard.current.sKey.isPressed ||
             Keyboard.current.dKey.isPressed ||
             Keyboard.current.aKey.isPressed ||
             Keyboard.current.spaceKey.isPressed )
         {
-            // in this branch, we already know color switch is NOT being pressed
-            // AND we are moving, so lower arm
-            shouldRaiseArm = false;
+            if(currTimeout <= 0)
+            {
+                shouldRaiseArm = false;
+            }
         }
     }
+
+    void 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         initialWatchBoneRotation = watchBone.localRotation;
+        armAnimator.Play(ArmUp.name, 0, positionInAnimation);
 
         // subscribe to hue update actions
         SpectrumManager.OnColorUpdate += OnHueChanged;
@@ -99,7 +112,7 @@ public class ArmsScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateAnimationState();
+        currTimeout -= Time.deltaTime;
         UpdateAnimation();
     }
 }

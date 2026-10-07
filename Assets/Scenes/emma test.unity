@@ -1353,6 +1353,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 627451971877818424, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 627451971877818424, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 627451971877818424, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 627451971877818424, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1390,6 +1402,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 627451971877818424, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 627451971877818424, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3391697912374542190, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
@@ -1998,6 +2014,7 @@ MonoBehaviour:
   VIOLET: {r: 0.5019608, g: 0, b: 0.5019608, a: 1}
   ObtainedCount: 1
   ScrollSpeed: 0.2
+  SnapToBands: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
