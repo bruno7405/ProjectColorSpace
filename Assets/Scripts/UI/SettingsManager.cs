@@ -8,15 +8,13 @@ public class SettingsManager : MonoBehaviour
 
     void Awake()
     {
-        MouseSensitivitySlider.value = GameSettings.MouseSensitivity;
-
         MouseSensitivitySlider.onValueChanged.AddListener(HandleMouseSlider);
         CloseSettings.onClick.AddListener(HandleCloseSettings);
     }
 
-    void Start()
+    void OnEnable()
     {
-        
+        MouseSensitivitySlider.SetValueWithoutNotify(GameSettings.MouseSensitivity);
     }
 
     public void HandleMouseSlider(float value)

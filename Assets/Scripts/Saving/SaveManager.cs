@@ -26,6 +26,7 @@ public class SaveManager : MonoBehaviour
         {
             Debug.LogWarning(">1 Save Manager in scene!");
             Destroy(gameObject);
+            return;
         }
 
         InitialLoad();
@@ -33,6 +34,8 @@ public class SaveManager : MonoBehaviour
 
     void Start()
     {
+        if (Instance != this) return;
+
         SignalBus.Subscribe(SaveSignal.SaveGame, Save);
         SignalBus.Subscribe(SaveSignal.LoadGame, Load);
     } 
@@ -59,12 +62,12 @@ public class SaveManager : MonoBehaviour
                     unlockedColors = 2
                 };
             } else
-            {
-                LoadData(CurrentSave);
-                
+            {    
                 Debug.Log("[SaveManager]: Loaded save data!");
             }
         }
+
+        LoadData(CurrentSave);
     }
 
     private void LoadData(SaveData data)
@@ -79,6 +82,7 @@ public class SaveManager : MonoBehaviour
 
     void OnDestroy()
     {
+        if (Instance != this) return;
         if (!_debugMode) SaveGame(CurrentSave); 
         // to not override our saved games later on
         // also this doesn't work with webgl i'm suddenly realizing, uhh
