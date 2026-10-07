@@ -24,6 +24,8 @@ public class SpectrumObject : MonoBehaviour
     private Rigidbody _rb;
     private GrabbableObject _grabbableObject;
 
+    private bool _cacheHasProperty;
+
     public void Awake()
     {
         _renderer = GetComponent<MeshRenderer>();
@@ -32,6 +34,8 @@ public class SpectrumObject : MonoBehaviour
         _grabbableObject = GetComponent<GrabbableObject>();
 
         _spectrum_material = _renderer.materials[0];
+
+        _cacheHasProperty = _spectrum_material.HasProperty("_Object_Color");
 
         // Subscribe only after references are assigned
         SpectrumManager.OnColorUpdate += HandleColorUpdate;
@@ -60,7 +64,7 @@ public class SpectrumObject : MonoBehaviour
         float v = CalculateVisibility(hue);
         _spectrum_material.SetFloat("_Ghost_Progress", 1 - v);
 
-        if (_spectrum_material.HasProperty("_Object_Color"))
+        if (_cacheHasProperty)
         {
             _spectrum_material.SetColor("_Object_Color", c);
         }

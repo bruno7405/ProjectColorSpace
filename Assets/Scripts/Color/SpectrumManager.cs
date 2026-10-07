@@ -69,7 +69,6 @@ public class SpectrumManager : MonoBehaviour
         if (HueValue != lastHue)
         {
             OnColorUpdate?.Invoke(HueValue);
-            Debug.Log("Hue Value: " + HueValue);
         }
     }
 
