@@ -23,7 +23,7 @@ public class ArmsScript : MonoBehaviour
 
         // set watchBone local rotation to match hue
         // i hate quaternion
-        float rotation = shiftedHue * 360f;
+        float rotation = 360 - (shiftedHue * 360f); // WHY DO IT GO BACKWARDS
         watchBone.localRotation = initialWatchBoneRotation * Quaternion.Euler(0f, rotation, 0f);
     }
 
