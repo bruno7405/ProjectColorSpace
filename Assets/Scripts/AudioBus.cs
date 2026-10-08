@@ -170,7 +170,7 @@ public class AudioBus : MonoBehaviour
         const float numLayers = 7.0f;
         const float colorPoint = 1.0f/numLayers;
 
-        float scaledHue = _hueValue * numLayers - 0.5f;
+        float scaledHue = _hueValue * numLayers; // - 0.5f;
         print(scaledHue);
         int lowerIndex = (int)scaledHue;
         int upperIndex = (int)scaledHue + 1;
