@@ -32,7 +32,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Armature_Left|IdleLeft
+  m_Name: IdleLeft
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -45,7 +45,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 614996220556322434, guid: 6d9b7709f7db0d84ab89f933e3cfe9b3, type: 3}
+  m_Motion: {fileID: -901574720385973533, guid: 80e88b77fb2562c43bfa79e260d404b2, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -80,7 +80,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Armature_Left|HoldArmOutToGrab
+  m_Name: HoldArmOutToGrab
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -93,7 +93,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -1309020002807505491, guid: 6d9b7709f7db0d84ab89f933e3cfe9b3, type: 3}
+  m_Motion: {fileID: 3986001615813447104, guid: 80e88b77fb2562c43bfa79e260d404b2, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
