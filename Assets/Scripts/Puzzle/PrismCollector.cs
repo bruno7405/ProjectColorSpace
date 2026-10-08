@@ -14,7 +14,6 @@ public class PrismCollector : MonoBehaviour
     private void Awake()
     {
         colorMaterial = Resources.Load<Material>($"Materials/Colors/{prismColor.ToString()}Glow");
-        Debug.Log("Color: " + prismColor.ToString() + $" Materials/Colors/{prismColor.ToString()}Glow");
         if (colorMaterial != null)
         {
             _auraParticles.GetComponent<ParticleSystemRenderer>().material = colorMaterial;

@@ -39,7 +39,6 @@ public class ToolTipUI : MonoBehaviour
 
     public void SetInteractionText(string text)
     {
-        Debug.Log("Set Text: " + text);
         if (interactionTMP.text == text && interactionTMP.gameObject.activeInHierarchy) return;
 
         interactionTMP.gameObject.SetActive(true);
@@ -48,7 +47,6 @@ public class ToolTipUI : MonoBehaviour
 
     public void HideInteractionText()
     {
-        Debug.Log("Hide Text");
         interactionTMP.gameObject.SetActive(false);
         interactionTMP.text = "";
     }

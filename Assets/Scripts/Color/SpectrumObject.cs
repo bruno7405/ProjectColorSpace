@@ -7,6 +7,7 @@ public class SpectrumObject : MonoBehaviour
 
     public float value = 1f;
     public float saturation = 1f;
+    public float emission = 0;
 
     public bool StrictCollision = false;
     public bool IsSolid { get; private set; } = true;
@@ -23,10 +24,11 @@ public class SpectrumObject : MonoBehaviour
     private Rigidbody _rb;
     private GrabbableObject _grabbableObject;
 
-    private bool _cacheHasProperty;
+    private bool _cacheHasColorProperty;
+    private bool _cacheHasEmissionProperty;
 
     private float _fadeSpeed = 0.75f;
-    private float _heldMinVis = 0.4f;
+    private float _heldMinVis = 0.5f;
     private float _dialVisibility;
     private float _actualV;
     private bool _wasHeld;
@@ -43,7 +45,8 @@ public class SpectrumObject : MonoBehaviour
         _grabbableObject = GetComponent<GrabbableObject>();
 
         _spectrum_material = _renderer.materials[0];
-        _cacheHasProperty = _spectrum_material.HasProperty("_Object_Color");
+        _cacheHasColorProperty = _spectrum_material.HasProperty("_Object_Color");
+        _cacheHasEmissionProperty = _spectrum_material.HasProperty("_Emission");
 
         InheritFromParent();
 
@@ -133,8 +136,10 @@ public class SpectrumObject : MonoBehaviour
     {
         _spectrum_material.SetFloat("_Ghost_Progress", 1 - _actualV);
 
-        if (_cacheHasProperty) _spectrum_material.SetColor("_Object_Color", _color);
+        if (_cacheHasColorProperty) _spectrum_material.SetColor("_Object_Color", _color);
         else _spectrum_material.color = _color;
+
+        if (emission != 0 && _cacheHasEmissionProperty) _spectrum_material.SetFloat("_Emission", emission);
 
         if (_outline_material != null)
         {

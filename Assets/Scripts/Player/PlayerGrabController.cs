@@ -31,7 +31,7 @@ public class PlayerGrabController : MonoBehaviour
     private GrabbableObject _hoveredGrabbable;
     private Transform _cam;
 
-    public bool HasGrabbable => _hoveredGrabbable != null;
+    public bool IsHoveringGrabbable => _hoveredGrabbable != null;
     public bool IsHolding => _heldGrabbable != null;
 
     private void Awake()

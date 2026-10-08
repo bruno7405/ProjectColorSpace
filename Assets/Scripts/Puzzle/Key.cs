@@ -8,7 +8,7 @@ public class Key : GrabbableObject
     private Collider _collider;
     private Keyhole _currentKeyhole;
 
-    public SpectrumColor KeycColor => _keyColor;
+    public SpectrumColor KeyColor => _keyColor;
     public bool IsAttached => _currentKeyhole != null;
 
     protected override void Awake()

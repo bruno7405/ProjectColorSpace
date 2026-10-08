@@ -9,16 +9,33 @@ public class Keyhole : MonoBehaviour
     [SerializeField] private UnityEvent OnKeyEnter;
     [SerializeField] private UnityEvent OnKeyExit;
 
+    [SerializeField] Renderer symbolRenderer; // for showing the color required for the keyhole
+
     private Key _currentKey;
 
     public AudioClip keyedAudio;
 
     public bool HasKey => _currentKey != null;
 
+    private Material colorMaterial;
+
+    private void Awake()
+    {
+        colorMaterial = Resources.Load<Material>($"Materials/Colors/{_requiredColor.ToString()}Glow");
+        if (colorMaterial != null)
+        {
+            symbolRenderer.material = colorMaterial;
+        }
+        else
+        {
+            Debug.LogWarning($"No material found at Resources/Materials/Colors/{_requiredColor}", this);
+        }
+    }
+
     public bool TryAttachKey(Key key)
     {
         if (HasKey) return false;
-        if (key.KeycColor != _requiredColor) return false;
+        if (key.KeyColor != _requiredColor) return false;
 
         // Stop any physics motion, then lock the key in place
         if (key.TryGetComponent(out Rigidbody rb))

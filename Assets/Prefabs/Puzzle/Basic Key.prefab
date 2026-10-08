@@ -130,6 +130,7 @@ MonoBehaviour:
   _spectrumColor: 1
   value: 1
   saturation: 0.8
+  emission: 0.5
   StrictCollision: 0
 --- !u!114 &3654147540507175706
 MonoBehaviour:

@@ -34,6 +34,7 @@ public class PlayerInteractor : MonoBehaviour
 
     private void CheckForInteractable()
     {
+        if (PlayerGrabController.Instance.IsHolding || PlayerGrabController.Instance.IsHoveringGrabbable) return;
         // Hovering over valid interactable object
         if (Physics.Raycast(cam.position, cam.forward, out RaycastHit hit, interactDistance, interactLayer)
             && hit.transform.TryGetComponent<IInteractable>(out IInteractable interactable))
