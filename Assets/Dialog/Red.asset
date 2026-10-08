@@ -19,8 +19,7 @@ MonoBehaviour:
   - dialogLine: Yes, I am in the facility. Remind me what we are looking for again?
     dialogAudio: {fileID: 8300000, guid: e2a53f092ebe44245a775b3950af559e, type: 3}
     clipLength: 0
-  - dialogLine: '[M] The prisms. We need to find all 7 in order to open the vault
-      (and escape).'
+  - dialogLine: '[M] The prisms. We need to find all 7 in order to open the vault.'
     dialogAudio: {fileID: 8300000, guid: f7406bfcd6a84bc4eb2001f6da3e9320, type: 3}
     clipLength: 0
   - dialogLine: Oh we already got the red one. I'm gonna have to look around.
