@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 276c41f0449f5d248b676991829b29df, type: 3}
+  m_Name: Blue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  dialogLines:
+  - dialogLine: I just unlocked blue. This place is way more complex than we initially
+      thought...
+    dialogAudio: {fileID: 8300000, guid: 7be0ac3c768d07447a79cd55febabbdc, type: 3}
+    clipLength: 0
+  - dialogLine: '[M] You know this reminds me of Fort Knox back home, except the
+      vault here holds color.'
+    dialogAudio: {fileID: 8300000, guid: 2f3441f56a78a2645b51dcf8be8ff918, type: 3}
+    clipLength: 0
+  - dialogLine: I mean yeah. Color is as precious as gold in this dimension.
+    dialogAudio: {fileID: 8300000, guid: 4289e86550ecaab46a5da8c35247d790, type: 3}
+    clipLength: 0
+  - dialogLine: '[M] Can''t blame them. Can you imagine living in a world without
+      color?'
+    dialogAudio: {fileID: 8300000, guid: 568c797d94c5ff448b33a5001c992dae, type: 3}
+    clipLength: 6
+  - dialogLine: NUH UHH
+    dialogAudio: {fileID: 8300000, guid: eaa45014f0552d4429bf1becf3017eb9, type: 3}
+    clipLength: 0

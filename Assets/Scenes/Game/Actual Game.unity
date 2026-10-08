@@ -2569,7 +2569,7 @@ GameObject:
   - component: {fileID: 212917814}
   - component: {fileID: 212917815}
   m_Layer: 0
-  m_Name: OrangeDialog (1)
+  m_Name: Blue Dialog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2603,7 +2603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialoguePlayer
   playOnStart: 0
-  dialog: {fileID: 11400000, guid: 58b4316dc7af8b0459078fbf827aca49, type: 2}
+  dialog: {fileID: 11400000, guid: 1f93013129173734eaab68457b82fc5b, type: 2}
 --- !u!1001 &213398005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5940,7 +5940,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c459e87f5fe0f8e46aaf992477f33ffa, type: 2}
     - target: {fileID: 9066366376613723266, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_Name
-      value: Prism Pickup (3)
+      value: Green Prism
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9896,7 +9896,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f7442d75fed8ed04aacb6917e1a0f11f, type: 2}
     - target: {fileID: 9066366376613723266, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_Name
-      value: Prism Pickup
+      value: Yellow Prism
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12098,7 +12098,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 1db1195fa86f57a40a330490bb1a12d8, type: 2}
     - target: {fileID: 9066366376613723266, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_Name
-      value: Prism Pickup (1)
+      value: Orange Prism
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12893,7 +12893,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 815ec27c875e7734a9e27ab40558b346, type: 2}
     - target: {fileID: 9066366376613723266, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_Name
-      value: Prism Pickup
+      value: Indigo Prism
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15681,13 +15681,41 @@ PrefabInstance:
       propertyPath: interactText
       value: Collect Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 212917815}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayDialog
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DialoguePlayer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8910546813690547235, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 446690335c78b9a4c966566cc2b7643b, type: 2}
     - target: {fileID: 9066366376613723266, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_Name
-      value: Prism Pickup (4)
+      value: Blue Prism
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24720,6 +24748,34 @@ PrefabInstance:
       propertyPath: interactText
       value: Collect Red
       objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 212917815}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayDialog
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DialoguePlayer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9066366376613723266, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_Name
       value: Prism Pickup (7)
@@ -25433,7 +25489,7 @@ GameObject:
   - component: {fileID: 1680648403}
   - component: {fileID: 1680648404}
   m_Layer: 0
-  m_Name: OrangeDialog (2)
+  m_Name: EndDialog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25991,7 +26047,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2344539623522707750, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 490.51
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: 2344539623522707750, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -25999,7 +26055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2344539623522707750, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 245.255
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 2344539623522707750, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -26018,12 +26074,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8820698368311485117, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8820698368311485117, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
       propertyPath: m_HorizontalFit
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29231,7 +29283,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 757f1397d3c9ae9429d7cc1b8fc132d9, type: 2}
     - target: {fileID: 9066366376613723266, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_Name
-      value: Prism Pickup (5)
+      value: Violet Prism
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

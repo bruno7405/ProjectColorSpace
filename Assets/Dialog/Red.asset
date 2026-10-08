@@ -15,12 +15,17 @@ MonoBehaviour:
   dialogLines:
   - dialogLine: '[M] Are you in?'
     dialogAudio: {fileID: 8300000, guid: 9f19c9fcd7dc69543868db10beb62cc9, type: 3}
+    clipLength: 0
   - dialogLine: Yes, I am in the facility. Remind me what we are looking for again?
     dialogAudio: {fileID: 8300000, guid: e2a53f092ebe44245a775b3950af559e, type: 3}
-  - dialogLine: '[M] The prisms. We need to find all 7 in order to open the vaulr
+    clipLength: 0
+  - dialogLine: '[M] The prisms. We need to find all 7 in order to open the vault
       (and escape).'
     dialogAudio: {fileID: 8300000, guid: f7406bfcd6a84bc4eb2001f6da3e9320, type: 3}
+    clipLength: 0
   - dialogLine: Oh we already got the red one. I'm gonna have to look around.
     dialogAudio: {fileID: 8300000, guid: f78f448033012e74ca9fcecf1166774c, type: 3}
+    clipLength: 0
   - dialogLine: '[M] Radio back when you find the next one.'
     dialogAudio: {fileID: 8300000, guid: 40685d90644c8aa49a08040b76f76c16, type: 3}
+    clipLength: 0
