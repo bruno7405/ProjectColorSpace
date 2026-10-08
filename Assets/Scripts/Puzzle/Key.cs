@@ -7,7 +7,7 @@ public class Key : GrabbableObject
     private SpectrumObject _spectrumObject;
     private Collider _collider;
     private Keyhole _currentKeyhole;
-    private PrismRotator _rotatorScript;
+    private KeyRotator _rotatorScript;
     public SpectrumColor KeyColor => _keyColor;
     public bool IsAttached => _currentKeyhole != null;
 
@@ -16,7 +16,7 @@ public class Key : GrabbableObject
         base.Awake();
         _spectrumObject = GetComponent<SpectrumObject>();
         _collider = GetComponent<Collider>();
-        _rotatorScript = GetComponent<PrismRotator>();
+        _rotatorScript = GetComponent<KeyRotator>();
 
         grabbableObjectName = _keyColor.ToString() + " Core";
     }

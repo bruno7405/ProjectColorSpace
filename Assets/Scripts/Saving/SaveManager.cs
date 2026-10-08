@@ -59,6 +59,7 @@ public class SaveManager : MonoBehaviour
                     // setup defaults here
                     uuid = System.Guid.NewGuid().ToString(),
                     mouseSensitivity = 0.5f,
+                    saturation = 1f,
                     musicVolume = 0.75f,
                     sfxVolume = 0.75f,
                     unlockedColors = 1
@@ -75,6 +76,7 @@ public class SaveManager : MonoBehaviour
     private void LoadData(SaveData data)
     {
         GameSettings.MouseSensitivity = data.mouseSensitivity;
+        GameSettings.Saturation = data.saturation;
         GameSettings.MusicVolume = data.musicVolume;
         GameSettings.SFXVolume = data.sfxVolume;
     }
@@ -82,6 +84,7 @@ public class SaveManager : MonoBehaviour
     private void SaveData()
     {
         CurrentSave.mouseSensitivity = GameSettings.MouseSensitivity;
+        CurrentSave.saturation = GameSettings.Saturation;
         CurrentSave.musicVolume = GameSettings.MusicVolume;
         CurrentSave.sfxVolume = GameSettings.SFXVolume;
     }
