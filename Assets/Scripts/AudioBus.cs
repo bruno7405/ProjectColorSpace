@@ -19,6 +19,7 @@ public class AudioBus : MonoBehaviour
 
         DefaultButtonHoverSFX = Resources.Load<AudioClip>("ButtonHover");
         DefaultButtonClickSFX = Resources.Load<AudioClip>("ButtonClick");
+        SetupAudioSources();
     }
     
     // Audio source references
@@ -29,7 +30,7 @@ public class AudioBus : MonoBehaviour
     void Start()
     {
         // Create and configure audio sources
-        SetupAudioSources();
+        //SetupAudioSources();
     }
 
     public void SubscribeToLayerScroll()
