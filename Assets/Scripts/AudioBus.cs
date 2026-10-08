@@ -170,18 +170,18 @@ public class AudioBus : MonoBehaviour
         const float numLayers = 7.0f;
         const float colorPoint = 1.0f/numLayers;
 
-        float scaledHue = _hueValue * numLayers; // - 0.5f;
+        float scaledHue = _hueValue * numLayers - 0.5f;
         print(scaledHue);
         int lowerIndex = (int)scaledHue;
-        int upperIndex = (int)scaledHue + 1;
+        int upperIndex = (int) ((scaledHue + 1) % numLayers);
 
-        if (upperIndex >= musicSourceLayers.Count) { return; }
 
-        print("Hello");
 
-        musicSourceLayers[lowerIndex].volume = (scaledHue - lowerIndex);
-        print(musicSourceLayers[lowerIndex].isPlaying);
-        print(musicSourceLayers[lowerIndex].volume);
-        musicSourceLayers[upperIndex].volume = -(scaledHue - upperIndex);
+        print("Lower "+ lowerIndex + " and Upper " + upperIndex);
+
+        musicSourceLayers[lowerIndex].volume = (upperIndex - scaledHue);
+        print("Lower Volume: " + musicSourceLayers[lowerIndex].volume);
+        print("Upper Volume: " + musicSourceLayers[upperIndex].volume);
+        musicSourceLayers[upperIndex].volume = -(lowerIndex - scaledHue);
     }
 }
