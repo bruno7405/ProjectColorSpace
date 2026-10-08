@@ -12,10 +12,15 @@ public class PrismRotator : MonoBehaviour
 
     void Start()
     {
+        UpdateInitalPositionAndRotation();
+    }
+    
+    public void UpdateInitalPositionAndRotation()
+    {
         _initialPos = transform.position;
         _target = transform.rotation;
     }
-    
+
     void Update()
     {
         Vector3 pos = _initialPos;

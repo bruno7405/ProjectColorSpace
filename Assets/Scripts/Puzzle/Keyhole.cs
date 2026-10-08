@@ -14,6 +14,7 @@ public class Keyhole : MonoBehaviour
     private Key _currentKey;
 
     public AudioClip keyedAudio;
+    bool audioPlayed = false; // can only play key audio once
 
     public bool HasKey => _currentKey != null;
 
@@ -61,7 +62,11 @@ public class Keyhole : MonoBehaviour
         _currentKey = key;
         key.SetKeyhole(this);
         OnKeyEnter.Invoke();
-        AudioBus.Instance.PlaySFX(keyedAudio);
+        if (!audioPlayed)
+        {
+            AudioBus.Instance.PlaySFX(keyedAudio);
+            audioPlayed = true;
+        }
         return true;
     }
 

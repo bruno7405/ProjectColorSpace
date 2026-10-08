@@ -7,7 +7,7 @@ public class Key : GrabbableObject
     private SpectrumObject _spectrumObject;
     private Collider _collider;
     private Keyhole _currentKeyhole;
-
+    private PrismRotator _rotatorScript;
     public SpectrumColor KeyColor => _keyColor;
     public bool IsAttached => _currentKeyhole != null;
 
@@ -16,6 +16,7 @@ public class Key : GrabbableObject
         base.Awake();
         _spectrumObject = GetComponent<SpectrumObject>();
         _collider = GetComponent<Collider>();
+        _rotatorScript = GetComponent<PrismRotator>();
 
         grabbableObjectName = _keyColor.ToString() + " Core";
     }
@@ -36,12 +37,15 @@ public class Key : GrabbableObject
         if (IsAttached || IsGrabbed()) return;
 
         Keyhole keyhole = other.GetComponentInParent<Keyhole>();
-        if (keyhole != null)
+        if (keyhole == null) return;
+
+        if (keyhole.TryAttachKey(this))
         {
-            if (keyhole.TryAttachKey(this))
-            {
-                gameObject.layer = 0; // DELETE THIS IF YOU WANT TO REMOVE KEYS FROM KEYHOLES
-            }
+            gameObject.layer = 0; // DELETE THIS IF YOU WANT TO REMOVE KEYS FROM KEYHOLES
+
+            if (_rotatorScript.enabled == true) return;
+            _rotatorScript.enabled = true;
+            _rotatorScript.UpdateInitalPositionAndRotation();
         }
     }
 
@@ -63,7 +67,8 @@ public class Key : GrabbableObject
     {
         if (!isSolid && _currentKeyhole != null)
         {
-            _currentKeyhole.DetachKey(this);
+            // DONT DETACH BECAUSE KEY ONE TIME USE
+            //_currentKeyhole.DetachKey(this);
         }
     }
 }
