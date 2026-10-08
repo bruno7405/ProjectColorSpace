@@ -163,25 +163,23 @@ public class AudioBus : MonoBehaviour
         layerSource.Play();
     }
 
-    public void LayerScroll(float _hueValue) {
-        // _hueValue is between 0,1
-        // so we need 7 layers, with an additional 8th for violet->red
-
-        const float numLayers = 7.0f;
-        const float colorPoint = 1.0f/numLayers;
+    public void LayerScroll(float _hueValue)
+    {
+        int numLayers = musicSourceLayers.Count;
+        if (numLayers == 0) return;
 
         float scaledHue = _hueValue * numLayers - 0.5f;
-        print(scaledHue);
-        int lowerIndex = (int)scaledHue;
-        int upperIndex = (int) ((scaledHue + 1) % numLayers);
 
+        int lowerIndex = Mathf.FloorToInt(scaledHue);
+        float t = scaledHue - lowerIndex;
 
+        int lower = ((lowerIndex % numLayers) + numLayers) % numLayers;
+        int upper = (lower + 1) % numLayers;
 
-        print("Lower "+ lowerIndex + " and Upper " + upperIndex);
+        for (int i = 0; i < numLayers; i++)
+            musicSourceLayers[i].volume = 0f;
 
-        musicSourceLayers[lowerIndex].volume = (upperIndex - scaledHue);
-        print("Lower Volume: " + musicSourceLayers[lowerIndex].volume);
-        print("Upper Volume: " + musicSourceLayers[upperIndex].volume);
-        musicSourceLayers[upperIndex].volume = -(lowerIndex - scaledHue);
+        musicSourceLayers[lower].volume = 1f - t;
+        musicSourceLayers[upper].volume = t;
     }
 }
