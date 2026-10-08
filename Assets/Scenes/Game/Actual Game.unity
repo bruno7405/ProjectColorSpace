@@ -3260,7 +3260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialoguePlayer
   playOnStart: 0
-  dialog: {fileID: 11400000, guid: 58b4316dc7af8b0459078fbf827aca49, type: 2}
+  dialog: {fileID: 11400000, guid: 057c8e037ffdf834b94d079fc985b9e8, type: 2}
 --- !u!1001 &249803689
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12063,6 +12063,34 @@ PrefabInstance:
     - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: interactText
       value: Collect Orange
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 246179212}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayDialog
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DialoguePlayer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8910546813690547235, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'

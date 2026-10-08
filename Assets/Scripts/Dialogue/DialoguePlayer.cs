@@ -19,13 +19,13 @@ public class DialoguePlayer : MonoBehaviour
 
     public void PlayDialog()
     {
-        DialogueSystem.Instance.PlayDialogue(dialog);
+        StartCoroutine(PlayDialogDelay(2.5f));
     }
 
     IEnumerator PlayDialogDelay(float seconds)
     {
         yield return new WaitForSeconds(seconds);
-        PlayDialog();
+        DialogueSystem.Instance.PlayDialogue(dialog);
     }
 
     private void OnDestroy()

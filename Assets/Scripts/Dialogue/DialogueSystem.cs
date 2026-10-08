@@ -76,7 +76,7 @@ public class DialogueSystem : MonoBehaviour
             {
                 currentVoice = AudioBus.Instance.PlaySFX(line.dialogAudio, 2, false, false);
 
-                yield return new WaitForSeconds(line.dialogAudio.length);
+                yield return new WaitForSeconds(line.clipLength == 0 ? line.dialogAudio.length : line.clipLength);
             }
             else
             {

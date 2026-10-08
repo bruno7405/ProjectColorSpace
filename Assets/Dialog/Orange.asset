@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 276c41f0449f5d248b676991829b29df, type: 3}
+  m_Name: Orange
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  dialogLines:
+  - dialogLine: Ok I found the orange prism. How does this watch work again?
+    dialogAudio: {fileID: 8300000, guid: 1a63e22a539e66a429a32733e16587da, type: 3}
+    clipLength: 0
+  - dialogLine: '[M] Did you really not listen to anything I said on the ship? *sigh*
+      I should''ve gone in instead of you...'
+    dialogAudio: {fileID: 8300000, guid: 917caaf968aabb1439f5ba2997c49851, type: 3}
+    clipLength: 0
+  - dialogLine: '[M] Try shifting between the colors. It should allow you to slip
+      in between the color planes. '
+    dialogAudio: {fileID: 8300000, guid: a08b79e10ecd878478161b490946824f, type: 3}
+    clipLength: 0
+  - dialogLine: '*Use E/Q to switch colors*'
+    dialogAudio: {fileID: 8300000, guid: 49d2a49bd9e5bf0088d3d94066d2e00a, type: 3}
+    clipLength: 6
+  - dialogLine: Ohhh you're a genius! What do I do after that?
+    dialogAudio: {fileID: 8300000, guid: 50fecffce21783c4bb5f36cdbb3f6f22, type: 3}
+    clipLength: 0
+  - dialogLine: '[M] Unlocking more colors should unlock new routes. Check in when
+      you found more prisms.'
+    dialogAudio: {fileID: 8300000, guid: 4c90abdb272ba3446b15446b4ecbb33c, type: 3}
+    clipLength: 0

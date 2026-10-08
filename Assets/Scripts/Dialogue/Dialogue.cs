@@ -13,6 +13,8 @@ public class Dialogue : ScriptableObject
         [TextArea(3, 5)]
         public string dialogLine;
         public AudioClip dialogAudio;
+
+        public float clipLength;
     }
 
     [SerializeField] List<DialogueLine> dialogLines = new List<DialogueLine>();
