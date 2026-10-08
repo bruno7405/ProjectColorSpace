@@ -10,7 +10,7 @@ public class Keyhole : MonoBehaviour
     [SerializeField] private UnityEvent OnKeyExit;
 
     [SerializeField] Renderer symbolRenderer; // for showing the color required for the keyhole
-
+    [SerializeField] ParticleSystem auraParticles;
     private Key _currentKey;
 
     public AudioClip keyedAudio;
@@ -25,6 +25,7 @@ public class Keyhole : MonoBehaviour
         if (colorMaterial != null)
         {
             symbolRenderer.material = colorMaterial;
+            auraParticles.GetComponent<ParticleSystemRenderer>().material = colorMaterial;
         }
         else
         {

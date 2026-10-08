@@ -388,6 +388,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   symbolRenderer: {fileID: 2662969863429223962}
+  auraParticles: {fileID: 8626886047025424417}
   keyedAudio: {fileID: 8300000, guid: 49d2a49bd9e5bf0088d3d94066d2e00a, type: 3}
 --- !u!65 &2152352656471421656
 BoxCollider:

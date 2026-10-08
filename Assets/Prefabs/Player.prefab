@@ -107,7 +107,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 503
+    m_Bits: 1015
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -226,7 +226,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962437195141243520}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2678f2d075141d14894de072bfdb47da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteractor
-  interactDistance: 3
+  interactDistance: 2.5
   interactLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -409,6 +409,7 @@ MonoBehaviour:
     m_Bits: 119
   _dropPadding: 0.3
   _minHoldDistance: 0.6
+  pickupSFX: {fileID: 8300000, guid: 9ce334b6c4c0a69eb895aa65a57fd8bc, type: 3}
 --- !u!1 &8001934595211458033
 GameObject:
   m_ObjectHideFlags: 0
