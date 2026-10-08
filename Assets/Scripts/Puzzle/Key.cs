@@ -4,7 +4,7 @@ using UnityEngine;
 public class Key : GrabbableObject
 {
     [SerializeField] private SpectrumColor _keyColor;
-    private SpectrumObject _spectrumObject;
+    private SpectrumObject _spectrumKeyObject;
     private Collider _collider;
     private Keyhole _currentKeyhole;
     private KeyRotator _rotatorScript;
@@ -14,7 +14,7 @@ public class Key : GrabbableObject
     protected override void Awake()
     {
         base.Awake();
-        _spectrumObject = GetComponent<SpectrumObject>();
+        _spectrumKeyObject = GetComponent<SpectrumObject>();
         _collider = GetComponent<Collider>();
         _rotatorScript = GetComponent<KeyRotator>();
 
@@ -23,12 +23,12 @@ public class Key : GrabbableObject
 
     private void Start()
     {
-        _spectrumObject.OnSolidChanged += UpdateAttachState;
+        _spectrumKeyObject.OnSolidChanged += UpdateAttachState;
     }
 
     private void OnDestroy()
     {
-        if (_spectrumObject != null) _spectrumObject.OnSolidChanged -= UpdateAttachState;
+        if (_spectrumKeyObject != null) _spectrumKeyObject.OnSolidChanged -= UpdateAttachState;
     }
 
     // Attach only once the key is released inside the keyhole's trigger

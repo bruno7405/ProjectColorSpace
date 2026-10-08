@@ -31,6 +31,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 5090254732395652597}
   - {fileID: 1231642692538047298}
   - {fileID: 7100800080140115746}
   m_Father: {fileID: 0}
@@ -44,7 +45,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5871097944612085651}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 64a8227202e45504e80181c7eebef4be, type: 3}
+  m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: df96d543d34d70d4db860ad49be69073, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -69,8 +70,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6c9fc8852e543c4b8e7389a03ea8833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VaultDoorAnimation
-  animator: {fileID: 8763841679379414708}
-  initialCollider: {fileID: 0}
+  animator: {fileID: 2804339379593814059}
+  handleInteractBox: {fileID: 6595381776169672064}
+  initialCollider: {fileID: 2824873881640461165}
   finalCollider: {fileID: 3013822864836595329}
 --- !u!1001 &1629482819305798825
 PrefabInstance:
@@ -166,6 +168,125 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3459603051315571903, guid: 791ea47de91fda543bd6c6dccd4b511d, type: 3}
+--- !u!1001 &2762312850813133058
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7789819666847052078}
+    m_Modifications:
+    - target: {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: prismColor
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.925
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.067
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: interactText
+      value: Open Vault
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3238251585640307801}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TurnHandle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayDialog
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: VaultDoorAnimation, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DialoguePlayer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8910546813690547235, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 446690335c78b9a4c966566cc2b7643b, type: 2}
+    - target: {fileID: 9066366376613723266, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_Name
+      value: Blue Prism that i copied to make interaction work
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4425891820536695859, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+    - {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+    - {fileID: 8910546813690547235, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 4807877184144886540, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+--- !u!4 &5090254732395652597 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+  m_PrefabInstance: {fileID: 2762312850813133058}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6595381776169672064 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9066366376613723266, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+  m_PrefabInstance: {fileID: 2762312850813133058}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7278280374930405577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -254,7 +375,40 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 856eaacc76b145748ad330040f30e271, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2804339379593814059}
+    - targetCorrespondingSourceObject: {fileID: -8068073526183931155, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2824873881640461165}
+    - targetCorrespondingSourceObject: {fileID: -3111565609762313623, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7943869359221839314}
   m_SourcePrefab: {fileID: 100100000, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+--- !u!1 &3589609559387787936 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3111565609762313623, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+  m_PrefabInstance: {fileID: 7278280374930405577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7943869359221839314
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3589609559387787936}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6360558719573625917, guid: 856eaacc76b145748ad330040f30e271, type: 3}
 --- !u!4 &7100800080140115746 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 856eaacc76b145748ad330040f30e271, type: 3}
@@ -287,3 +441,30 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &8433505628424415780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8068073526183931155, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+  m_PrefabInstance: {fileID: 7278280374930405577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2824873881640461165
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8433505628424415780}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}

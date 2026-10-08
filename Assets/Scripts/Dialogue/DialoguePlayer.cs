@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -8,6 +9,8 @@ public class DialoguePlayer : MonoBehaviour
 {
     [SerializeField] bool playOnStart;
     [SerializeField] Dialogue dialog;
+    [SerializeField] bool playOnce = false;
+    bool _hasPlayed = false;
 
     private void Start()
     {
@@ -19,6 +22,9 @@ public class DialoguePlayer : MonoBehaviour
 
     public void PlayDialog()
     {
+        if (playOnce && _hasPlayed) return;
+        
+        _hasPlayed = true;
         StartCoroutine(PlayDialogDelay(2.5f));
     }
 
