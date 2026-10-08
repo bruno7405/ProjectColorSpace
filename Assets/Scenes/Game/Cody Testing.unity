@@ -36875,6 +36875,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Final Prism
       objectReference: {fileID: 0}
+    - target: {fileID: 3515403053290822740, guid: 87452e6e7a4d44e4f8276ac6c64b1a10, type: 3}
+      propertyPath: Delay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3515403053290822740, guid: 87452e6e7a4d44e4f8276ac6c64b1a10, type: 3}
+      propertyPath: Duration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7551502470253138716, guid: 87452e6e7a4d44e4f8276ac6c64b1a10, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.895
