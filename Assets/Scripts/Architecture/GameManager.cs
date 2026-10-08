@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
 
     private bool _loadingScene;
 
+    public SceneTransition Transitioner;
+
     void Awake()
     {
         if (Instance == null) Instance = this;
@@ -71,20 +73,32 @@ public class GameManager : MonoBehaviour
 
     public void LoadLevel()
     {
-        SceneManager.LoadScene(LevelScene);
+        ChangeScene(LevelScene);
         ChangeState(GameState.Playing);
+    }
+
+    public void ChangeScene(string scene)
+    {
+        if (Transitioner != null && Transitioner.isActiveAndEnabled)
+        {
+            Transitioner.LoadScene(scene);
+        } 
+        else
+        {
+            SceneManager.LoadScene(scene);
+        }
     }
 
     public void StartGame()
     {
         ChangeState(GameState.Playing);
-        SceneManager.LoadScene(LevelScene);
+        ChangeScene(LevelScene);
     }
 
     public void ReturnToMenu()
     {
         ChangeState(GameState.Menu);
-        SceneManager.LoadScene(MenuScene);
+        ChangeScene(MenuScene);
     }
 
     public void QuitGame()

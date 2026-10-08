@@ -1404,6 +1404,68 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+--- !u!1001 &129242840
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1737442752}
+    m_Modifications:
+    - target: {fileID: 4285488928547818323, guid: eb0da8176a47e7016ae99c3ef77473a9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.3011303
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285488928547818323, guid: eb0da8176a47e7016ae99c3ef77473a9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285488928547818323, guid: eb0da8176a47e7016ae99c3ef77473a9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.5876598
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285488928547818323, guid: eb0da8176a47e7016ae99c3ef77473a9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285488928547818323, guid: eb0da8176a47e7016ae99c3ef77473a9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285488928547818323, guid: eb0da8176a47e7016ae99c3ef77473a9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285488928547818323, guid: eb0da8176a47e7016ae99c3ef77473a9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285488928547818323, guid: eb0da8176a47e7016ae99c3ef77473a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285488928547818323, guid: eb0da8176a47e7016ae99c3ef77473a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285488928547818323, guid: eb0da8176a47e7016ae99c3ef77473a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258328700916585332, guid: eb0da8176a47e7016ae99c3ef77473a9, type: 3}
+      propertyPath: m_Name
+      value: Music
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eb0da8176a47e7016ae99c3ef77473a9, type: 3}
+--- !u!4 &129242841 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4285488928547818323, guid: eb0da8176a47e7016ae99c3ef77473a9, type: 3}
+  m_PrefabInstance: {fileID: 129242840}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &132505060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5927,6 +5989,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: prismColor
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38
@@ -10014,6 +10080,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: prismColor
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.75
@@ -12120,6 +12190,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: prismColor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.5
@@ -12968,6 +13042,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: prismColor
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4
@@ -15581,6 +15659,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: prismColor
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -42.25
@@ -25960,9 +26042,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 627451971877818424, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 129242841}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
+--- !u!4 &1737442752 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 627451971877818424, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
+  m_PrefabInstance: {fileID: 1737442751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1746526552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29109,6 +29199,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: prismColor
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -42.25

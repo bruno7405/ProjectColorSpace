@@ -59,9 +59,9 @@ public class SaveManager : MonoBehaviour
                     // setup defaults here
                     uuid = System.Guid.NewGuid().ToString(),
                     mouseSensitivity = 0.5f,
-                    musicVolume = 1f,
-                    sfxVolume = 1f,
-                    unlockedColors = 2
+                    musicVolume = 0.75f,
+                    sfxVolume = 0.75f,
+                    unlockedColors = 1
                 };
             } else
             {    
