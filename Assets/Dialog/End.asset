@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 276c41f0449f5d248b676991829b29df, type: 3}
+  m_Name: End
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  dialogLines:
+  - dialogLine: YES! I'm at the exit! Get me out of this colorful BS!
+    dialogAudio: {fileID: 8300000, guid: 2ed0b031a781b5545856b0fd8d859835, type: 3}
+    clipLength: 0
+  - dialogLine: '[M] Are you sure you got all the colors?'
+    dialogAudio: {fileID: 8300000, guid: b18a253a25bdea4438d269e1ff77f848, type: 3}
+    clipLength: 0
+  - dialogLine: Yes, I got ROYGBIV.
+    dialogAudio: {fileID: 8300000, guid: 04d71c05c20680145aeed3d15fcf0a53, type: 3}
+    clipLength: 0
+  - dialogLine: '*Absolute Cinema*'
+    dialogAudio: {fileID: 8300000, guid: b347c363a33f71249a013ac79b6984bd, type: 3}
+    clipLength: 0
