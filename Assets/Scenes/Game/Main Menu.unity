@@ -179,14 +179,6 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2344539623522707750, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2344539623522707750, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2696748417675605883, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.00012207031
@@ -851,11 +843,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1753806008889824333, guid: ee59a60f58785464f9c2d99302f94a53, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1321540319}
   m_SourcePrefab: {fileID: 100100000, guid: ee59a60f58785464f9c2d99302f94a53, type: 3}
 --- !u!224 &1321540316 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5885742206027267747, guid: ee59a60f58785464f9c2d99302f94a53, type: 3}
+  m_PrefabInstance: {fileID: 1321540315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1321540317 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1753806008889824333, guid: ee59a60f58785464f9c2d99302f94a53, type: 3}
   m_PrefabInstance: {fileID: 1321540315}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1321540318 stripped
@@ -863,12 +863,26 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8074998196635838087, guid: ee59a60f58785464f9c2d99302f94a53, type: 3}
   m_PrefabInstance: {fileID: 1321540315}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1321540317}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!114 &1321540319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321540317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275ec240b3c82fe4da7883d27520b171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonAudioPlayer
+  hoverSFX: {fileID: 0}
+  clickSFX: {fileID: 0}
 --- !u!1 &1351322334
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,7 +1383,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1753806008889824333, guid: ee59a60f58785464f9c2d99302f94a53, type: 3}
-      insertIndex: -1
+      insertIndex: 5
       addedObject: {fileID: 1581642893}
   m_SourcePrefab: {fileID: 100100000, guid: ee59a60f58785464f9c2d99302f94a53, type: 3}
 --- !u!224 &1581642888 stripped
@@ -1522,7 +1536,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1753806008889824333, guid: ee59a60f58785464f9c2d99302f94a53, type: 3}
-      insertIndex: -1
+      insertIndex: 6
       addedObject: {fileID: 764739448}
   m_SourcePrefab: {fileID: 100100000, guid: ee59a60f58785464f9c2d99302f94a53, type: 3}
 --- !u!1001 &8346155698973954326
@@ -1660,8 +1674,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3394803671851576751, guid: 0095613462ef71c4083c92d5d1be36a4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8346155698973954328}
   m_SourcePrefab: {fileID: 100100000, guid: 0095613462ef71c4083c92d5d1be36a4, type: 3}
+--- !u!1 &8346155698973954327 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3394803671851576751, guid: 0095613462ef71c4083c92d5d1be36a4, type: 3}
+  m_PrefabInstance: {fileID: 8346155698973954326}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8346155698973954328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8346155698973954327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275ec240b3c82fe4da7883d27520b171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonAudioPlayer
+  hoverSFX: {fileID: 0}
+  clickSFX: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

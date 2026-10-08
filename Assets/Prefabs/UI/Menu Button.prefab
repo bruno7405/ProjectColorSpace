@@ -89,6 +89,8 @@ GameObject:
   - component: {fileID: 5350510363315837278}
   - component: {fileID: 8074998196635838087}
   - component: {fileID: 7803779467282369194}
+  - component: {fileID: 910965032567054691}
+  - component: {fileID: 4261412461200789386}
   m_Layer: 5
   m_Name: Menu Button
   m_TagString: Untagged
@@ -214,6 +216,34 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   FadeSpeed: 8
+--- !u!114 &910965032567054691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753806008889824333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275ec240b3c82fe4da7883d27520b171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonAudioPlayer
+  hoverSFX: {fileID: 0}
+  clickSFX: {fileID: 0}
+--- !u!114 &4261412461200789386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753806008889824333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275ec240b3c82fe4da7883d27520b171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonAudioPlayer
+  hoverSFX: {fileID: 0}
+  clickSFX: {fileID: 0}
 --- !u!1 &4430314506659887268
 GameObject:
   m_ObjectHideFlags: 0

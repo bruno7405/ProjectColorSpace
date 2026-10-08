@@ -21,8 +21,8 @@ public class AudioBus : MonoBehaviour
         }
         Instance = this;
 
-        DefaultButtonHoverSFX = Resources.Load<AudioClip>("ButtonHover");
-        DefaultButtonClickSFX = Resources.Load<AudioClip>("ButtonClick");
+        DefaultButtonHoverSFX = Resources.Load<AudioClip>("SFX/ButtonHover");
+        DefaultButtonClickSFX = Resources.Load<AudioClip>("SFX/ButtonClick");
         SetupAudioSources();
     }
 

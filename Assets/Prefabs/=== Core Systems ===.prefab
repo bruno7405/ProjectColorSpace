@@ -1289,8 +1289,58 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 499904634345836382, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2456526300068373206}
+    - targetCorrespondingSourceObject: {fileID: 5317174777747895683, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8034198512241857808}
+    - targetCorrespondingSourceObject: {fileID: 6099204005194647304, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4721771315418414922}
+    - targetCorrespondingSourceObject: {fileID: 1941549417318998141, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1795408550505241032}
   m_SourcePrefab: {fileID: 100100000, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
+--- !u!1 &2960695969067717393 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6099204005194647304, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
+  m_PrefabInstance: {fileID: 9057364431594460185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4721771315418414922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2960695969067717393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275ec240b3c82fe4da7883d27520b171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonAudioPlayer
+  hoverSFX: {fileID: 0}
+  clickSFX: {fileID: 0}
+--- !u!1 &3780876063859958170 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5317174777747895683, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
+  m_PrefabInstance: {fileID: 9057364431594460185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8034198512241857808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3780876063859958170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275ec240b3c82fe4da7883d27520b171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonAudioPlayer
+  hoverSFX: {fileID: 0}
+  clickSFX: {fileID: 0}
 --- !u!1 &3827629204707705400 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5236631441276769825, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
@@ -1301,3 +1351,41 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2307178437447391145, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
   m_PrefabInstance: {fileID: 9057364431594460185}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7441068219140961380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1941549417318998141, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
+  m_PrefabInstance: {fileID: 9057364431594460185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1795408550505241032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7441068219140961380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275ec240b3c82fe4da7883d27520b171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonAudioPlayer
+  hoverSFX: {fileID: 0}
+  clickSFX: {fileID: 0}
+--- !u!1 &8881727848301419335 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 499904634345836382, guid: eef6e75bd4177d74b9b514aaa862cfbe, type: 3}
+  m_PrefabInstance: {fileID: 9057364431594460185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2456526300068373206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8881727848301419335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275ec240b3c82fe4da7883d27520b171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonAudioPlayer
+  hoverSFX: {fileID: 0}
+  clickSFX: {fileID: 0}
