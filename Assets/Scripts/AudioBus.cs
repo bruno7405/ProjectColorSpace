@@ -12,18 +12,13 @@ public class AudioBus : MonoBehaviour
     public static AudioClip DefaultButtonHoverSFX { get; private set; }
     public static AudioClip DefaultButtonClickSFX { get; private set; }
 
-    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-    public static void Autoload()
+    public void Awake()
     {
-        GameObject autoObj = new GameObject("Audio Bus");
-        autoObj.AddComponent<AudioBus>();
-
-        Instance = autoObj.GetComponent<AudioBus>();
+        if (Instance == null) Instance = this;
+        else { Destroy(gameObject); return; }
 
         DefaultButtonHoverSFX = Resources.Load<AudioClip>("ButtonHover");
         DefaultButtonClickSFX = Resources.Load<AudioClip>("ButtonClick");
-
-        DontDestroyOnLoad(autoObj);
     }
     
     // Audio source references
@@ -35,7 +30,10 @@ public class AudioBus : MonoBehaviour
     {
         // Create and configure audio sources
         SetupAudioSources();
+    }
 
+    public void SubscribeToLayerScroll()
+    {
         SpectrumManager.OnColorUpdate += LayerScroll;
     }
     
@@ -155,6 +153,7 @@ public class AudioBus : MonoBehaviour
     public void InitMusicLayer(AudioClip layer) {
         GameObject layerObject = new GameObject(layer.name);
         AudioSource layerSource = layerObject.AddComponent<AudioSource>();
+        layerObject.transform.parent = transform;
         layerSource.clip = layer;
         layerSource.loop = true;        // Music usually loops
         layerSource.volume = 0.0f;
