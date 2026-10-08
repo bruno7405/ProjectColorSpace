@@ -139,4 +139,11 @@ public class ArmsScript : MonoBehaviour
         UpdateAnimationState();
         UpdateAnimation();
     }
+
+    private void OnDestroy()
+    {
+        // clean up the actions
+        SpectrumManager.OnColorUpdate -= OnHueChanged;
+        SpectrumManager.OnColorUnlocked -= OnColorUnlocked;
+    }
 }
