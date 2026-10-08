@@ -38,8 +38,10 @@ public class Key : GrabbableObject
         Keyhole keyhole = other.GetComponentInParent<Keyhole>();
         if (keyhole != null)
         {
-            keyhole.TryAttachKey(this);
-            gameObject.layer = 0; // DELETE THIS IF YOU WANT TO REMOVE KEYS FROM KEYHOLES
+            if (keyhole.TryAttachKey(this))
+            {
+                gameObject.layer = 0; // DELETE THIS IF YOU WANT TO REMOVE KEYS FROM KEYHOLES
+            }
         }
     }
 
