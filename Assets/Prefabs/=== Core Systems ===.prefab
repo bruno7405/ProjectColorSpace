@@ -665,7 +665,7 @@ MonoBehaviour:
   BLUE: {r: 0, g: 0.69411767, b: 1, a: 1}
   INDIGO: {r: 0.35978997, g: 0.3215686, b: 1, a: 1}
   VIOLET: {r: 0.46666667, g: 0, b: 1, a: 1}
-  ObtainedCount: 2
+  ObtainedCount: 1
   ScrollSpeed: 0.2
   SnapToBands: 0
 --- !u!114 &6251785562472391125
