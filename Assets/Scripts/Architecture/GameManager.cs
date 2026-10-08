@@ -107,7 +107,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Quitting Game...");
         SignalBus.Invoke(SaveSignal.SaveGame);
-        Application.Quit();
+        Transitioner.QuitOut();
     }
 
 }
