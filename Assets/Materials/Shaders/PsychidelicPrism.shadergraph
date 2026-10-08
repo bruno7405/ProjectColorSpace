@@ -1156,7 +1156,7 @@
         "ctime0": 0,
         "ctime1": 9541,
         "ctime2": 19853,
-        "ctime3": 31322,
+        "ctime3": 27274,
         "ctime4": 40574,
         "ctime5": 50404,
         "ctime6": 58596,
@@ -3368,7 +3368,7 @@
     "m_Hidden": false,
     "m_PerRendererData": false,
     "m_customAttributes": [],
-    "m_Value": -5.0,
+    "m_Value": -50.0,
     "m_FloatType": 0,
     "m_LiteralFloatMode": false,
     "m_RangeValues": {
@@ -4749,7 +4749,7 @@
     "m_Hidden": false,
     "m_PerRendererData": false,
     "m_customAttributes": [],
-    "m_Value": 1.0,
+    "m_Value": 3.0,
     "m_FloatType": 0,
     "m_LiteralFloatMode": false,
     "m_RangeValues": {
