@@ -4860,6 +4860,7 @@ GameObject:
   - component: {fileID: 4425891820536695859}
   - component: {fileID: 7850920379710445858}
   - component: {fileID: 3054768477544755925}
+  - component: {fileID: 2206554615018600824}
   m_Layer: 6
   m_Name: Prism Pickup
   m_TagString: Untagged
@@ -4973,6 +4974,7 @@ MonoBehaviour:
   OnHoverExit:
     m_PersistentCalls:
       m_Calls: []
+  interactText: 
 --- !u!114 &4425891820536695859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5005,7 +5007,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -5026,3 +5028,24 @@ MonoBehaviour:
   _auraParticles: {fileID: 8241169273293199270}
   _burstParticles: {fileID: 1784420634115022703, guid: fd896c5b293d5094586fe369d9ab760c, type: 3}
   prismBreak: {fileID: 8300000, guid: abfafcb2bfb22b990813ac343342f3e8, type: 3}
+--- !u!65 &2206554615018600824
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9066366376613723266}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.5, y: 2.5, z: 2.5}
+  m_Center: {x: 0, y: 0, z: 0}
