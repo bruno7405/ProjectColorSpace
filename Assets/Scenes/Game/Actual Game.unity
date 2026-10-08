@@ -25687,15 +25687,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3492875650302489841, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
       propertyPath: ORANGE.b
-      value: 0.09967949
+      value: 0.011764706
       objectReference: {fileID: 0}
     - target: {fileID: 3492875650302489841, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
       propertyPath: ORANGE.g
-      value: 0.38392717
+      value: 0.4117647
       objectReference: {fileID: 0}
     - target: {fileID: 3492875650302489841, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
       propertyPath: ORANGE.r
-      value: 0.70440245
+      value: 0.8627451
       objectReference: {fileID: 0}
     - target: {fileID: 3492875650302489841, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
       propertyPath: VIOLET.r
