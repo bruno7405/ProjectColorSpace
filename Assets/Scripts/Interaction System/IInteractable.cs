@@ -8,5 +8,5 @@ public interface IInteractable
 
     public void InteractEnter();
 
-
+    public string GetInteractText();
 }

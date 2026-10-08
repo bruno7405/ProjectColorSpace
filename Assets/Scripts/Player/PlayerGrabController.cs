@@ -19,10 +19,10 @@ public class PlayerGrabController : MonoBehaviour
     [SerializeField] float _minHoldDistance = 0.6f;
 
 
-    public static Action OnObjectHoverEntered;
-    public static Action OnObjectHoverExited;
-    public static Action OnObjectGrabbed;
-    public static Action OnObjectDropped;
+    public static Action<string> OnGrabHoverEntered;
+    public static Action OnGrabHoverExited;
+    public static Action<string> OnGrabbed;
+    public static Action OnDropped;
 
     private GrabbableObject _heldGrabbable;
     private GrabbableObject _hoveredGrabbable;
@@ -109,14 +109,14 @@ public class PlayerGrabController : MonoBehaviour
         {
             _hoveredGrabbable.HoverExit();
             Debug.Log("hover exit");
-            OnObjectHoverExited?.Invoke();
+            OnGrabHoverExited?.Invoke();
         }
 
         _hoveredGrabbable = found;
 
         if (_hoveredGrabbable != null)
         {
-            OnObjectHoverEntered?.Invoke();
+            OnGrabHoverEntered?.Invoke($"[F] Grab {_hoveredGrabbable.GetName()}");
             Debug.Log("hover enter");
             _hoveredGrabbable.HoverEnter();
         }
@@ -131,7 +131,7 @@ public class PlayerGrabController : MonoBehaviour
         if (_heldGrabbable != null)
         {
             StopClipping();
-            OnObjectDropped?.Invoke();
+            OnDropped?.Invoke();
             _heldGrabbable.Dropped();
             _heldGrabbable = null;
             return;
@@ -142,10 +142,10 @@ public class PlayerGrabController : MonoBehaviour
         // Pick up item
         _heldGrabbable = _hoveredGrabbable;
         _hoveredGrabbable.HoverExit();
-        OnObjectHoverExited?.Invoke();
+        OnGrabHoverExited?.Invoke();
         _hoveredGrabbable = null;
         _heldGrabbable.Grabbed();
-        OnObjectGrabbed?.Invoke();
+        OnGrabbed?.Invoke("[F] Drop");
 
     }
 

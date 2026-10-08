@@ -7,6 +7,8 @@ public class CollectibleObject : MonoBehaviour, IInteractable
     [SerializeField] UnityEvent OnHoverEnter;
     [SerializeField] UnityEvent OnHoverExit;
 
+    [SerializeField] string interactText;
+
 
     public void InteractEnter()
     {
@@ -21,5 +23,10 @@ public class CollectibleObject : MonoBehaviour, IInteractable
     public void HoverEnter()
     {
         OnHoverEnter.Invoke();
+    }
+
+    public string GetInteractText()
+    {
+        return interactText;
     }
 }

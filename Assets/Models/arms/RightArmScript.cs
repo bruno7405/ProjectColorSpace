@@ -76,7 +76,6 @@ public class ArmsScript : MonoBehaviour
 
     void UpdateAnimation()
     {
-        Debug.Log(positionInAnimation);
         if(shouldRaiseArm)
         {
             positionInAnimation += ANIMATION_SPEED_UP;
