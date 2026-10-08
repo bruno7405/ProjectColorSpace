@@ -447,6 +447,7 @@ MonoBehaviour:
   doorTransform: {fileID: 25917017}
   doorSpeed: 10
   openTransform: {fileID: 1453596244}
+  doorOpenSFX: {fileID: 0}
 --- !u!1001 &29010623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1871,7 +1872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
-      value: 2
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 6216473540915898884, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: m_Name
@@ -2299,6 +2300,7 @@ MonoBehaviour:
   doorTransform: {fileID: 201833381}
   doorSpeed: 15
   openTransform: {fileID: 2005106449}
+  doorOpenSFX: {fileID: 0}
 --- !u!4 &201859109 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
@@ -4567,7 +4569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
-      value: 2
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 6216473540915898884, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: m_Name
@@ -8160,6 +8162,14 @@ PrefabInstance:
     - target: {fileID: 2354011135859911236, guid: 51dcd18f3a7566040a8e6f807d63ea8a, type: 3}
       propertyPath: m_Name
       value: Door (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145110366080400460, guid: 51dcd18f3a7566040a8e6f807d63ea8a, type: 3}
+      propertyPath: MaxDistance
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145110366080400460, guid: 51dcd18f3a7566040a8e6f807d63ea8a, type: 3}
+      propertyPath: rolloffMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4193733096425784128, guid: 51dcd18f3a7566040a8e6f807d63ea8a, type: 3}
       propertyPath: doorSpeed
@@ -12587,7 +12597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
-      value: 4
+      value: 124
       objectReference: {fileID: 0}
     - target: {fileID: 6216473540915898884, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: m_Name
@@ -13065,7 +13075,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
-      value: 4
+      value: 124
       objectReference: {fileID: 0}
     - target: {fileID: 6216473540915898884, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: m_Name
@@ -14530,7 +14540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
-      value: 16
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 6216473540915898884, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: m_Name
@@ -15558,6 +15568,7 @@ MonoBehaviour:
   doorTransform: {fileID: 385850611}
   doorSpeed: 10
   openTransform: {fileID: 507509163}
+  doorOpenSFX: {fileID: 0}
 --- !u!1001 &1091587891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18019,7 +18030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6216473540915898884, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: m_Name
@@ -18173,7 +18184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
-      value: 32
+      value: 96
       objectReference: {fileID: 0}
     - target: {fileID: 6216473540915898884, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: m_Name
@@ -20452,7 +20463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
-      value: 32
+      value: 96
       objectReference: {fileID: 0}
     - target: {fileID: 6216473540915898884, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: m_Name
@@ -21102,6 +21113,7 @@ MonoBehaviour:
   doorTransform: {fileID: 1344195886}
   doorSpeed: 10
   openTransform: {fileID: 615422999}
+  doorOpenSFX: {fileID: 0}
 --- !u!1001 &1353514242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23095,6 +23107,7 @@ MonoBehaviour:
   doorTransform: {fileID: 1464580109}
   doorSpeed: 15
   openTransform: {fileID: 83950558}
+  doorOpenSFX: {fileID: 0}
 --- !u!1001 &1464690659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24669,7 +24682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
-      value: 16
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 6216473540915898884, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: m_Name
@@ -24746,7 +24759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6216473540915898884, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: m_Name
@@ -27226,7 +27239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
-      value: 8
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 6216473540915898884, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: m_Name
@@ -30539,6 +30552,7 @@ MonoBehaviour:
   doorTransform: {fileID: 1504089834}
   doorSpeed: 10
   openTransform: {fileID: 2005930873}
+  doorOpenSFX: {fileID: 0}
 --- !u!1001 &1974493586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31849,7 +31863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
-      value: 8
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 6216473540915898884, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: m_Name

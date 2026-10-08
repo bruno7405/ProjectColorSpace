@@ -9,6 +9,9 @@ public class Door : MonoBehaviour
     [SerializeField] float doorSpeed = 10;
     [SerializeField] Transform openTransform;
 
+    AudioSource audioSource; //needs to be a 3D sound
+    [SerializeField] AudioClip doorOpenSFX;
+
     Vector3 closedPosition;
     Vector3 openPosition;
     private Vector3 target;
@@ -24,18 +27,24 @@ public class Door : MonoBehaviour
         closedPosition = doorTransform.position;
         openPosition = openTransform.position;
         target = closedPosition;
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void Open()
     {
         isOpen = true;
         target = openPosition;
+        audioSource.volume = GameSettings.SFXVolume;
+        audioSource.PlayOneShot(doorOpenSFX);
     }
 
     public void Close()
     {
         isOpen = false;
         target = closedPosition;
+        audioSource.volume = GameSettings.SFXVolume;
+        audioSource.PlayOneShot(doorOpenSFX);
     }
 
     public void FixedUpdate()
