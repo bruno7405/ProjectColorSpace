@@ -35,6 +35,12 @@ public class MenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
         _image.material = _buttonMat;
     }
 
+    void OnDisable()
+    {
+        _buttonText.text = _normalText;
+        _targetS = 0;
+    }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         _buttonText.text = _hoveredText;

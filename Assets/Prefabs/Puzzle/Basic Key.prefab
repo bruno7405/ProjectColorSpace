@@ -199,4 +199,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   HoverSpeed: 1
   HoverAmplitude: 0.25
-  RotationSpeeds: {x: 70, y: 45, z: 60}
+  RotationSpeeds: {x: 100, y: 50, z: 0}
