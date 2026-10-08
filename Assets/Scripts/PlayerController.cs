@@ -25,6 +25,9 @@ public class PlayerController : MonoBehaviour
     [Header("Audio")]
     public float footstepInterval = 0.45f; // Interval in seconds.
     public AudioClip[] footstepClips;
+    public AudioClip jumpAudio;
+    public AudioClip landAudio;
+    public AudioClip bounceAudio;
 
     void Start()
     {
@@ -85,6 +88,7 @@ public class PlayerController : MonoBehaviour
             grounded = false;
             BouncePad pad = currentGround.GetComponent<BouncePad>();
             verticalVelocity = pad.bouncePower;
+            AudioBus.Instance.PlaySFX(bounceAudio);
         }
 
         if (grounded && verticalVelocity < 0)
@@ -95,6 +99,7 @@ public class PlayerController : MonoBehaviour
         if (grounded && Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+            AudioBus.Instance.PlaySFX(jumpAudio);
         }
 
         if (!grounded)

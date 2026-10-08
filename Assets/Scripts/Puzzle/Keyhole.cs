@@ -11,6 +11,8 @@ public class Keyhole : MonoBehaviour
 
     private Key _currentKey;
 
+    public AudioClip keyedAudio;
+
     public bool HasKey => _currentKey != null;
 
     public bool TryAttachKey(Key key)
@@ -41,6 +43,7 @@ public class Keyhole : MonoBehaviour
         _currentKey = key;
         key.SetKeyhole(this);
         OnKeyEnter.Invoke();
+        AudioBus.Instance.PlaySFX(keyedAudio);
         return true;
     }
 

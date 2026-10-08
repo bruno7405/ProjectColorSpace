@@ -385,6 +385,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  keyedAudio: {fileID: 8300000, guid: 49d2a49bd9e5bf0088d3d94066d2e00a, type: 3}
 --- !u!65 &2152352656471421656
 BoxCollider:
   m_ObjectHideFlags: 0

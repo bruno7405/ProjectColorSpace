@@ -366,6 +366,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d198b9c91cdabd6f0970ef80a6225def, type: 3}
   - {fileID: 8300000, guid: ccf864eb06888d59c8bd6ed68e2677a3, type: 3}
   - {fileID: 8300000, guid: 582b5c0b577bf01e3ac286ab429798b3, type: 3}
+  jumpAudio: {fileID: 8300000, guid: 6c7d82769870ff21ab6a2751a7b75030, type: 3}
+  landAudio: {fileID: 8300000, guid: ac0bb8dd97c5840cd9fd5819a9ececbe, type: 3}
+  bounceAudio: {fileID: 0}
 --- !u!114 &5768588481943481414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,6 +385,7 @@ MonoBehaviour:
   interactLayer:
     serializedVersion: 2
     m_Bits: 64
+  pickupAudio: {fileID: 8300000, guid: 9ce334b6c4c0a69eb895aa65a57fd8bc, type: 3}
 --- !u!114 &3548575435394346337
 MonoBehaviour:
   m_ObjectHideFlags: 0

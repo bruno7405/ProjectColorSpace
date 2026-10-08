@@ -9,6 +9,8 @@ public class PlayerInteractor : MonoBehaviour
     private IInteractable currentInteractable;
     private Transform cam;
 
+    public AudioClip pickupAudio;
+
     private void Awake()
     {
         cam = Camera.main.transform;
@@ -47,6 +49,7 @@ public class PlayerInteractor : MonoBehaviour
     private void Interact()
     {
         currentInteractable?.InteractEnter();
+        AudioBus.Instance.PlaySFX(pickupAudio);
     }
 
     private void OnDrawGizmos()
