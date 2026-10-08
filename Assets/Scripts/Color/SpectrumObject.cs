@@ -27,7 +27,7 @@ public class SpectrumObject : MonoBehaviour
     private bool _cacheHasProperty;
 
     private float _fadeSpeed = 0.75f;
-    private float _heldMinVis = 0.7f;
+    private float _heldMinVis = 0.4f;
     private float _dialVisibility;
     private float _actualV;
     private bool _wasHeld;
@@ -148,7 +148,7 @@ public class SpectrumObject : MonoBehaviour
         if (newSolid == IsSolid) return;
 
         IsSolid = newSolid;
-        _coll.enabled = IsSolid;
+        if (_coll != null) _coll.enabled = IsSolid;
         RefreshKinematic();
         OnSolidChanged?.Invoke(IsSolid);
     }
