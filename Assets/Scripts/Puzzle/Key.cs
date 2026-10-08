@@ -39,6 +39,7 @@ public class Key : GrabbableObject
         if (keyhole != null)
         {
             keyhole.TryAttachKey(this);
+            gameObject.layer = 0; // DELETE THIS IF YOU WANT TO REMOVE KEYS FROM KEYHOLES
         }
     }
 
