@@ -9,6 +9,11 @@ public class SceneTransition : MonoBehaviour
     public RawImage Overlay;
     public float Duration = 1.5f;
 
+    void Awake()
+    {
+        Overlay.gameObject.SetActive(false);
+    }
+
     public void LoadScene(string scene)
     {
         StartCoroutine(Run(scene));
@@ -19,7 +24,11 @@ public class SceneTransition : MonoBehaviour
         Overlay.gameObject.SetActive(false);
         yield return new WaitForEndOfFrame();
 
-        Texture2D snapshot = ScreenCapture.CaptureScreenshotAsTexture();
+        var snapshot = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
+        snapshot.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
+        snapshot.Apply();
+        snapshot.wrapMode = TextureWrapMode.Clamp;
+        snapshot.filterMode = FilterMode.Bilinear;
 
         Mat.SetTexture("_Snapshot", snapshot);
         Mat.SetFloat("_Progress", 0f);

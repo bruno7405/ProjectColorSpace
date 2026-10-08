@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == LevelScene)
         {
             ChangeState(GameState.Playing);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 
