@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -5,6 +6,10 @@ public class PlayerInteractor : MonoBehaviour
 {
     [SerializeField] float interactDistance;
     [SerializeField] LayerMask interactLayer;
+
+    public static Action<string> OnInteractHoverEntered;
+    public static Action OnInteractHoverExited;
+    public static Action OnInteractEnter;
 
     private IInteractable currentInteractable;
     private Transform cam;
@@ -36,17 +41,21 @@ public class PlayerInteractor : MonoBehaviour
             currentInteractable?.HoverExit();
             currentInteractable = interactable;
             currentInteractable.HoverEnter();
+            OnInteractHoverEntered?.Invoke(currentInteractable.GetInteractText());
             return;
         }
 
+        if (currentInteractable == null) return;
         // Not hovering on any interactable
         currentInteractable?.HoverExit();
         currentInteractable = null;
+        OnInteractHoverExited?.Invoke();
     }
 
     private void Interact()
     {
         currentInteractable?.InteractEnter();
+        OnInteractEnter?.Invoke();
     }
 
     private void OnDrawGizmos()

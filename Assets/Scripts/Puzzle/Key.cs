@@ -16,6 +16,8 @@ public class Key : GrabbableObject
         base.Awake();
         _spectrumObject = GetComponent<SpectrumObject>();
         _collider = GetComponent<Collider>();
+
+        grabbableObjectName = _keyColor.ToString() + " Core";
     }
 
     private void Start()

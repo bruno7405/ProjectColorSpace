@@ -44,7 +44,7 @@ public class LeftArmScript: MonoBehaviour
         }
     }
 
-    void OnObjectGrabbed()
+    void OnObjectGrabbed(string str)
     {
         holdingObject = true;
     }
@@ -57,8 +57,8 @@ public class LeftArmScript: MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        PlayerGrabController.OnObjectGrabbed += OnObjectGrabbed;
-        PlayerGrabController.OnObjectDropped += OnObjectDropped;
+        PlayerGrabController.OnGrabbed += OnObjectGrabbed;
+        PlayerGrabController.OnDropped += OnObjectDropped;
         armAnimator.Play("HoldArmOutToGrab", 0, 0f);
     }
 

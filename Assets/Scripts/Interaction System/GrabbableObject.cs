@@ -8,6 +8,8 @@ public class GrabbableObject : MonoBehaviour
     [SerializeField] UnityEvent OnHoverEnter;
     [SerializeField] UnityEvent OnHoverExit;
 
+    protected string grabbableObjectName;
+
     private SpectrumObject _spectrumObject;
     private int _grabbableLayer;
     private int _heldLayer;
@@ -54,5 +56,10 @@ public class GrabbableObject : MonoBehaviour
     public bool IsGrabbed()
     {
         return _isGrabbed;
+    }
+
+    public string GetName()
+    {
+        return grabbableObjectName;
     }
 }
