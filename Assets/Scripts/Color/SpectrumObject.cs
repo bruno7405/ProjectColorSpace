@@ -34,6 +34,8 @@ public class SpectrumObject : MonoBehaviour
     private bool _dirty = true;
     private Color _color;
 
+    private bool _inheritedFromParent;
+
     public void Awake()
     {
         _renderer = GetComponent<MeshRenderer>();
@@ -44,8 +46,30 @@ public class SpectrumObject : MonoBehaviour
         _spectrum_material = _renderer.materials[0];
         _cacheHasProperty = _spectrum_material.HasProperty("_Object_Color");
 
+        InheritFromParent();
+
         // Subscribe only after references are assigned
         SpectrumManager.OnColorUpdate += HandleColorUpdate;
+    }
+
+    public void InheritFromParent()
+    {
+        if (_inheritedFromParent) return;
+        _inheritedFromParent = true;
+
+        if (transform.parent == null) return;
+
+        SpectrumObject parent = transform.parent.GetComponent<SpectrumObject>();
+        if (parent == null) return;
+
+        // Make sure the parent has resolved its own inheritance first,
+        // so nested chains (grandparent -> parent -> child) work in any Awake order.
+        parent.InheritFromParent();
+
+        _spectrumColor = parent._spectrumColor;
+        StrictCollision = parent.StrictCollision;
+        _fadeSpeed = parent._fadeSpeed;
+        _heldMinVis = parent._heldMinVis;
     }
 
     public void Start()
