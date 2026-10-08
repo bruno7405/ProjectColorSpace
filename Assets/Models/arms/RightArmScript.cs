@@ -8,8 +8,8 @@ public class ArmsScript : MonoBehaviour
     [SerializeField] private GameObject[] watchLockedColorBlockers = new GameObject[7];
 
     [SerializeField] private Animator armAnimator;
-    [SerializeField] private readonly float ANIMATION_SPEED_UP = 0.020f;
-    [SerializeField] private readonly float ANIMATION_SPEED_DOWN = 0.005f;
+    [SerializeField] private readonly float ANIMATION_SPEED_UP = 0.080f; // quadrupled in develop branch
+    [SerializeField] private readonly float ANIMATION_SPEED_DOWN = 0.020f; // quadrupled in develop branch
     [SerializeField] private readonly float TIMEOUT_SECONDS = 1.200f; // delta time is in seconds :(
     [SerializeField] private readonly float TIMEOUT_WHILE_MOVING_SECONDS = 0.800f;
 

@@ -4,8 +4,8 @@ public class LeftArmScript: MonoBehaviour
 { 
     // couldve made one script to reuse between arms but eh dont feel like it
     [SerializeField] private Animator armAnimator;
-    [SerializeField] private readonly float ANIMATION_SPEED_UP = 0.020f;
-    [SerializeField] private readonly float ANIMATION_SPEED_DOWN = 0.005f;
+    [SerializeField] private readonly float ANIMATION_SPEED_UP = 0.080f; // quadrupled in develop branch
+    [SerializeField] private readonly float ANIMATION_SPEED_DOWN = 0.020f; // quadrupled in develop branch
     [SerializeField] private readonly float TIMEOUT_SECONDS = 0.400f;
     float positionInAnimation = 0f;
     float currTimeout = 0;
