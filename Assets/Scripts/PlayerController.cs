@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public float JumpHeight = 0f;
     public float CrouchScale = 0.5f;
     public float CoyoteTime = 0.15f;
+    public float JumpBufferTime = 0.1f;
+    private float _jumpBufferTimer;
     
     private float _coyoteTimer;
 
@@ -89,6 +91,9 @@ public class PlayerController : MonoBehaviour
         if (grounded) _coyoteTimer = CoyoteTime;
         else _coyoteTimer -= Time.deltaTime;
 
+        if (Keyboard.current.spaceKey.wasPressedThisFrame) _jumpBufferTimer = JumpBufferTime;
+        else _jumpBufferTimer -= Time.deltaTime;
+
         if (grounded && currentGround != null && currentGround.GetComponent<BouncePad>() != null)
         {
             grounded = false;
@@ -103,10 +108,11 @@ public class PlayerController : MonoBehaviour
             verticalVelocity = -2f;
         }
 
-        if (_coyoteTimer > 0f && Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (_jumpBufferTimer > 0f && _coyoteTimer > 0f)
         {
             verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
             AudioBus.Instance.PlaySFX(jumpAudio);
+            _jumpBufferTimer = 0f; 
             _coyoteTimer = 0f;
         }
 
