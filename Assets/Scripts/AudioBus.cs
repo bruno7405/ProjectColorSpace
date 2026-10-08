@@ -46,10 +46,16 @@ public class AudioBus : MonoBehaviour
         //SetupAudioSources();
     }
 
+    float dialogueMult = 1f;
+
     void Update()
     {
+        float dialogueMultTarg = DialogueSystem.Instance.IsPlaying ? 0.25f : 1f;
+        float rate = DialogueSystem.Instance.IsPlaying ? 6f : 2f;
+        dialogueMult = Mathf.Lerp(dialogueMult, dialogueMultTarg, rate * Time.deltaTime);
+
         _sfxSource.volume = GameSettings.SFXVolume;
-        _musicSource.volume = GameSettings.MusicVolume;
+        _musicSource.volume = GameSettings.MusicVolume * dialogueMult;
 
         LayerScroll(_lastHue);
     }
@@ -210,7 +216,7 @@ public class AudioBus : MonoBehaviour
         for (int i = 0; i < numLayers; i++)
             _musicSourceLayers[i].volume = 0f;
 
-        _musicSourceLayers[lower].volume = (1f - t) * GameSettings.MusicVolume;
-        _musicSourceLayers[upper].volume = t * GameSettings.MusicVolume;
+        _musicSourceLayers[lower].volume = (1f - t) * GameSettings.MusicVolume * dialogueMult;
+        _musicSourceLayers[upper].volume = t * GameSettings.MusicVolume * dialogueMult;
     }
 }
