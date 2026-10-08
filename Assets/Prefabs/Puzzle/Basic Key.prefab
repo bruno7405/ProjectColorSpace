@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5352897242307936641}
   - component: {fileID: 3654147540507175706}
   - component: {fileID: 6663140599282670549}
-  - component: {fileID: 2986308183152075412}
+  - component: {fileID: 184992824643026758}
   m_Layer: 7
   m_Name: Basic Key
   m_TagString: Untagged
@@ -185,7 +185,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2986308183152075412
+--- !u!114 &184992824643026758
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,9 +194,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8780840710218172948}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84e2daaf0b2c7514dbe1032eccb7f3ba, type: 3}
+  m_Script: {fileID: 11500000, guid: a9348cd0176f4f747b53aee44aacb254, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PrismRotator
+  m_EditorClassIdentifier: '::'
   HoverSpeed: 1
   HoverAmplitude: 0.25
-  TurnInterval: 3
+  RotationSpeeds: {x: 70, y: 45, z: 60}

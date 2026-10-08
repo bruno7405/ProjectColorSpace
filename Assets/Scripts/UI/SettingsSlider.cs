@@ -7,7 +7,7 @@ public class SettingsSlider : MonoBehaviour
     public Slider MySlider;
     public TMP_Text ValueText;
 
-    public enum SliderType { MouseSense, Music, SFX }
+    public enum SliderType { MouseSense, Saturation, Music, SFX }
 
     [SerializeField] private SliderType _sliderType;
 
@@ -22,6 +22,9 @@ public class SettingsSlider : MonoBehaviour
         {
             case SliderType.MouseSense:
                 MySlider.SetValueWithoutNotify(GameSettings.MouseSensitivity);
+                break;
+            case SliderType.Saturation:
+                MySlider.SetValueWithoutNotify(GameSettings.Saturation);
                 break;
             case SliderType.Music:
                 MySlider.SetValueWithoutNotify(GameSettings.MusicVolume);
@@ -40,6 +43,9 @@ public class SettingsSlider : MonoBehaviour
         {
             case SliderType.MouseSense:
                 GameSettings.MouseSensitivity = value;
+                break;
+            case SliderType.Saturation:
+                GameSettings.Saturation = value;
                 break;
             case SliderType.Music:
                 GameSettings.MusicVolume = value;
