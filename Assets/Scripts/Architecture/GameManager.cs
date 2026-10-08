@@ -79,13 +79,13 @@ public class GameManager : MonoBehaviour
 
     public void ChangeScene(string scene)
     {
-        if (Transitioner != null)
+        if (Transitioner != null && Transitioner.isActiveAndEnabled)
         {
-            Transitioner.LoadScene(LevelScene);
+            Transitioner.LoadScene(scene);
         } 
         else
         {
-            SceneManager.LoadScene(LevelScene);
+            SceneManager.LoadScene(scene);
         }
     }
 
