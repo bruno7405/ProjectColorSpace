@@ -127,15 +127,32 @@ public static class SpectrumColorExtensions
 {
     public static Color ToColor(this SpectrumColor color)
     {
-        if (color.HasFlag(SpectrumColor.Red))       return SpectrumManager.Instance.RED;
-        if (color.HasFlag(SpectrumColor.Orange))    return SpectrumManager.Instance.ORANGE;
-        if (color.HasFlag(SpectrumColor.Yellow))    return SpectrumManager.Instance.YELLOW;
-        if (color.HasFlag(SpectrumColor.Green))     return SpectrumManager.Instance.GREEN;
-        if (color.HasFlag(SpectrumColor.Blue))      return SpectrumManager.Instance.BLUE;
-        if (color.HasFlag(SpectrumColor.Indigo))    return SpectrumManager.Instance.INDIGO;
-        if (color.HasFlag(SpectrumColor.Violet))    return SpectrumManager.Instance.VIOLET;
-        
+        SpectrumManager m = GetManager();
+        if (m == null) return Color.magenta; // no manager available: obvious "missing" color
+
+        if (color.HasFlag(SpectrumColor.Red)) return m.RED;
+        if (color.HasFlag(SpectrumColor.Orange)) return m.ORANGE;
+        if (color.HasFlag(SpectrumColor.Yellow)) return m.YELLOW;
+        if (color.HasFlag(SpectrumColor.Green)) return m.GREEN;
+        if (color.HasFlag(SpectrumColor.Blue)) return m.BLUE;
+        if (color.HasFlag(SpectrumColor.Indigo)) return m.INDIGO;
+        if (color.HasFlag(SpectrumColor.Violet)) return m.VIOLET;
+
         return Color.black;
+    }
+
+    private static SpectrumManager GetManager()
+    {
+        if (SpectrumManager.Instance != null) return SpectrumManager.Instance;
+
+#if UNITY_EDITOR
+        // Edit mode: Instance isn't assigned yet, so look the manager up in the scene
+        if (!Application.isPlaying)
+        {
+            return UnityEngine.Object.FindFirstObjectByType<SpectrumManager>();
+        }  
+#endif
+        return null;
     }
 
     public static float ToValue(this SpectrumColor color)
