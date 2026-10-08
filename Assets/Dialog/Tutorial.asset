@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 276c41f0449f5d248b676991829b29df, type: 3}
+  m_Name: Tutorial
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  dialogLines:
+  - dialogLine: Is that a small stellated dodecahedron?! What does that do?
+    dialogAudio: {fileID: 8300000, guid: 8524c3309f44e9b45a97752a36936387, type: 3}
+    clipLength: 0
+  - dialogLine: That's a color core. you need to bring it to the matching color conduit
+      to unlock the mechanisms.
+    dialogAudio: {fileID: 8300000, guid: ce34a9fce9709b34e83ca7632c0a71c4, type: 3}
+    clipLength: 0
