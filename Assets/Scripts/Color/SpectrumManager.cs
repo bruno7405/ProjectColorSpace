@@ -53,8 +53,8 @@ public class SpectrumManager : MonoBehaviour
 
     public void UnlockNextColor()
     {
-        ObtainedCount = Mathf.Min(ObtainedCount + 1, ColorUtilities.BANDCOUNT);
         OnColorUnlocked?.Invoke(ObtainedCount);
+        ObtainedCount = Mathf.Min(ObtainedCount + 1, ColorUtilities.BANDCOUNT);
     }
 
     public void Update()

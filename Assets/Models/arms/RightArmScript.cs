@@ -36,7 +36,7 @@ public class ArmsScript : MonoBehaviour
         float rotation = 360 - (shiftedHue * 360f); // WHY DO IT GO BACKWARDS
         watchBone.localRotation = initialWatchBoneRotation * Quaternion.Euler(0f, rotation, 0f);
 
-        
+        if(!shouldRaiseArm) { Debug.Log("set raisearm to true"); }
         shouldRaiseArm = true;
         if (isMoving) { currTimeout = TIMEOUT_WHILE_MOVING_SECONDS; } else { currTimeout = TIMEOUT_SECONDS; };
     }
@@ -76,7 +76,7 @@ public class ArmsScript : MonoBehaviour
 
     void UpdateAnimation()
     {
-        
+        Debug.Log(positionInAnimation);
         if(shouldRaiseArm)
         {
             positionInAnimation += ANIMATION_SPEED_UP;
@@ -95,6 +95,10 @@ public class ArmsScript : MonoBehaviour
      * - using Play instead of Update seems to work
      * - but raising the arm is really inconsistent, whereas lowering it works perfectly
      * - removing the has-changed check fixed this. now pausing seems to always raise the arm. weird but not high priority
+     * 
+     * - since splitting arms & adding to player prefab, right arm raising has become inconsistent
+     * - removing moving requirement to lower has not fixed it (idk why it would)
+     * - 
      */
 
     void UpdateAnimationState()
@@ -106,14 +110,15 @@ public class ArmsScript : MonoBehaviour
             Keyboard.current.spaceKey.isPressed )
         {
             isMoving = true;
-            if(currTimeout <= 0)
-            {
-                shouldRaiseArm = false;
-            }
         }
         else
         {
             isMoving = false;
+        }
+
+        if (currTimeout <= 0)
+        {
+            shouldRaiseArm = false;
         }
     }
 
