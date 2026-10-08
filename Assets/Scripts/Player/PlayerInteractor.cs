@@ -43,7 +43,7 @@ public class PlayerInteractor : MonoBehaviour
             currentInteractable?.HoverExit();
             currentInteractable = interactable;
             currentInteractable.HoverEnter();
-            OnInteractHoverEntered?.Invoke(currentInteractable.GetInteractText());
+            OnInteractHoverEntered?.Invoke("[F] " + currentInteractable.GetInteractText());
             return;
         }
 
@@ -56,6 +56,7 @@ public class PlayerInteractor : MonoBehaviour
 
     private void Interact()
     {
+        if (currentInteractable == null) return;
         currentInteractable?.InteractEnter();
         AudioBus.Instance.PlaySFX(pickupAudio);
         OnInteractEnter?.Invoke();

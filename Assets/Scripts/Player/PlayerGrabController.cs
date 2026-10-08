@@ -18,6 +18,9 @@ public class PlayerGrabController : MonoBehaviour
     [SerializeField] float _dropPadding = 0.3f; // roughly half the object's size
     [SerializeField] float _minHoldDistance = 0.6f;
 
+    [Header("Audio")]
+    [SerializeField] AudioClip pickupSFX;
+
 
     public static Action<string> OnGrabHoverEntered;
     public static Action OnGrabHoverExited;
@@ -146,7 +149,7 @@ public class PlayerGrabController : MonoBehaviour
         _hoveredGrabbable = null;
         _heldGrabbable.Grabbed();
         OnGrabbed?.Invoke("[F] Drop");
-
+        AudioBus.Instance.PlaySFX(pickupSFX);
     }
 
     /// <summary>
