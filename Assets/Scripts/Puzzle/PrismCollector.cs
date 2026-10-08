@@ -7,6 +7,8 @@ public class PrismCollector : MonoBehaviour
     [SerializeField] ParticleSystem _auraParticles;
     [SerializeField] ParticleSystem _burstParticles;
 
+    public AudioClip prismBreak;
+
     private Material colorMaterial;
 
     private void Awake()
@@ -29,6 +31,8 @@ public class PrismCollector : MonoBehaviour
         particle.GetComponent<ParticleSystemRenderer>().material = colorMaterial;
 
         SpectrumManager.Instance.UnlockNextColor();
+
+        AudioBus.Instance.PlaySFX(prismBreak);
 
         Destroy(gameObject);
     }

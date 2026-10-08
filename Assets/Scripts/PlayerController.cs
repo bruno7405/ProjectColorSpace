@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
@@ -19,6 +21,10 @@ public class PlayerController : MonoBehaviour
     float x, y;
     float camX, camY;
     float verticalVelocity;
+
+    [Header("Audio")]
+    public float footstepInterval = 0.45f; // Interval in seconds.
+    public AudioClip[] footstepClips;
 
     void Start()
     {
@@ -56,6 +62,16 @@ public class PlayerController : MonoBehaviour
         CameraAnchor.localRotation = Quaternion.Euler(camX, 0, 0);
         transform.rotation = Quaternion.Euler(0, camY, 0);
     }
+
+    private Coroutine steppingCoroutine = null;
+
+    IEnumerator WaitForStep() {
+        AudioBus.Instance.PlayRandomSFX(footstepClips);
+        yield return new WaitForSeconds(footstepInterval);
+        steppingCoroutine = null;
+    }
+
+    
 
     private void HandleMovement()
     {
@@ -96,9 +112,15 @@ public class PlayerController : MonoBehaviour
 
         velocity = move * Speed;
         velocity.y = verticalVelocity;
+        
+        if (grounded && steppingCoroutine == null && (Math.Abs(velocity.x) > 0.0f || Math.Abs(velocity.z) > 0.0f)) {
+            steppingCoroutine = StartCoroutine(WaitForStep());
+        }
 
         m_CharacterController.Move(velocity * Time.deltaTime);
+
     }
+ 
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {

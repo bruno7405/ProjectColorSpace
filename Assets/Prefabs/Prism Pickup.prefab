@@ -5025,3 +5025,4 @@ MonoBehaviour:
   prismColor: 0
   _auraParticles: {fileID: 8241169273293199270}
   _burstParticles: {fileID: 1784420634115022703, guid: fd896c5b293d5094586fe369d9ab760c, type: 3}
+  prismBreak: {fileID: 8300000, guid: abfafcb2bfb22b990813ac343342f3e8, type: 3}

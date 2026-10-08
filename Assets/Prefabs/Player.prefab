@@ -361,6 +361,11 @@ MonoBehaviour:
   Gravity: -20
   JumpHeight: 1.5
   CrouchScale: 0.5
+  footstepInterval: 0.25
+  footstepClips:
+  - {fileID: 8300000, guid: d198b9c91cdabd6f0970ef80a6225def, type: 3}
+  - {fileID: 8300000, guid: ccf864eb06888d59c8bd6ed68e2677a3, type: 3}
+  - {fileID: 8300000, guid: 582b5c0b577bf01e3ac286ab429798b3, type: 3}
 --- !u!114 &5768588481943481414
 MonoBehaviour:
   m_ObjectHideFlags: 0
