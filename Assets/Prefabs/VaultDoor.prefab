@@ -33,6 +33,7 @@ Transform:
   m_Children:
   - {fileID: 1231642692538047298}
   - {fileID: 7100800080140115746}
+  - {fileID: 3875943051842898043}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &8763841679379414708
@@ -69,9 +70,96 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6c9fc8852e543c4b8e7389a03ea8833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VaultDoorAnimation
-  animator: {fileID: 8763841679379414708}
-  initialCollider: {fileID: 0}
+  animator: {fileID: 2804339379593814059}
+  handleInteractBox: {fileID: 6498347518310763746}
+  initialCollider: {fileID: 2824873881640461165}
   finalCollider: {fileID: 3013822864836595329}
+--- !u!1 &6498347518310763746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3875943051842898043}
+  - component: {fileID: 3069924233882916158}
+  - component: {fileID: 2359514105235525919}
+  - component: {fileID: 6635920737963342896}
+  m_Layer: 0
+  m_Name: InteractCube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3875943051842898043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6498347518310763746}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.04, y: 0.128, z: 0.3326018}
+  m_LocalScale: {x: 1, y: 1, z: 0.6147964}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7789819666847052078}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3069924233882916158
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6498347518310763746}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &2359514105235525919
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6498347518310763746}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6635920737963342896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6498347518310763746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 332bfb36433b65742b665f08840611a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VaultDoorInteract
+  OnInteractEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverExit:
+    m_PersistentCalls:
+      m_Calls: []
+  anim: {fileID: 3238251585640307801}
+  interactText: Press F to open
 --- !u!1001 &1629482819305798825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -254,7 +342,40 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 856eaacc76b145748ad330040f30e271, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2804339379593814059}
+    - targetCorrespondingSourceObject: {fileID: -8068073526183931155, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2824873881640461165}
+    - targetCorrespondingSourceObject: {fileID: -3111565609762313623, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7943869359221839314}
   m_SourcePrefab: {fileID: 100100000, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+--- !u!1 &3589609559387787936 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3111565609762313623, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+  m_PrefabInstance: {fileID: 7278280374930405577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7943869359221839314
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3589609559387787936}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6360558719573625917, guid: 856eaacc76b145748ad330040f30e271, type: 3}
 --- !u!4 &7100800080140115746 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 856eaacc76b145748ad330040f30e271, type: 3}
@@ -287,3 +408,30 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &8433505628424415780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8068073526183931155, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+  m_PrefabInstance: {fileID: 7278280374930405577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2824873881640461165
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8433505628424415780}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
