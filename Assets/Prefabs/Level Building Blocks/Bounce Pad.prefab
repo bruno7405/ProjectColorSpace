@@ -231,6 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   visualEffect: {fileID: 328802245930865151}
+  spectrumObject: {fileID: 7557376776178237809}
 --- !u!1001 &205181163967677366
 PrefabInstance:
   m_ObjectHideFlags: 0
