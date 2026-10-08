@@ -37,6 +37,8 @@ public class SpectrumObject : MonoBehaviour
 
     private bool _inheritedFromParent;
 
+    public SpectrumColor GetSpectrumColor() { return _spectrumColor; }
+
     public void Awake()
     {
         _renderer = GetComponent<MeshRenderer>();

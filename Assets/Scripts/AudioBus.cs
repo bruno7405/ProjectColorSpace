@@ -36,14 +36,22 @@ public class AudioBus : MonoBehaviour
     }
 
     // Audio source references
-    private AudioSource musicSource;
-    private List<AudioSource> musicSourceLayers = new List<AudioSource>();
-    private AudioSource sfxSource;
+    private AudioSource _musicSource;
+    private List<AudioSource> _musicSourceLayers = new List<AudioSource>();
+    private AudioSource _sfxSource;
 
     void Start()
     {
         // Create and configure audio sources
         //SetupAudioSources();
+    }
+
+    void Update()
+    {
+        _sfxSource.volume = GameSettings.SFXVolume;
+        _musicSource.volume = GameSettings.MusicVolume;
+
+        LayerScroll(_lastHue);
     }
 
     public void SubscribeToLayerScroll()
@@ -57,16 +65,16 @@ public class AudioBus : MonoBehaviour
         // Create two audio sources - one for music, one for SFX
 
         // Music audio source
-        musicSource = gameObject.AddComponent<AudioSource>();
-        musicSource.loop = true;        // Music usually loops
-        musicSource.volume = defaultMusicVolume;      // Lower volume for background music
-        musicSource.priority = 0;       // Highest priority
+        _musicSource = gameObject.AddComponent<AudioSource>();
+        _musicSource.loop = true;        // Music usually loops
+        _musicSource.volume = defaultMusicVolume;      // Lower volume for background music
+        _musicSource.priority = 0;       // Highest priority
 
         // SFX audio source
-        sfxSource = gameObject.AddComponent<AudioSource>();
-        sfxSource.loop = false;         // Sound effects don't usually loop
-        sfxSource.volume = defaultSFXVolume;        // Full volume for sound effects
-        sfxSource.priority = 128;       // Normal priority
+        _sfxSource = gameObject.AddComponent<AudioSource>();
+        _sfxSource.loop = false;         // Sound effects don't usually loop
+        _sfxSource.volume = defaultSFXVolume;        // Full volume for sound effects
+        _sfxSource.priority = 128;       // Normal priority
     }
 
     // Play a music track
@@ -75,14 +83,14 @@ public class AudioBus : MonoBehaviour
         if (clip == null) return;
 
         // Stop any currently playing music
-        musicSource.Stop();
+        _musicSource.Stop();
 
         // Set the new music clip
-        musicSource.clip = clip;
-        musicSource.loop = loop;
+        _musicSource.clip = clip;
+        _musicSource.loop = loop;
 
         // Start playing
-        musicSource.Play();
+        _musicSource.Play();
     }
 
     public AudioSource PlaySFX(AudioClip clip, float volume = 1.0f, bool pitchRandomization = true, bool persistAcrossScenes = true)
@@ -120,31 +128,31 @@ public class AudioBus : MonoBehaviour
     {
         if (clip == null) return;
 
-        sfxSource.PlayOneShot(clip, volume);
+        _sfxSource.PlayOneShot(clip, volume);
     }
 
     // Control music volume
     public void SetMusicVolume(float volume = defaultMusicVolume)
     {
-        musicSource.volume = Mathf.Clamp01(volume);
+        _musicSource.volume = Mathf.Clamp01(volume);
     }
 
     // Control SFX volume
     public void SetSFXVolume(float volume)
     {
-        sfxSource.volume = Mathf.Clamp01(volume);
+        _sfxSource.volume = Mathf.Clamp01(volume);
     }
 
     // Fade music in
     public void FadeMusicIn(float duration = 1.0f)
     {
-        StartCoroutine(FadeMusicVolume(0, musicSource.volume, duration));
+        StartCoroutine(FadeMusicVolume(0, _musicSource.volume, duration));
     }
 
     // Fade music out
     public void FadeMusicOut(float duration = 1.0f)
     {
-        StartCoroutine(FadeMusicVolume(musicSource.volume, 0, duration));
+        StartCoroutine(FadeMusicVolume(_musicSource.volume, 0, duration));
     }
 
     // Coroutine to fade music volume
@@ -153,17 +161,17 @@ public class AudioBus : MonoBehaviour
         float startTime = Time.time;
         float elapsedTime = 0;
 
-        musicSource.volume = startVolume;
+        _musicSource.volume = startVolume;
 
         while (elapsedTime < duration)
         {
             elapsedTime = Time.time - startTime;
             float normalizedTime = elapsedTime / duration;
-            musicSource.volume = Mathf.Lerp(startVolume, targetVolume, normalizedTime);
+            _musicSource.volume = Mathf.Lerp(startVolume, targetVolume, normalizedTime);
             yield return null;
         }
 
-        musicSource.volume = targetVolume;
+        _musicSource.volume = targetVolume;
     }
 
     ///
@@ -179,13 +187,16 @@ public class AudioBus : MonoBehaviour
         layerSource.loop = true;        // Music usually loops
         layerSource.volume = 0.0f;
         layerSource.priority = 1;
-        musicSourceLayers.Add(layerSource);
+        _musicSourceLayers.Add(layerSource);
         layerSource.Play();
     }
 
+    private float _lastHue;
+
     public void LayerScroll(float _hueValue)
     {
-        int numLayers = musicSourceLayers.Count;
+        _lastHue = _hueValue;
+        int numLayers = _musicSourceLayers.Count;
         if (numLayers == 0) return;
 
         float scaledHue = _hueValue * numLayers - 0.5f;
@@ -197,9 +208,9 @@ public class AudioBus : MonoBehaviour
         int upper = (lower + 1) % numLayers;
 
         for (int i = 0; i < numLayers; i++)
-            musicSourceLayers[i].volume = 0f;
+            _musicSourceLayers[i].volume = 0f;
 
-        musicSourceLayers[lower].volume = 1f - t;
-        musicSourceLayers[upper].volume = t;
+        _musicSourceLayers[lower].volume = (1f - t) * GameSettings.MusicVolume;
+        _musicSourceLayers[upper].volume = t * GameSettings.MusicVolume;
     }
 }
