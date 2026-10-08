@@ -41,6 +41,7 @@ public class ArmsScript : MonoBehaviour
         if (isMoving) { currTimeout = TIMEOUT_WHILE_MOVING_SECONDS; } else { currTimeout = TIMEOUT_SECONDS; };
     }
 
+    // TODO test this
     public void OnColorUnlocked(int index)
     {
         Debug.Log("unlocked " + index);
@@ -86,14 +87,6 @@ public class ArmsScript : MonoBehaviour
         positionInAnimation = Mathf.Clamp01(positionInAnimation);
 
         armAnimator.Play("ArmUp", 0, positionInAnimation);
-
-        /*if(shouldRaiseArm)
-        {
-            armAnimator.Play("ArmUp", 0, Mathf.Clamp01(ANIMATION_SPEED));
-        }else
-        {
-            armAnimator.Play("ArmUp", 0, Mathf.Clamp01(-ANIMATION_SPEED));
-        }*/
     }
 
     /* TROUBLESHOOTING
