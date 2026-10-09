@@ -9,6 +9,7 @@ public class SceneTransition : MonoBehaviour
     public RawImage Overlay;
     public RawImage Void;
     public float Duration = 1.5f;
+    public AudioClip transitionClip;
 
     void Awake()
     {
@@ -18,6 +19,7 @@ public class SceneTransition : MonoBehaviour
 
     public void LoadScene(string scene)
     {
+        AudioBus.Instance.PlaySFX(transitionClip);
         StartCoroutine(Run(scene));
     }
 

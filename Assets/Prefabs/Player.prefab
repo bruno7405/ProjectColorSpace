@@ -361,6 +361,8 @@ MonoBehaviour:
   Gravity: -20
   JumpHeight: 1.5
   CrouchScale: 0.5
+  CoyoteTime: 0.15
+  JumpBufferTime: 0.1
   footstepInterval: 0.25
   footstepClips:
   - {fileID: 8300000, guid: d198b9c91cdabd6f0970ef80a6225def, type: 3}
@@ -368,7 +370,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 582b5c0b577bf01e3ac286ab429798b3, type: 3}
   jumpAudio: {fileID: 8300000, guid: 6c7d82769870ff21ab6a2751a7b75030, type: 3}
   landAudio: {fileID: 8300000, guid: ac0bb8dd97c5840cd9fd5819a9ececbe, type: 3}
-  bounceAudio: {fileID: 0}
+  bounceAudio: {fileID: 8300000, guid: 23a5a1a01901c8393906af8035a0530b, type: 3}
 --- !u!114 &5768588481943481414
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -99,12 +99,18 @@ public class AudioBus : MonoBehaviour
         _musicSource.Play();
     }
 
-    public AudioSource PlaySFX(AudioClip clip, float volume = 1.0f, bool pitchRandomization = true, bool persistAcrossScenes = true)
+    public AudioSource PlaySFX(
+        AudioClip clip,
+        float volume = 1.0f,
+        bool pitchRandomization = true,
+        bool persistAcrossScenes = true,
+        Transform positionSource = null)
     {
         if (clip == null) return null;
 
         GameObject soundSource = new GameObject($"SFX_{clip.name}");
-        soundSource.transform.position = transform.position;
+        soundSource.transform.position =
+            positionSource != null ? positionSource.position : transform.position;
 
         if (persistAcrossScenes)
             soundSource.transform.SetParent(transform);
@@ -123,10 +129,12 @@ public class AudioBus : MonoBehaviour
         return source;
     }
 
-    public AudioSource PlayRandomSFX(AudioClip[] clips, bool persistAcrossScenes = true)
+    
+
+    public AudioSource PlayRandomSFX(AudioClip[] clips, float volume = 1.0f, bool persistAcrossScenes = true)
     {
         if (clips == null || clips.Length == 0) return null;
-        return PlaySFX(clips[Random.Range(0, clips.Length)], 1.0f, true, persistAcrossScenes);
+        return PlaySFX(clips[Random.Range(0, clips.Length)], volume, true, persistAcrossScenes);
     }
 
     // Plays through the bus's own sfxSource, so it always persists.
