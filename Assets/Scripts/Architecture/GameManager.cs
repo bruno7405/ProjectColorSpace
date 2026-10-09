@@ -109,7 +109,7 @@ public class GameManager : MonoBehaviour
         StartCoroutine(WinTheGame());
     }
 
-    private float hueChangeTime = 10f;
+    private float hueChangeTime = 5f;
     private float hueTimer;
 
     IEnumerator WinTheGame()
@@ -122,7 +122,7 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(5f);
 
         QuitGame();
     }

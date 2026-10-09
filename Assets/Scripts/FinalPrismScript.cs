@@ -86,6 +86,8 @@ public class FinalPrismScript : MonoBehaviour
         {
             Debug.Log("Final prism countdown ended!");
             // create vfx
+
+            GameManager.Instance.WingDingTheGame();
             
             startCountdown=false;
         }
