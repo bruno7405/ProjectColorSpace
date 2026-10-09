@@ -10,6 +10,7 @@ public class VaultDoorAnimation: MonoBehaviour
     [SerializeField] GameObject handleInteractBox;
     [SerializeField] MeshCollider initialCollider;
     [SerializeField] MeshCollider finalCollider;
+    [SerializeField] DialoguePlayer dialoguePlayer;
     bool opened = false;
     bool shouldOpenSoon = false;
 
@@ -23,6 +24,7 @@ public class VaultDoorAnimation: MonoBehaviour
 
     void OpenDoor()
     {
+        dialoguePlayer.PlayDialog();
         // Debug.Log("opendoor called");
         animator.Play("Open", 0, 0);
         finalCollider.enabled = true;
