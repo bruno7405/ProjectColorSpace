@@ -2587,6 +2587,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87452e6e7a4d44e4f8276ac6c64b1a10, type: 3}
+--- !u!1 &2428923109288375909 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3085435631061297514, guid: 87452e6e7a4d44e4f8276ac6c64b1a10, type: 3}
+  m_PrefabInstance: {fileID: 821044816185073423}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7181196957041249299 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7551502470253138716, guid: 87452e6e7a4d44e4f8276ac6c64b1a10, type: 3}
@@ -2845,16 +2850,28 @@ PrefabInstance:
       value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.3452325
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0179527
+      value: 1.88
       objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.6282196
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2890,7 +2907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -2936,7 +2953,8 @@ PrefabInstance:
     - {fileID: 8910546813690547235, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
     - {fileID: 4425891820536695859, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
     - {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4807877184144886540, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9066366376613723266, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
@@ -2960,6 +2978,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dc95c78847afdd4d9b93fa851ba6bec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  prismGameObject: {fileID: 2428923109288375909}
+  destroyVFX: {fileID: 0}
+  dialoguePlayer: {fileID: 0}
+  countdownToDestroy: 5
 --- !u!4 &2154917169370761128 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
