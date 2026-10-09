@@ -13,7 +13,7 @@ public class LeftArmScript: MonoBehaviour
 
     void UpdateAnimation()
     {
-        Debug.Log(positionInAnimation);
+        //Debug.Log(positionInAnimation);
         if (shouldRaiseArm)
         {
             positionInAnimation += ANIMATION_SPEED_UP;

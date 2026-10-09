@@ -42,6 +42,7 @@ public class SpectrumObject : MonoBehaviour
     public void Awake()
     {
         _renderer = GetComponent<MeshRenderer>();
+        if (_renderer == null) return;
         _renderer.SetPropertyBlock(null);
         _coll = GetComponent<Collider>();
         _rb = GetComponent<Rigidbody>();
@@ -79,6 +80,8 @@ public class SpectrumObject : MonoBehaviour
 
     public void Start()
     {
+        if (_renderer == null) return;
+        
         UpdateDial(SpectrumManager.Instance.HueValue);
         _actualV = GetTarget();
         _wasHeld = IsHeld();
@@ -137,6 +140,8 @@ public class SpectrumObject : MonoBehaviour
 
     private void ApplyVisuals()
     {
+        if (_renderer == null) return;
+
         _spectrum_material.SetFloat("_Ghost_Progress", 1 - _actualV);
 
         if (_cacheHasColorProperty) _spectrum_material.SetColor("_Object_Color", _color);
