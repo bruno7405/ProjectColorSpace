@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 
 [DefaultExecutionOrder(200)]
-public class Door : MonoBehaviour
+public class Door : MonoBehaviour, IMovingSurface
 {
     public GameObject doorModel;
 
