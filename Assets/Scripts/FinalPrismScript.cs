@@ -22,6 +22,8 @@ public class FinalPrismScript : MonoBehaviour
     public void StartDestroyPrism()
     {
         startCountdown = true;
+        CollectibleObject interactor = GetComponent<CollectibleObject>();
+        Destroy(interactor);
         Debug.Log("Start destroy prism");
     }
     

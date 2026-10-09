@@ -301,9 +301,7 @@ GameObject:
   - component: {fileID: 4762999264101822440}
   - component: {fileID: 8352039001259949706}
   - component: {fileID: 1107600716988909044}
-  - component: {fileID: 245248846637590313}
   - component: {fileID: 5996493168738044091}
-  - component: {fileID: 4183798392427489439}
   m_Layer: 6
   m_Name: compoundfive (1)
   m_TagString: Untagged
@@ -419,28 +417,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4012585, y: 1.4012585, z: 1.4012585}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &245248846637590313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8953498604149863413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8fde1c6f53293547bde6a798c3d67b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CollectibleObject
-  OnInteractEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnHoverEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnHoverExit:
-    m_PersistentCalls:
-      m_Calls: []
-  interactText: Facility Core
 --- !u!65 &5996493168738044091
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -462,37 +438,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4012585, y: 1.4012585, z: 1.4012585}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4183798392427489439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8953498604149863413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8fde1c6f53293547bde6a798c3d67b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CollectibleObject
-  OnInteractEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialoguePlayer, Assembly-CSharp
-        m_MethodName: PlayDialog
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnHoverEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnHoverExit:
-    m_PersistentCalls:
-      m_Calls: []
-  interactText: Facility Core
