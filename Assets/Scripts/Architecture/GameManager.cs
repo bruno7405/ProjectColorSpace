@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -101,6 +102,29 @@ public class GameManager : MonoBehaviour
     {
         ChangeState(GameState.Menu);
         ChangeScene(MenuScene);
+    }
+
+    public void WingDingTheGame()
+    {
+        StartCoroutine(WinTheGame());
+    }
+
+    private float hueChangeTime = 5f;
+    private float hueTimer;
+
+    IEnumerator WinTheGame()
+    {
+        yield return new WaitForSeconds(5f);
+
+        for (float t = 0; t < 1f; t += Time.unscaledDeltaTime / hueChangeTime)
+        {
+            GameSettings.SaturationOverride = 1f - t;
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(5f);
+
+        QuitGame();
     }
 
     public void QuitGame()

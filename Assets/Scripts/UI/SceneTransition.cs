@@ -75,7 +75,7 @@ public class SceneTransition : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
 
         Application.Quit();
 

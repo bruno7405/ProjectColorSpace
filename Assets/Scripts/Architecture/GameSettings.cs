@@ -6,4 +6,6 @@ public static class GameSettings
     public static float Saturation = 1f;
     public static float MusicVolume = 1.0f;
     public static float SFXVolume = 1.0f;
+
+    public static float SaturationOverride = 1f;
 }
