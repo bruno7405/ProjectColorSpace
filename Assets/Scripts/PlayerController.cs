@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour
 
         Vector3 move = (transform.right * x + transform.forward * y).normalized;
 
-        if (grounded && !prevGrounded && Mathf.Abs(prevVelocityY) > 1.0f) AudioBus.Instance.PlaySFX(landAudio);
+        if (grounded && !prevGrounded && Mathf.Abs(prevVelocityY) > 5.5f) AudioBus.Instance.PlaySFX(landAudio);
         prevGrounded = grounded;
 
         if (grounded) _coyoteTimer = CoyoteTime;
