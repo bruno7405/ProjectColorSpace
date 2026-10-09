@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
+[DefaultExecutionOrder(-100)]
 public class Door : MonoBehaviour
 {
     public GameObject doorModel;
@@ -15,10 +16,9 @@ public class Door : MonoBehaviour
     Vector3 closedPosition;
     Vector3 openPosition;
     private Vector3 target;
-    Coroutine moveRoutine;
 
     private Vector3 lastPosition;
-    public Vector3 CalculatedVelocity { get; private set; }
+    public Vector3 DeltaMovement { get; private set; }
 
     private bool isOpen = false;
 
@@ -27,6 +27,7 @@ public class Door : MonoBehaviour
         closedPosition = doorTransform.position;
         openPosition = openTransform.position;
         target = closedPosition;
+        lastPosition = doorTransform.position;
 
         audioSource = GetComponent<AudioSource>();
     }
@@ -47,17 +48,15 @@ public class Door : MonoBehaviour
         audioSource.PlayOneShot(doorOpenSFX);
     }
 
-    public void FixedUpdate()
+    public void Update()
     {
-        if ((doorTransform.position - target).magnitude > 0.001f)
+        if ((doorTransform.position - target).sqrMagnitude > 0.000001f)
         {
             doorTransform.position = Vector3.MoveTowards(
                 doorTransform.position, target, doorSpeed * Time.deltaTime);
         }
 
-        Vector3 displacement = transform.position - lastPosition;
-        CalculatedVelocity = displacement / Time.fixedDeltaTime;
-        lastPosition = transform.position;
-
+        DeltaMovement = doorTransform.position - lastPosition;
+        lastPosition = doorTransform.position;
     }
 }

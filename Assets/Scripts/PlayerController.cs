@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 using System;
 using System.Collections;
 
+[DefaultExecutionOrder(100)]
 public class PlayerController : MonoBehaviour
 {
 
@@ -33,6 +34,8 @@ public class PlayerController : MonoBehaviour
     public AudioClip jumpAudio;
     public AudioClip landAudio;
     public AudioClip bounceAudio;
+
+    private Door currentPlatform;
 
     void Start()
     {
@@ -122,22 +125,21 @@ public class PlayerController : MonoBehaviour
             transform.SetParent(null);
         }
 
-        if (grounded && currentGround != null && currentGround.layer == LayerMask.NameToLayer("Moving Platform"))
-        {
-            Vector3 groundVelocity = currentGround.GetComponent<Door>().CalculatedVelocity;
-            velocity = (move * Speed) + groundVelocity;
-            velocity.y = verticalVelocity + groundVelocity.y;
-        }
-
         velocity = move * Speed;
         velocity.y = verticalVelocity;
-        
-        if (grounded && steppingCoroutine == null && (Math.Abs(velocity.x) > 0.0f || Math.Abs(velocity.z) > 0.0f)) {
+
+        Vector3 platformDelta = Vector3.zero;
+        if (grounded && currentPlatform != null)
+            platformDelta = currentPlatform.DeltaMovement;
+        else if (!grounded)
+            currentPlatform = null;
+
+        if (grounded && steppingCoroutine == null && (Mathf.Abs(velocity.x) > 0f || Mathf.Abs(velocity.z) > 0f))
+        {
             steppingCoroutine = StartCoroutine(WaitForStep());
         }
 
-        m_CharacterController.Move(velocity * Time.deltaTime);
-
+        m_CharacterController.Move(velocity * Time.deltaTime + platformDelta);
     }
  
 
@@ -146,6 +148,7 @@ public class PlayerController : MonoBehaviour
         if (hit.normal.y > 0.7f)
         {
             currentGround = hit.collider.gameObject;
+            currentPlatform = hit.collider.GetComponentInParent<Door>();
         }
     }
 }
