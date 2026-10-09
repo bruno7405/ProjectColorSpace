@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 5598958664962742945}
   - component: {fileID: 3242255521837497074}
   - component: {fileID: 6679091261851240760}
+  - component: {fileID: 1275450753969442813}
   m_Layer: 0
   m_Name: Cube (10)
   m_TagString: Untagged
@@ -202,6 +203,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1275450753969442813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136615837320228938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &1449165062284480932
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,6 +232,7 @@ GameObject:
   - component: {fileID: 6614818882514646742}
   - component: {fileID: 6518254098225998028}
   - component: {fileID: 1114721340594355288}
+  - component: {fileID: 1964870271134691334}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -314,6 +333,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1964870271134691334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449165062284480932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &1936294218014207964
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,6 +398,7 @@ GameObject:
   - component: {fileID: 3497636522627739171}
   - component: {fileID: 3842396471912007266}
   - component: {fileID: 6531026334991952152}
+  - component: {fileID: 8205090738243530253}
   m_Layer: 0
   m_Name: Cube (16)
   m_TagString: Untagged
@@ -462,6 +499,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8205090738243530253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062763194345803687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &2085011682289944726
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,6 +528,7 @@ GameObject:
   - component: {fileID: 4665337034987246057}
   - component: {fileID: 2662068721795914530}
   - component: {fileID: 5044799193936631763}
+  - component: {fileID: 1757136475596072279}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -574,6 +629,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1757136475596072279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085011682289944726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &2676939712486816849
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,6 +658,7 @@ GameObject:
   - component: {fileID: 4602547986782663068}
   - component: {fileID: 8516304903562642737}
   - component: {fileID: 8975898710915600397}
+  - component: {fileID: 4920301878337405736}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -686,6 +759,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4920301878337405736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2676939712486816849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &2764888584488277733
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,6 +788,7 @@ GameObject:
   - component: {fileID: 2092029023041146869}
   - component: {fileID: 7630186669486431287}
   - component: {fileID: 3059292097618896936}
+  - component: {fileID: 5592696206868077954}
   m_Layer: 0
   m_Name: Cube (13)
   m_TagString: Untagged
@@ -798,6 +889,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5592696206868077954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2764888584488277733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &3194940854110841632
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,6 +918,7 @@ GameObject:
   - component: {fileID: 2649361647286444594}
   - component: {fileID: 4487924416957411146}
   - component: {fileID: 3219151513281057387}
+  - component: {fileID: 1027440101163594507}
   m_Layer: 0
   m_Name: Cube (15)
   m_TagString: Untagged
@@ -910,6 +1019,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1027440101163594507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3194940854110841632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &3274819306931095715
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,6 +1048,7 @@ GameObject:
   - component: {fileID: 5149317036876134861}
   - component: {fileID: 373083676763202548}
   - component: {fileID: 8039539919147971288}
+  - component: {fileID: 4709000942994576901}
   m_Layer: 0
   m_Name: Cube (11)
   m_TagString: Untagged
@@ -1022,6 +1149,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4709000942994576901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3274819306931095715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &3522877376394629428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,6 +1178,7 @@ GameObject:
   - component: {fileID: 9025401778901737268}
   - component: {fileID: 8852625034636469730}
   - component: {fileID: 3412818668113677023}
+  - component: {fileID: 8732630835702101100}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -1134,6 +1279,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8732630835702101100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3522877376394629428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &3817764234474856249
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,6 +1308,7 @@ GameObject:
   - component: {fileID: 4375902360625479162}
   - component: {fileID: 7995348127954876553}
   - component: {fileID: 3468322622085725919}
+  - component: {fileID: 8363880402856773793}
   m_Layer: 0
   m_Name: Cube (9)
   m_TagString: Untagged
@@ -1246,6 +1409,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8363880402856773793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3817764234474856249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &4624575549948205406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,6 +1438,7 @@ GameObject:
   - component: {fileID: 7145615677458571979}
   - component: {fileID: 6195422025544017109}
   - component: {fileID: 6604973686198485526}
+  - component: {fileID: 8611248133947042032}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1358,6 +1539,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8611248133947042032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4624575549948205406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &4917332337724446502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1370,6 +1568,7 @@ GameObject:
   - component: {fileID: 5767302710754921474}
   - component: {fileID: 7175915851467166599}
   - component: {fileID: 2072943768366062873}
+  - component: {fileID: 4779372246450963101}
   m_Layer: 0
   m_Name: Cube (14)
   m_TagString: Untagged
@@ -1470,6 +1669,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4779372246450963101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4917332337724446502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &5054338954126191734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,6 +1698,7 @@ GameObject:
   - component: {fileID: 2793547562982247367}
   - component: {fileID: 71140791609226004}
   - component: {fileID: 5713624512595037221}
+  - component: {fileID: 1696441533781413574}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1582,6 +1799,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1696441533781413574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5054338954126191734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &5063074342905088274
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,6 +1828,7 @@ GameObject:
   - component: {fileID: 1258942631469431427}
   - component: {fileID: 1583947287901029346}
   - component: {fileID: 6532882604804890473}
+  - component: {fileID: 5368239783433004523}
   m_Layer: 0
   m_Name: ceiling
   m_TagString: Untagged
@@ -1694,6 +1929,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5368239783433004523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5063074342905088274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &7182182984934524582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,6 +1958,7 @@ GameObject:
   - component: {fileID: 5090705784586418740}
   - component: {fileID: 8457209067635886305}
   - component: {fileID: 6044996409024231782}
+  - component: {fileID: 7562301036554112044}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -1806,6 +2059,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7562301036554112044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7182182984934524582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &7548100026932118652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1818,6 +2088,7 @@ GameObject:
   - component: {fileID: 1480704320626554485}
   - component: {fileID: 668395847543393608}
   - component: {fileID: 1617439145095522224}
+  - component: {fileID: 3308353506958299578}
   m_Layer: 0
   m_Name: Cube (12)
   m_TagString: Untagged
@@ -1918,6 +2189,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3308353506958299578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7548100026932118652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &7636873883961091724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1930,6 +2218,7 @@ GameObject:
   - component: {fileID: 7503128092281257393}
   - component: {fileID: 759456583783045094}
   - component: {fileID: 5857571235864721836}
+  - component: {fileID: 3523445751810038522}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -2030,6 +2319,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3523445751810038522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636873883961091724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &7731574612893875225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2042,6 +2348,7 @@ GameObject:
   - component: {fileID: 1319804319627313710}
   - component: {fileID: 1433385745496863440}
   - component: {fileID: 3435971897079597333}
+  - component: {fileID: 4399137540040215974}
   m_Layer: 0
   m_Name: Cube (8)
   m_TagString: Untagged
@@ -2142,6 +2449,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4399137540040215974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7731574612893875225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &7939265806037529254
 GameObject:
   m_ObjectHideFlags: 0
@@ -2154,6 +2478,7 @@ GameObject:
   - component: {fileID: 1139689182293110427}
   - component: {fileID: 5830752378138552421}
   - component: {fileID: 4072522844356115214}
+  - component: {fileID: 1796463453669808283}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -2254,6 +2579,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1796463453669808283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7939265806037529254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &8199890111094130170
 GameObject:
   m_ObjectHideFlags: 0
@@ -2266,6 +2608,7 @@ GameObject:
   - component: {fileID: 7451951194542002659}
   - component: {fileID: 6797620284972508728}
   - component: {fileID: 8191867194540927568}
+  - component: {fileID: 9112386016483218264}
   m_Layer: 0
   m_Name: back
   m_TagString: Untagged
@@ -2366,6 +2709,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9112386016483218264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8199890111094130170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &8258180120529700952
 GameObject:
   m_ObjectHideFlags: 0
@@ -2378,6 +2738,7 @@ GameObject:
   - component: {fileID: 2070848068446676447}
   - component: {fileID: 450636326392909470}
   - component: {fileID: 1750499025134564573}
+  - component: {fileID: 1003985665125764163}
   m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Untagged
@@ -2478,6 +2839,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1003985665125764163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8258180120529700952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 0.5
+  saturation: 0.8
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &9206155252309915802
 GameObject:
   m_ObjectHideFlags: 0
@@ -2775,13 +3153,103 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: f038c5573c34d934ca2a162bc1e17aa6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6555662595601669728}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -5568371526223589888, guid: f038c5573c34d934ca2a162bc1e17aa6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3924139005890851004}
+    - targetCorrespondingSourceObject: {fileID: 8513859187771203891, guid: f038c5573c34d934ca2a162bc1e17aa6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8389136527346757864}
+    - targetCorrespondingSourceObject: {fileID: -6733177361254619370, guid: f038c5573c34d934ca2a162bc1e17aa6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5172695541182162194}
   m_SourcePrefab: {fileID: 100100000, guid: f038c5573c34d934ca2a162bc1e17aa6, type: 3}
+--- !u!1 &125612302053028321 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6733177361254619370, guid: f038c5573c34d934ca2a162bc1e17aa6, type: 3}
+  m_PrefabInstance: {fileID: 2535721633398478583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5172695541182162194
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125612302053028321}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8691780276856062721, guid: f038c5573c34d934ca2a162bc1e17aa6, type: 3}
+--- !u!1 &1263711583850617079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5568371526223589888, guid: f038c5573c34d934ca2a162bc1e17aa6, type: 3}
+  m_PrefabInstance: {fileID: 2535721633398478583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &3924139005890851004
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263711583850617079}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: f038c5573c34d934ca2a162bc1e17aa6, type: 3}
 --- !u!4 &2646436636535042332 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f038c5573c34d934ca2a162bc1e17aa6, type: 3}
   m_PrefabInstance: {fileID: 2535721633398478583}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6131647279208150980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8513859187771203891, guid: f038c5573c34d934ca2a162bc1e17aa6, type: 3}
+  m_PrefabInstance: {fileID: 2535721633398478583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &8389136527346757864
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6131647279208150980}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7387706064836869012, guid: f038c5573c34d934ca2a162bc1e17aa6, type: 3}
 --- !u!1001 &6733124541433411979
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2866,15 +3334,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 1.29
       objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 1.29
       objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 1.29
       objectReference: {fileID: 0}
     - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
       propertyPath: m_LocalPosition.x

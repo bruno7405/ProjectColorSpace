@@ -41,16 +41,17 @@ public class SpectrumObject : MonoBehaviour
 
     public void Awake()
     {
-        _renderer = GetComponent<MeshRenderer>();
-        if (_renderer == null) return;
-        _renderer.SetPropertyBlock(null);
         _coll = GetComponent<Collider>();
+        
+        _renderer = GetComponent<MeshRenderer>();
+        if (_renderer != null) _renderer.SetPropertyBlock(null);
+        
         _rb = GetComponent<Rigidbody>();
         _grabbableObject = GetComponent<GrabbableObject>();
 
-        _spectrum_material = _renderer.materials[0];
-        _cacheHasColorProperty = _spectrum_material.HasProperty("_Object_Color");
-        _cacheHasEmissionProperty = _spectrum_material.HasProperty("_Emission");
+        if (_renderer != null) _spectrum_material = _renderer.materials[0];
+        if (_renderer != null) _cacheHasColorProperty = _spectrum_material.HasProperty("_Object_Color");
+        if (_renderer != null) _cacheHasEmissionProperty = _spectrum_material.HasProperty("_Emission");
 
         InheritFromParent();
 
@@ -80,8 +81,6 @@ public class SpectrumObject : MonoBehaviour
 
     public void Start()
     {
-        if (_renderer == null) return;
-        
         UpdateDial(SpectrumManager.Instance.HueValue);
         _actualV = GetTarget();
         _wasHeld = IsHeld();
@@ -140,12 +139,12 @@ public class SpectrumObject : MonoBehaviour
 
     private void ApplyVisuals()
     {
-        if (_renderer == null) return;
+        if (_renderer != null) _spectrum_material.SetFloat("_Ghost_Progress", 1 - _actualV);
 
-        _spectrum_material.SetFloat("_Ghost_Progress", 1 - _actualV);
-
+        if (_renderer != null) {
         if (_cacheHasColorProperty) _spectrum_material.SetColor("_Object_Color", _color);
         else _spectrum_material.color = _color;
+        
 
         if (emission != 0 && _cacheHasEmissionProperty) _spectrum_material.SetFloat("_Emission", emission);
 
@@ -153,8 +152,9 @@ public class SpectrumObject : MonoBehaviour
         {
             _outline_material.color = new Color(0, 0, 0, 1 - _actualV);
         }
+        }
 
-        _renderer.enabled = _actualV > 0.001f;
+        if (_renderer != null) _renderer.enabled = _actualV > 0.001f;
 
         bool newSolid = StrictCollision ? _actualV >= 0.001f : _actualV >= 0.99f;
         if (newSolid == IsSolid) return;

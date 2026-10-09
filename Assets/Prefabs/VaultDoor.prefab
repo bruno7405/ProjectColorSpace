@@ -375,13 +375,75 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 856eaacc76b145748ad330040f30e271, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2804339379593814059}
+    - targetCorrespondingSourceObject: {fileID: -7128900418104574359, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 830220518980547479}
     - targetCorrespondingSourceObject: {fileID: -8068073526183931155, guid: 856eaacc76b145748ad330040f30e271, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2824873881640461165}
     - targetCorrespondingSourceObject: {fileID: -3111565609762313623, guid: 856eaacc76b145748ad330040f30e271, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7943869359221839314}
+    - targetCorrespondingSourceObject: {fileID: -3111565609762313623, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3341851851322699692}
+    - targetCorrespondingSourceObject: {fileID: 2766212503428324877, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3312735105950311141}
+    - targetCorrespondingSourceObject: {fileID: -3507764624611079156, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5930666217797439274}
+    - targetCorrespondingSourceObject: {fileID: -3622040657277077538, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3259678177968250368}
+    - targetCorrespondingSourceObject: {fileID: 1874710876136272234, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8845002091106140779}
   m_SourcePrefab: {fileID: 100100000, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+--- !u!1 &2934737572931718935 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3622040657277077538, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+  m_PrefabInstance: {fileID: 7278280374930405577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3259678177968250368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2934737572931718935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 1
+  saturation: 1
+  emission: 0
+  StrictCollision: 0
+--- !u!1 &3049024740234392773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3507764624611079156, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+  m_PrefabInstance: {fileID: 7278280374930405577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5930666217797439274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3049024740234392773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 1
+  saturation: 1
+  emission: 0
+  StrictCollision: 0
 --- !u!1 &3589609559387787936 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3111565609762313623, guid: 856eaacc76b145748ad330040f30e271, type: 3}
@@ -409,6 +471,45 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6360558719573625917, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+--- !u!114 &3341851851322699692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3589609559387787936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 1
+  saturation: 1
+  emission: 0
+  StrictCollision: 0
+--- !u!1 &4855490549068244676 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2766212503428324877, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+  m_PrefabInstance: {fileID: 7278280374930405577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3312735105950311141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4855490549068244676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 1
+  saturation: 1
+  emission: 0
+  StrictCollision: 0
 --- !u!4 &7100800080140115746 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 856eaacc76b145748ad330040f30e271, type: 3}
@@ -468,3 +569,47 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!1 &8651603619953657504 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7128900418104574359, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+  m_PrefabInstance: {fileID: 7278280374930405577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &830220518980547479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8651603619953657504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 1
+  saturation: 1
+  emission: 0
+  StrictCollision: 0
+--- !u!1 &9152980115284920739 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1874710876136272234, guid: 856eaacc76b145748ad330040f30e271, type: 3}
+  m_PrefabInstance: {fileID: 7278280374930405577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8845002091106140779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9152980115284920739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f333eb8936ef144692fc40b35e57835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpectrumObject
+  _spectrumColor: -1
+  value: 1
+  saturation: 1
+  emission: 0
+  StrictCollision: 0
