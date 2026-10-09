@@ -37,7 +37,7 @@ public class Door : MonoBehaviour
         isOpen = true;
         target = openPosition;
         audioSource.volume = GameSettings.SFXVolume;
-        audioSource.PlayOneShot(doorOpenSFX);
+        audioSource.PlayOneShot(doorOpenSFX, 0.3f);
     }
 
     public void Close()
@@ -45,7 +45,7 @@ public class Door : MonoBehaviour
         isOpen = false;
         target = closedPosition;
         audioSource.volume = GameSettings.SFXVolume;
-        audioSource.PlayOneShot(doorOpenSFX);
+        audioSource.PlayOneShot(doorOpenSFX, 0.15f);
     }
 
     public void Update()

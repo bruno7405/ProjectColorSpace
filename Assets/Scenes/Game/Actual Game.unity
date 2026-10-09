@@ -57447,6 +57447,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3048698205777220448, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
+      propertyPath: transitionClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e3f48895cebe1657fadcbd6fd510a5ff, type: 3}
     - target: {fileID: 3391697912374542190, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
       propertyPath: m_Name
       value: === Core Systems ===
