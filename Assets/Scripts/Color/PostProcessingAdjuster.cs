@@ -24,7 +24,7 @@ public class PostProcessingAdjuster : MonoBehaviour
 
     void Update()
     {
-        float s = GameSettings.Saturation;
+        float s = GameSettings.Saturation * GameSettings.SaturationOverride;
         if (s == _lastSaturation) return;
 
         _lastSaturation = s;
