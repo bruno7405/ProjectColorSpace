@@ -761,6 +761,7 @@ MonoBehaviour:
   ObtainedCount: 1
   ScrollSpeed: 0.15
   SnapToBands: 1
+  turnClip: {fileID: 8300000, guid: 98ef3f45920c19d81a96f383b6409f7c, type: 3}
 --- !u!114 &6251785562472391125
 MonoBehaviour:
   m_ObjectHideFlags: 0

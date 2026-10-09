@@ -36,6 +36,8 @@ public class SpectrumManager : MonoBehaviour
     private float _unwrappedHue;
 
     public float HueValue { get; private set; }
+
+    public AudioClip turnClip;
     
     public void Awake()
     {
@@ -92,8 +94,14 @@ public class SpectrumManager : MonoBehaviour
         int count = ColorUtilities.BANDCOUNT;
 
         int dir = 0;
-        if (Keyboard.current.qKey.wasPressedThisFrame) dir -= 1;
-        if (Keyboard.current.eKey.wasPressedThisFrame) dir += 1;
+        if (Keyboard.current.qKey.wasPressedThisFrame) {
+            dir -= 1;
+            AudioBus.Instance.PlaySFX(turnClip);
+        }
+        if (Keyboard.current.eKey.wasPressedThisFrame) {
+            dir += 1;
+            AudioBus.Instance.PlaySFX(turnClip);
+        }
 
         if (dir != 0)
         {

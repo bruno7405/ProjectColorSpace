@@ -123,6 +123,7 @@ MonoBehaviour:
   - {fileID: 4079667683228809346}
   - {fileID: 5598519309818188667}
   countdownToDestroy: 5
+  destroyClip: {fileID: 8300000, guid: d1b228dd14c179ca1a43668e6262e3e4, type: 3}
 --- !u!1 &4079667683228809346
 GameObject:
   m_ObjectHideFlags: 0

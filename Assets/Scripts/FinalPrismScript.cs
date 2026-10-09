@@ -19,12 +19,15 @@ public class FinalPrismScript : MonoBehaviour
     bool destroyedList = false;
     bool madeParticles = false;
 
+    public AudioClip destroyClip;
+
     public void StartDestroyPrism()
     {
         startCountdown = true;
         CollectibleObject interactor = GetComponent<CollectibleObject>();
         Destroy(interactor);
         Debug.Log("Start destroy prism");
+        AudioBus.Instance.PlaySFX(destroyClip);
     }
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
