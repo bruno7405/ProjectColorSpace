@@ -35,8 +35,9 @@ public class PlayerController : MonoBehaviour
     public AudioClip landAudio;
     public AudioClip bounceAudio;
 
-    private Door currentPlatform;
-    private MovingPlatform currentMovingPlatform;
+    private IMovingSurface surface;
+    private float surfaceTimer;
+    private const float SurfaceGrace = 0.1f;
 
     void Start()
     {
@@ -88,79 +89,67 @@ public class PlayerController : MonoBehaviour
 
     private void HandleMovement()
     {
-
-        Vector3 move = transform.right * x + transform.forward * y;
-        move.Normalize();
-        
+        float dt = Time.deltaTime;
 
         bool grounded = m_CharacterController.isGrounded;
 
-        if (grounded && !prevGrounded && Mathf.Abs(prevVelocityY) > 1.0f) AudioBus.Instance.PlaySFX(landAudio);
+        surfaceTimer -= dt;
+        if (surfaceTimer <= 0f) surface = null;
+        if (surface != null)
+            m_CharacterController.Move(surface.DeltaMovement);
 
+        Vector3 move = (transform.right * x + transform.forward * y).normalized;
+
+        if (grounded && !prevGrounded && Mathf.Abs(prevVelocityY) > 1.0f) AudioBus.Instance.PlaySFX(landAudio);
         prevGrounded = grounded;
 
         if (grounded) _coyoteTimer = CoyoteTime;
-        else _coyoteTimer -= Time.deltaTime;
+        else _coyoteTimer -= dt;
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame) _jumpBufferTimer = JumpBufferTime;
-        else _jumpBufferTimer -= Time.deltaTime;
+        else _jumpBufferTimer -= dt;
 
-        if (grounded && currentGround != null && currentGround.GetComponent<BouncePad>() != null)
+        if (grounded && currentGround != null && currentGround.TryGetComponent(out BouncePad pad))
         {
             grounded = false;
             _coyoteTimer = 0f;
-            BouncePad pad = currentGround.GetComponent<BouncePad>();
             verticalVelocity = pad.bouncePower;
+            surface = null;
             AudioBus.Instance.PlaySFX(bounceAudio);
         }
 
-        if (grounded && verticalVelocity < 0 && currentPlatform == null && currentMovingPlatform == null)
-        {
+        if (grounded && verticalVelocity < 0f)
             verticalVelocity = -2f;
-        }
 
         if (_jumpBufferTimer > 0f && _coyoteTimer > 0f)
         {
             verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
             AudioBus.Instance.PlaySFX(jumpAudio);
-            _jumpBufferTimer = 0f; 
+            _jumpBufferTimer = 0f;
             _coyoteTimer = 0f;
+            surface = null; 
         }
 
         if (!grounded)
-        {
-            verticalVelocity += Gravity * Time.deltaTime;
-        }
+            verticalVelocity += Gravity * dt;
 
         velocity = move * Speed;
         velocity.y = verticalVelocity;
         prevVelocityY = velocity.y;
 
-        Vector3 platformDelta = Vector3.zero;
-        if (grounded && currentPlatform != null)
-            platformDelta = currentPlatform.DeltaMovement;
-        else if (grounded && currentMovingPlatform != null)
-            platformDelta = currentMovingPlatform.DeltaMovement;
-        else if (!grounded)
-            currentPlatform = null;
-            currentMovingPlatform = null;
-
-        if (grounded && steppingCoroutine == null && (Mathf.Abs(velocity.x) > 0f || Mathf.Abs(velocity.z) > 0f))
-        {
+        if (grounded && steppingCoroutine == null && move.sqrMagnitude > 0f)
             steppingCoroutine = StartCoroutine(WaitForStep());
-        }
 
-        m_CharacterController.Move(velocity * Time.deltaTime + platformDelta);
+        m_CharacterController.Move(velocity * dt);
     }
- 
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
         if (hit.normal.y > 0.7f)
         {
             currentGround = hit.collider.gameObject;
-            currentPlatform = hit.collider.GetComponentInParent<Door>();
-            currentMovingPlatform = hit.collider.GetComponentInParent<MovingPlatform>();
+            surface = hit.collider.GetComponentInParent<IMovingSurface>();
+            surfaceTimer = SurfaceGrace;
         }
     }
 }

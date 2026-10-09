@@ -1,8 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[DefaultExecutionOrder(200)]
-public class MovingPlatform : MonoBehaviour
+public interface IMovingSurface
+{
+    Vector3 DeltaMovement { get; }
+}
+
+[DefaultExecutionOrder(-100)]
+public class MovingPlatform : MonoBehaviour, IMovingSurface
 {
     [SerializeField] Transform doorTransform;
     [SerializeField] float doorSpeed = 10f;
@@ -94,5 +99,8 @@ public class MovingPlatform : MonoBehaviour
 
         DeltaMovement = doorTransform.position - lastPosition;
         lastPosition = doorTransform.position;
+
+        if (DeltaMovement != Vector3.zero)
+            Physics.SyncTransforms();
     }
 }
