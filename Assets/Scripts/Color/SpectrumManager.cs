@@ -103,19 +103,21 @@ public class SpectrumManager : MonoBehaviour
         int dir = 0;
         if (Keyboard.current.qKey.wasPressedThisFrame) {
             dir -= 1;
-            AudioBus.Instance.PlaySFX(turnClip);
         }
         if (Keyboard.current.eKey.wasPressedThisFrame) {
             dir += 1;
-            AudioBus.Instance.PlaySFX(turnClip);
         }
 
         if (dir != 0)
         {
+            int previousBand = _targetBand;
             _targetBand += dir;
 
             if (ObtainedCount < count)
                 _targetBand = Mathf.Clamp(_targetBand, 0, ObtainedCount - 1);
+
+            if (_targetBand != previousBand)
+                AudioBus.Instance.PlaySFX(turnClip);
         }
 
         float lastHue = HueValue;
