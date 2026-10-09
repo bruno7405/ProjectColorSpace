@@ -25,6 +25,7 @@ public class SceneTransition : MonoBehaviour
 
     public void QuitOut()
     {
+        AudioBus.Instance.PlaySFX(transitionClip);
         StartCoroutine(RunQuit());
     }
     
