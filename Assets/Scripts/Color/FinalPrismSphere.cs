@@ -5,6 +5,7 @@ public class FinalPrismSphere : MonoBehaviour
 {
     public float Duration = 1.5f;
     public float Delay = 1f;
+    public float StrenthMult = 1;
 
     public float maxScale = 10f;
     public AnimationCurve scaleCurve = new AnimationCurve(
@@ -71,7 +72,7 @@ public class FinalPrismSphere : MonoBehaviour
 
         _renderer.GetPropertyBlock(_block);
         //_block.SetFloat(progressId, t);
-        _block.SetFloat("_Strength", FadeCurve.Evaluate(t));
+        _block.SetFloat("_Strength", StrenthMult * FadeCurve.Evaluate(t));
         _renderer.SetPropertyBlock(_block);
     }
 
