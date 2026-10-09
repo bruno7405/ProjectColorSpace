@@ -66,6 +66,7 @@ public class GameManager : MonoBehaviour
         {
             case GameState.Menu:
                 SpectrumManager.Instance.ObtainedCount = 1;
+                SpectrumManager.Instance.Reset();
                 break;
             case GameState.Playing:
                 break;

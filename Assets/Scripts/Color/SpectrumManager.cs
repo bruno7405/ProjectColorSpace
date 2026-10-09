@@ -49,6 +49,13 @@ public class SpectrumManager : MonoBehaviour
         _targetBand = 0;
     }
 
+    public void Reset()
+    {
+        HueValue = SpectrumColor.Red.ToValue();
+        _unwrappedHue = HueValue;
+        _targetBand = 0;
+    }
+
     void Start()
     {
         OnColorUpdate?.Invoke(HueValue);
