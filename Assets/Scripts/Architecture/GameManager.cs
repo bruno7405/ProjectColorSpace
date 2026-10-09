@@ -65,6 +65,7 @@ public class GameManager : MonoBehaviour
         switch (state)
         {
             case GameState.Menu:
+                SpectrumManager.Instance.ObtainedCount = 1;
                 break;
             case GameState.Playing:
                 break;
