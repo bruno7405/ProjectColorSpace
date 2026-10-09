@@ -56,7 +56,7 @@ public class MovingPlatform : MonoBehaviour
         axisActive[index] = false;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (offsets.Count > 0)
         {
@@ -64,7 +64,7 @@ public class MovingPlatform : MonoBehaviour
             {
                 if (pauseTimer > 0f)
                 {
-                    pauseTimer -= Time.fixedDeltaTime;
+                    pauseTimer -= Time.deltaTime;
                 }
                 else
                 {
@@ -72,7 +72,7 @@ public class MovingPlatform : MonoBehaviour
                     if (length > 0.0001f)
                     {
                         float target = reachedEnd[activeIndex] ? 0f : 1f;
-                        float step = doorSpeed * Time.fixedDeltaTime / length;
+                        float step = doorSpeed * Time.deltaTime / length;
                         progress[activeIndex] = Mathf.MoveTowards(progress[activeIndex], target, step);
 
                         if (Mathf.Approximately(progress[activeIndex], target))
@@ -91,7 +91,7 @@ public class MovingPlatform : MonoBehaviour
             doorTransform.position = originalPosition + total;
         }
 
-        CalculatedVelocity = (doorTransform.position - lastPosition) / Time.fixedDeltaTime;
+        CalculatedVelocity = (doorTransform.position - lastPosition) / Time.deltaTime;
         lastPosition = doorTransform.position;
     }
 }

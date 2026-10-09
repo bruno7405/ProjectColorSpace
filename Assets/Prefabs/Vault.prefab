@@ -343,6 +343,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2154917169370761128}
   - {fileID: 4584081063684249011}
   - {fileID: 8387135668009634551}
   - {fileID: 2646436636535042332}
@@ -2586,6 +2587,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87452e6e7a4d44e4f8276ac6c64b1a10, type: 3}
+--- !u!1 &2428923109288375909 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3085435631061297514, guid: 87452e6e7a4d44e4f8276ac6c64b1a10, type: 3}
+  m_PrefabInstance: {fileID: 821044816185073423}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7181196957041249299 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7551502470253138716, guid: 87452e6e7a4d44e4f8276ac6c64b1a10, type: 3}
@@ -2648,6 +2654,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1817572e6862cd45baa23cbfccc5982, type: 3}
+--- !u!114 &3787382623447525248 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3238251585640307801, guid: e1817572e6862cd45baa23cbfccc5982, type: 3}
+  m_PrefabInstance: {fileID: 1765385511833975769}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6c9fc8852e543c4b8e7389a03ea8833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VaultDoorAnimation
 --- !u!4 &8387135668009634551 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7789819666847052078, guid: e1817572e6862cd45baa23cbfccc5982, type: 3}
@@ -2819,4 +2836,154 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4e3c177516c41c64ea7af433601d2d0a, type: 3}
   m_PrefabInstance: {fileID: 6733124541433411979}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9013478484633912159
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2348913497356125024}
+    m_Modifications:
+    - target: {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: prismColor
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: interactText
+      value: Open Vault
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3787382623447525248}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TurnHandle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayDialog
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: VaultDoorAnimation, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DialoguePlayer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956286979396917763, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: OnInteractEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8910546813690547235, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 446690335c78b9a4c966566cc2b7643b, type: 2}
+    - target: {fileID: 9066366376613723266, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      propertyPath: m_Name
+      value: Blue Prism that is actually final prism interactable
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8910546813690547235, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+    - {fileID: 4425891820536695859, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+    - {fileID: 3054768477544755925, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 4807877184144886540, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9066366376613723266, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3378057149564279792}
+  m_SourcePrefab: {fileID: 100100000, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+--- !u!1 &55304069926895581 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9066366376613723266, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+  m_PrefabInstance: {fileID: 9013478484633912159}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3378057149564279792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55304069926895581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc95c78847afdd4d9b93fa851ba6bec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  prismGameObject: {fileID: 2428923109288375909}
+  destroyVFX: {fileID: 0}
+  dialoguePlayer: {fileID: 0}
+  countdownToDestroy: 5
+--- !u!4 &2154917169370761128 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6985508888250877175, guid: c98d38140da0eed479273f751efd9fa7, type: 3}
+  m_PrefabInstance: {fileID: 9013478484633912159}
   m_PrefabAsset: {fileID: 0}
