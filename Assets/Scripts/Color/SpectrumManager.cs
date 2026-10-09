@@ -32,7 +32,8 @@ public class SpectrumManager : MonoBehaviour
 
     public float ScrollSpeed;
     public bool SnapToBands = false;
-    private float _targetHue;
+    private int _targetBand;
+    private float _unwrappedHue;
 
     public float HueValue { get; private set; }
     
@@ -42,7 +43,8 @@ public class SpectrumManager : MonoBehaviour
         else { Destroy(gameObject); return; }
 
         HueValue = SpectrumColor.Red.ToValue();
-        _targetHue = HueValue;
+        _unwrappedHue = HueValue;
+        _targetBand = 0;
     }
 
     void Start()
@@ -65,7 +67,8 @@ public class SpectrumManager : MonoBehaviour
             return;
         }
         
-        _targetHue = HueValue;
+        _unwrappedHue = HueValue;
+        _targetBand = Mathf.RoundToInt(HueValue * ColorUtilities.BANDCOUNT - 0.5f);
         float lastHue = HueValue;
         
         float input = 0f;
@@ -86,29 +89,42 @@ public class SpectrumManager : MonoBehaviour
 
     private void SnapUpdate()
     {
+        int count = ColorUtilities.BANDCOUNT;
+
         int dir = 0;
         if (Keyboard.current.qKey.wasPressedThisFrame) dir -= 1;
         if (Keyboard.current.eKey.wasPressedThisFrame) dir += 1;
 
         if (dir != 0)
         {
-            int current = Mathf.RoundToInt(_targetHue * ColorUtilities.BANDCOUNT - 0.5f);
-            int next = current + dir;
+            _targetBand += dir;
 
-            if (ObtainedCount < ColorUtilities.BANDCOUNT)
-                next = Mathf.Clamp(next, 0, ObtainedCount - 1);
-            else
-                next = (next + ColorUtilities.BANDCOUNT) % ColorUtilities.BANDCOUNT;
-
-            _targetHue = (next + 0.5f) / ColorUtilities.BANDCOUNT;
+            if (ObtainedCount < count)
+                _targetBand = Mathf.Clamp(_targetBand, 0, ObtainedCount - 1);
         }
 
         float lastHue = HueValue;
-        float diff = ColorUtilities.HueDifference(_targetHue, HueValue);
+        float targetHue = (_targetBand + 0.5f) / count;
+        float diff = targetHue - _unwrappedHue;
         float step = ScrollSpeed * Time.deltaTime;
 
-        if (Mathf.Abs(diff) <= step) HueValue = _targetHue;
-        else HueValue = Mathf.Repeat(HueValue + Mathf.Sign(diff) * step, 1f);
+        if (Mathf.Abs(diff) <= step)
+        {
+            _unwrappedHue = targetHue;
+
+            int wraps = Mathf.FloorToInt((float)_targetBand / count);
+            if (wraps != 0)
+            {
+                _targetBand -= wraps * count;
+                _unwrappedHue -= wraps;
+            }
+        }
+        else
+        {
+            _unwrappedHue += Mathf.Sign(diff) * step;
+        }
+
+        HueValue = Mathf.Repeat(_unwrappedHue, 1f);
 
         if (HueValue != lastHue)
         {
