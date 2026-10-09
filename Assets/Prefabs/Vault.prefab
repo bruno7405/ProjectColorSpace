@@ -2592,6 +2592,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3085435631061297514, guid: 87452e6e7a4d44e4f8276ac6c64b1a10, type: 3}
   m_PrefabInstance: {fileID: 821044816185073423}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3745037542666102669 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4079667683228809346, guid: 87452e6e7a4d44e4f8276ac6c64b1a10, type: 3}
+  m_PrefabInstance: {fileID: 821044816185073423}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5103986093817318516 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5598519309818188667, guid: 87452e6e7a4d44e4f8276ac6c64b1a10, type: 3}
+  m_PrefabInstance: {fileID: 821044816185073423}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &5295526662876655847 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4762999264101822440, guid: 87452e6e7a4d44e4f8276ac6c64b1a10, type: 3}
+  m_PrefabInstance: {fileID: 821044816185073423}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7181196957041249299 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7551502470253138716, guid: 87452e6e7a4d44e4f8276ac6c64b1a10, type: 3}
@@ -2979,8 +2994,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   prismGameObject: {fileID: 2428923109288375909}
-  destroyVFX: {fileID: 0}
-  dialoguePlayer: {fileID: 0}
+  targetRenderer: {fileID: 5295526662876655847}
+  destroyVFX: {fileID: 8926484042661614526, guid: 120afcdd38045894d950f6c6c38a2fdd, type: 3}
+  effectsToDestroyBeforePlayingVFX:
+  - {fileID: 3745037542666102669}
+  - {fileID: 5103986093817318516}
   countdownToDestroy: 5
 --- !u!4 &2154917169370761128 stripped
 Transform:
