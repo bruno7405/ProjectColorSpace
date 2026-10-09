@@ -11,6 +11,9 @@ public class Key : GrabbableObject
     public SpectrumColor KeyColor => _keyColor;
     public bool IsAttached => _currentKeyhole != null;
 
+    private LayerMask playerLayer = LayerMask.NameToLayer("Player");
+    private LayerMask keyLayer = LayerMask.NameToLayer("HeldObject");
+
     protected override void Awake()
     {
         base.Awake();
