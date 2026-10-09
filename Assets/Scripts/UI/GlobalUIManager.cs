@@ -17,7 +17,7 @@ public class GlobalUIManager : MonoBehaviour
 
     void Update()
     {
-        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        if (Keyboard.current.escapeKey.wasPressedThisFrame && GameManager.CurrentState != GameState.Menu)
         {
             TogglePauseMenu();
         }
