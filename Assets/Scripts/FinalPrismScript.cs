@@ -92,6 +92,7 @@ public class FinalPrismScript : MonoBehaviour
             Debug.Log("Final prism countdown ended!");
             Destroy(prismGameObject);
             startCountdown=false;
+            GameManager.Instance.WingDingTheGame();
         }
     }
 

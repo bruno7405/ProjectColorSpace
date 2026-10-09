@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip bounceAudio;
 
     private Door currentPlatform;
+    private MovingPlatform currentMovingPlatform;
 
     void Start()
     {
@@ -122,7 +123,6 @@ public class PlayerController : MonoBehaviour
         if (!grounded)
         {
             verticalVelocity += Gravity * Time.deltaTime;
-            transform.SetParent(null);
         }
 
         velocity = move * Speed;
@@ -131,8 +131,11 @@ public class PlayerController : MonoBehaviour
         Vector3 platformDelta = Vector3.zero;
         if (grounded && currentPlatform != null)
             platformDelta = currentPlatform.DeltaMovement;
+        else if (grounded && currentMovingPlatform != null)
+            platformDelta = currentMovingPlatform.DeltaMovement;
         else if (!grounded)
             currentPlatform = null;
+        currentMovingPlatform = null;
 
         if (grounded && steppingCoroutine == null && (Mathf.Abs(velocity.x) > 0f || Mathf.Abs(velocity.z) > 0f))
         {
@@ -148,7 +151,27 @@ public class PlayerController : MonoBehaviour
         if (hit.normal.y > 0.7f)
         {
             currentGround = hit.collider.gameObject;
-            currentPlatform = hit.collider.GetComponentInParent<Door>();
+            if (hit.collider.GetComponentInParent<Door>() != null)
+            {
+                currentPlatform = hit.collider.GetComponentInParent<Door>();
+                currentMovingPlatform = null;
+            }
+            else if (hit.collider.GetComponent<Door>() != null)
+            {
+                currentPlatform = hit.collider.GetComponent<Door>();
+                currentMovingPlatform = null;
+            }
+            else if (hit.collider.GetComponentInParent<MovingPlatform>() != null)
+            {
+                currentMovingPlatform = hit.collider.GetComponentInParent<MovingPlatform>();
+                currentPlatform = null;
+            }
+            else if(hit.collider.GetComponent<MovingPlatform>() != null)
+            {
+                currentMovingPlatform = hit.collider.GetComponentInParent<MovingPlatform>();
+                currentPlatform = null;
+            }
+            
         }
     }
 }
