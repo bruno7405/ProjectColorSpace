@@ -79,12 +79,13 @@ public class PlayerController : MonoBehaviour
     private Coroutine steppingCoroutine = null;
 
     IEnumerator WaitForStep() {
-        AudioBus.Instance.PlayRandomSFX(footstepClips);
+        AudioBus.Instance.PlayRandomSFX(footstepClips, 0.75f);
         yield return new WaitForSeconds(footstepInterval);
         steppingCoroutine = null;
     }
 
-    
+    private bool prevGrounded = false;
+    private float prevVelocityY = 0.0f;
 
     private void HandleMovement()
     {
@@ -98,6 +99,9 @@ public class PlayerController : MonoBehaviour
             m_CharacterController.Move(surface.DeltaMovement);
 
         Vector3 move = (transform.right * x + transform.forward * y).normalized;
+
+        if (grounded && !prevGrounded && Mathf.Abs(prevVelocityY) > 1.0f) AudioBus.Instance.PlaySFX(landAudio);
+        prevGrounded = grounded;
 
         if (grounded) _coyoteTimer = CoyoteTime;
         else _coyoteTimer -= dt;
@@ -131,6 +135,7 @@ public class PlayerController : MonoBehaviour
 
         velocity = move * Speed;
         velocity.y = verticalVelocity;
+        prevVelocityY = velocity.y;
 
         if (grounded && steppingCoroutine == null && move.sqrMagnitude > 0f)
             steppingCoroutine = StartCoroutine(WaitForStep());

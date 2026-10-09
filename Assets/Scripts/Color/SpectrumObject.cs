@@ -17,7 +17,7 @@ public class SpectrumObject : MonoBehaviour
 
     public Action<bool> OnSolidChanged;
 
-    private MeshRenderer _renderer;
+    private Renderer _renderer;
     private Material _spectrum_material;
     private Material _outline_material;
     private Collider _coll;
@@ -43,8 +43,10 @@ public class SpectrumObject : MonoBehaviour
     {
         _coll = GetComponent<Collider>();
         
-        _renderer = GetComponent<MeshRenderer>();
+        _renderer = GetComponent<Renderer>();
+        //if( _renderer == null ) { _renderer = GetComponent<SkinnedMeshRenderer>(); }
         if (_renderer != null) _renderer.SetPropertyBlock(null);
+        
         
         _rb = GetComponent<Rigidbody>();
         _grabbableObject = GetComponent<GrabbableObject>();
@@ -206,7 +208,7 @@ public class SpectrumObject : MonoBehaviour
     {
         if (!Application.isPlaying)
         {
-            var r = GetComponent<MeshRenderer>();
+            var r = GetComponent<Renderer>();
             if (r != null) r.SetPropertyBlock(null);
         }
     }
@@ -215,7 +217,7 @@ public class SpectrumObject : MonoBehaviour
 
     private void ApplyEditorPreview()
     {
-        var r = GetComponent<MeshRenderer>();
+        var r = GetComponent<Renderer>();
         if (r == null) return;
 
         _previewBlock ??= new MaterialPropertyBlock();

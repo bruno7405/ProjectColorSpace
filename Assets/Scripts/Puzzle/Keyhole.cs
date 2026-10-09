@@ -64,7 +64,7 @@ public class Keyhole : MonoBehaviour
         OnKeyEnter.Invoke();
         if (!audioPlayed)
         {
-            AudioBus.Instance.PlaySFX(keyedAudio);
+            AudioBus.Instance.PlaySFX(keyedAudio, 1.0f, false);
             audioPlayed = true;
         }
         return true;

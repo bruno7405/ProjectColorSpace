@@ -166,6 +166,7 @@ MonoBehaviour:
   Overlay: {fileID: 2283921494255296312}
   Void: {fileID: 4035742685688561527}
   Duration: 1.5
+  transitionClip: {fileID: 8300000, guid: e3f48895cebe1657fadcbd6fd510a5ff, type: 3}
 --- !u!1 &870615422136629436
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,7 +211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78361adf7a261a34c8db655a36412281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  PostProcessProfile: {fileID: 11400000, guid: 10fc4df2da32a41aaa32d77bc913491c, type: 2}
 --- !u!1 &2286987806484227931
 GameObject:
   m_ObjectHideFlags: 0
