@@ -39,6 +39,11 @@ public class PlayerController : MonoBehaviour
     private float surfaceTimer;
     private const float SurfaceGrace = 0.1f;
 
+    private void Awake()
+    {
+        transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
+    }
+
     void Start()
     {
         m_CharacterController = GetComponent<CharacterController>();
@@ -73,7 +78,7 @@ public class PlayerController : MonoBehaviour
         camX = Mathf.Clamp(camX, -90f, 90f);
 
         CameraAnchor.localRotation = Quaternion.Euler(camX, 0, 0);
-        transform.rotation = Quaternion.Euler(0, camY, 0);
+        transform.rotation = Quaternion.Euler(0, camY + 180, 0);
     }
 
     private Coroutine steppingCoroutine = null;
