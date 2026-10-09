@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-[DefaultExecutionOrder(-100)]
+[DefaultExecutionOrder(200)]
 public class Door : MonoBehaviour
 {
     public GameObject doorModel;

@@ -87,6 +87,7 @@ public class PlayerController : MonoBehaviour
 
     private void HandleMovement()
     {
+
         Vector3 move = transform.right * x + transform.forward * y;
         move.Normalize();
         
@@ -107,7 +108,7 @@ public class PlayerController : MonoBehaviour
             AudioBus.Instance.PlaySFX(bounceAudio);
         }
 
-        if (grounded && verticalVelocity < 0)
+        if (grounded && verticalVelocity < 0 && currentPlatform == null && currentMovingPlatform == null)
         {
             verticalVelocity = -2f;
         }
@@ -135,7 +136,7 @@ public class PlayerController : MonoBehaviour
             platformDelta = currentMovingPlatform.DeltaMovement;
         else if (!grounded)
             currentPlatform = null;
-        currentMovingPlatform = null;
+            currentMovingPlatform = null;
 
         if (grounded && steppingCoroutine == null && (Mathf.Abs(velocity.x) > 0f || Mathf.Abs(velocity.z) > 0f))
         {
@@ -151,27 +152,8 @@ public class PlayerController : MonoBehaviour
         if (hit.normal.y > 0.7f)
         {
             currentGround = hit.collider.gameObject;
-            if (hit.collider.GetComponentInParent<Door>() != null)
-            {
-                currentPlatform = hit.collider.GetComponentInParent<Door>();
-                currentMovingPlatform = null;
-            }
-            else if (hit.collider.GetComponent<Door>() != null)
-            {
-                currentPlatform = hit.collider.GetComponent<Door>();
-                currentMovingPlatform = null;
-            }
-            else if (hit.collider.GetComponentInParent<MovingPlatform>() != null)
-            {
-                currentMovingPlatform = hit.collider.GetComponentInParent<MovingPlatform>();
-                currentPlatform = null;
-            }
-            else if(hit.collider.GetComponent<MovingPlatform>() != null)
-            {
-                currentMovingPlatform = hit.collider.GetComponentInParent<MovingPlatform>();
-                currentPlatform = null;
-            }
-            
+            currentPlatform = hit.collider.GetComponentInParent<Door>();
+            currentMovingPlatform = hit.collider.GetComponentInParent<MovingPlatform>();
         }
     }
 }

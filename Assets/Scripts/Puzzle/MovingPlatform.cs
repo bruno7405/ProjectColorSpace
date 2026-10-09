@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[DefaultExecutionOrder(200)]
 public class MovingPlatform : MonoBehaviour
 {
     [SerializeField] Transform doorTransform;
