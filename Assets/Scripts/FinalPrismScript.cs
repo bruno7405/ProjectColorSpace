@@ -62,7 +62,8 @@ public class FinalPrismScript : MonoBehaviour
                 destroyedList = true;
             }
 
-            if(!madeParticles)
+            // create vfx
+            if (!madeParticles)
             {
                 if (destroyVFX != null)
                 {
@@ -80,16 +81,18 @@ public class FinalPrismScript : MonoBehaviour
             Vector3 newScale = prismGameObject.transform.localScale - new Vector3(SHRINK_RATE, SHRINK_RATE, SHRINK_RATE);
             newScale = new Vector3(Mathf.Clamp01(newScale.x), Mathf.Clamp01(newScale.y), Mathf.Clamp01(newScale.z));
             prismGameObject.transform.localScale = newScale;
+
+            // reduce emission to make it less obvious when it disappears
+            currentBloom -= 5 * BLOOM_INCREASE_RATE * Time.deltaTime;
+            prismMaterial.SetFloat("_Emission", currentBloom);
         }
 
         if(countdownToDestroy <= 0 && startCountdown)
         {
             Debug.Log("Final prism countdown ended!");
-            // create vfx
-
-            GameManager.Instance.WingDingTheGame();
-            
+            Destroy(prismGameObject);
             startCountdown=false;
+            GameManager.Instance.WingDingTheGame();
         }
     }
 

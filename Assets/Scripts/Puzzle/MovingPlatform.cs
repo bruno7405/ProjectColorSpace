@@ -17,7 +17,7 @@ public class MovingPlatform : MonoBehaviour
     int activeIndex = 0;
     float pauseTimer = 0f;
 
-    public Vector3 CalculatedVelocity { get; private set; }
+    public Vector3 DeltaMovement { get; private set; }
     Vector3 lastPosition;
 
     void Awake()
@@ -91,7 +91,7 @@ public class MovingPlatform : MonoBehaviour
             doorTransform.position = originalPosition + total;
         }
 
-        CalculatedVelocity = (doorTransform.position - lastPosition) / Time.deltaTime;
+        DeltaMovement = doorTransform.position - lastPosition;
         lastPosition = doorTransform.position;
     }
 }
