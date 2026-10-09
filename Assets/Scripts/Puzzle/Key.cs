@@ -68,7 +68,7 @@ public class Key : GrabbableObject
         if (!isSolid && _currentKeyhole != null)
         {
             // DONT DETACH BECAUSE KEY ONE TIME USE
-            //_currentKeyhole.DetachKey(this);
+            _currentKeyhole.DetachKey(this);
         }
     }
 }
