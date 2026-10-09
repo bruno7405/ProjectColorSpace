@@ -16,7 +16,7 @@ public class DialoguePlayer : MonoBehaviour
     {
         if (playOnStart)
         {
-            StartCoroutine(PlayDialogDelay(2.5f));
+            StartCoroutine(PlayDialogDelay(1.0f));
         }
     }
 
