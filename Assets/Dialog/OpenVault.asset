@@ -10,12 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 276c41f0449f5d248b676991829b29df, type: 3}
-  m_Name: End
+  m_Name: OpenVault
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   dialogLines:
-  - dialogLine: '[M] Are you sure you got all the colors?'
-    dialogAudio: {fileID: 8300000, guid: b18a253a25bdea4438d269e1ff77f848, type: 3}
-    clipLength: 0
-  - dialogLine: Yes, I got ROYGBIV.
-    dialogAudio: {fileID: 8300000, guid: 3d2e46f1f2a2a1f4f9437bf6ca3f6880, type: 3}
+  - dialogLine: YES! I'm at the exit! Get me out of this colorful BS!
+    dialogAudio: {fileID: 8300000, guid: 2ed0b031a781b5545856b0fd8d859835, type: 3}
     clipLength: 0
