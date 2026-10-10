@@ -39,6 +39,12 @@ public class SpectrumObject : MonoBehaviour
 
     public SpectrumColor GetSpectrumColor() { return _spectrumColor; }
 
+    static readonly int GhostId    = Shader.PropertyToID("_Ghost_Progress");
+    static readonly int ColorId    = Shader.PropertyToID("_Object_Color");
+    static readonly int EmissionId = Shader.PropertyToID("_Emission");
+    private float _hue;
+
+
     public void Awake()
     {
         _coll = GetComponent<Collider>();
@@ -83,7 +89,7 @@ public class SpectrumObject : MonoBehaviour
 
     public void Start()
     {
-        UpdateDial(SpectrumManager.Instance.HueValue);
+        //UpdateDial(SpectrumManager.Instance.HueValue);
         _actualV = GetTarget();
         _wasHeld = IsHeld();
         ApplyVisuals();
@@ -94,19 +100,15 @@ public class SpectrumObject : MonoBehaviour
         SpectrumManager.OnColorUpdate -= HandleColorUpdate;
     }
 
-    private void HandleColorUpdate(float dial)
+    private void HandleColorUpdate(float hue)
     {
-        UpdateDial(dial);
+        _hue = hue;
+        _dialVisibility = CalculateVisibility(hue);
+
+        if (_dialVisibility <= 0.001f && _actualV <= 0.001f && !_wasHeld) return;
+
         _actualV = GetTarget();
         _dirty = true;
-    }
-
-    private void UpdateDial(float hue)
-    {
-        Color c = ColorUtilities.FloatToColor(hue);
-        _color = ColorUtilities.Shade(c, saturation, value);
-        //_color = ColorUtilities.HueToRBG(ColorUtilities.RGBtoHue(c), saturation, value);
-        _dialVisibility = CalculateVisibility(hue);
     }
 
     private bool IsHeld() => _grabbableObject != null && _grabbableObject.IsGrabbed();
@@ -141,20 +143,26 @@ public class SpectrumObject : MonoBehaviour
 
     private void ApplyVisuals()
     {
-        if (_renderer != null) _spectrum_material.SetFloat("_Ghost_Progress", 1 - _actualV);
-
-        if (_renderer != null) {
-        if (_cacheHasColorProperty) _spectrum_material.SetColor("_Object_Color", _color);
-        else _spectrum_material.color = _color;
+        bool visible = _actualV > 0.001f;
+        if (_renderer != null)
+        {
+            _renderer.enabled = visible;
+            if (visible)
+            {
+                _color = ColorUtilities.Shade(ColorUtilities.FloatToColor(_hue), saturation, value); // should standardize this with a flag probably!!!
+                _spectrum_material.SetFloat(GhostId, 1 - _actualV);
+                if (_cacheHasColorProperty) _spectrum_material.SetColor(ColorId, _color);
+                else _spectrum_material.color = _color;
+                if (emission != 0 && _cacheHasEmissionProperty) _spectrum_material.SetFloat(EmissionId, emission);
+            }
+        }
         
-
-        if (emission != 0 && _cacheHasEmissionProperty) _spectrum_material.SetFloat("_Emission", emission);
 
         if (_outline_material != null)
         {
             _outline_material.color = new Color(0, 0, 0, 1 - _actualV);
         }
-        }
+        
 
         if (_renderer != null) _renderer.enabled = _actualV > 0.001f;
 
