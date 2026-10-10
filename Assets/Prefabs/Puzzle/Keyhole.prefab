@@ -388,6 +388,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   symbolRenderer: {fileID: 2662969863429223962}
+  cubeRenderer: {fileID: 7219345244962401815}
   auraParticles: {fileID: 8626886047025424417}
   keyedAudio: {fileID: 8300000, guid: 49d2a49bd9e5bf0088d3d94066d2e00a, type: 3}
 --- !u!65 &2152352656471421656
@@ -761,7 +762,7 @@ PrefabInstance:
     - target: {fileID: -4683669308469848369, guid: 4e3c177516c41c64ea7af433601d2d0a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a8467c28144ec76438dbd46f7bb35ab9, type: 2}
+      objectReference: {fileID: 2100000, guid: 10e81c306e25bf84a844e4712c0a5fb2, type: 2}
     - target: {fileID: -2217109080514979943, guid: 4e3c177516c41c64ea7af433601d2d0a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -778,5 +779,10 @@ PrefabInstance:
 --- !u!4 &6681862631912873779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4e3c177516c41c64ea7af433601d2d0a, type: 3}
+  m_PrefabInstance: {fileID: 6570760463911680216}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &7219345244962401815 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -4683669308469848369, guid: 4e3c177516c41c64ea7af433601d2d0a, type: 3}
   m_PrefabInstance: {fileID: 6570760463911680216}
   m_PrefabAsset: {fileID: 0}

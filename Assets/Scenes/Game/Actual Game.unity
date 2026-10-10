@@ -31957,8 +31957,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   MaterialSets:
   - TargetMaterial: {fileID: 2100000, guid: 39efc94ae3c3d0248bbf95b88643241c, type: 2}
-    Saturation: 0.8
-    Value: 0.75
+    Saturation: 0.75
+    Value: 0.8
   - TargetMaterial: {fileID: 2100000, guid: 1c0f10c398e3a81458da5b0add33f6f3, type: 2}
     Saturation: 0.7
     Value: 0.65

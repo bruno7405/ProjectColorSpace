@@ -9,7 +9,7 @@ public class Keyhole : MonoBehaviour
     [SerializeField] private UnityEvent OnKeyEnter;
     [SerializeField] private UnityEvent OnKeyExit;
 
-    [SerializeField] Renderer symbolRenderer; // for showing the color required for the keyhole
+    [SerializeField] Renderer symbolRenderer, cubeRenderer; // for showing the color required for the keyhole
     [SerializeField] ParticleSystem auraParticles;
     private Key _currentKey;
 
@@ -26,6 +26,7 @@ public class Keyhole : MonoBehaviour
         if (colorMaterial != null)
         {
             symbolRenderer.material = colorMaterial;
+            cubeRenderer.material = colorMaterial;
             auraParticles.GetComponent<ParticleSystemRenderer>().material = colorMaterial;
         }
         else
