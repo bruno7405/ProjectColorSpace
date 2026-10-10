@@ -1241,6 +1241,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2105888054}
     m_Modifications:
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: SecretWall
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: 111
       objectReference: {fileID: 0}
@@ -31128,6 +31132,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2105888054}
     m_Modifications:
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: SecretWall
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: 111
       objectReference: {fileID: 0}
@@ -32940,21 +32948,48 @@ MonoBehaviour:
   - TargetMaterial: {fileID: 2100000, guid: 39efc94ae3c3d0248bbf95b88643241c, type: 2}
     Saturation: 0.75
     Value: 0.8
+    Emissive: 0
+    EmissionIntensity: 1
   - TargetMaterial: {fileID: 2100000, guid: 1c0f10c398e3a81458da5b0add33f6f3, type: 2}
     Saturation: 0.7
     Value: 0.65
+    Emissive: 0
+    EmissionIntensity: 1
   - TargetMaterial: {fileID: 2100000, guid: e5dd7539a3e751948a3985765306a8ba, type: 2}
     Saturation: 0.85
     Value: 1
+    Emissive: 0
+    EmissionIntensity: 1
   - TargetMaterial: {fileID: 2100000, guid: 12e7fd086d29bc3408e3b412947beec3, type: 2}
     Saturation: 0.8
     Value: 0.5
+    Emissive: 0
+    EmissionIntensity: 1
   - TargetMaterial: {fileID: 2100000, guid: b983eca9a6ece184db1c5fee060860ce, type: 2}
     Saturation: 1
     Value: 1
+    Emissive: 0
+    EmissionIntensity: 1
   - TargetMaterial: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     Saturation: 0.8
     Value: 0.7
+    Emissive: 0
+    EmissionIntensity: 1
+  - TargetMaterial: {fileID: 2100000, guid: a4129de9b1677e34da40177214929282, type: 2}
+    Saturation: 0.95
+    Value: 0.8
+    Emissive: 1
+    EmissionIntensity: 1
+  - TargetMaterial: {fileID: 2100000, guid: 42a4929ac064fbd4d8a0f7f65960155d, type: 2}
+    Saturation: 0.95
+    Value: 0.8
+    Emissive: 0
+    EmissionIntensity: 1
+  - TargetMaterial: {fileID: 2100000, guid: 97c58ad1de0a1574091b211dbf22ba0e, type: 2}
+    Saturation: 0.75
+    Value: 0.8
+    Emissive: 0
+    EmissionIntensity: 1
 --- !u!4 &861948301 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5226307252971451312, guid: eb98c07856cea5b42a40df5c21b1fd25, type: 3}
@@ -59291,6 +59326,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -59303,7 +59342,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -72781,6 +72821,10 @@ PrefabInstance:
       value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: SecretWall
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: saturation
       value: 0.75
       objectReference: {fileID: 0}
@@ -78423,6 +78467,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -78435,7 +78483,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -82293,6 +82342,7 @@ MonoBehaviour:
   saturation: 1
   emission: 0
   StrictCollision: 0
+  SecretWall: 0
 --- !u!1001 &7521261032235993579
 PrefabInstance:
   m_ObjectHideFlags: 0

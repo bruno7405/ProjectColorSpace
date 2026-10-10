@@ -42,6 +42,12 @@ public class SpectrumManager : MonoBehaviour
     public AudioClip turnClip;
 
     public static Dictionary<SpectrumColor, float> ColorVisibility = new();
+
+    public Material BackupSpectrum, BackupEmissive, BackupSecret;
+    static readonly int ObjectColorId  = Shader.PropertyToID("_Object_Color");
+    static readonly int BaseColorId    = Shader.PropertyToID("_BaseColor");
+    static readonly int EmissionColorId = Shader.PropertyToID("_EmissionColor");
+
     
     public void Awake()
     {
@@ -51,6 +57,9 @@ public class SpectrumManager : MonoBehaviour
         HueValue = SpectrumColor.Red.ToValue();
         _unwrappedHue = HueValue;
         _targetBand = 0;
+
+        BackupEmissive.EnableKeyword("_EMISSION");
+        BackupEmissive.globalIlluminationFlags = MaterialGlobalIlluminationFlags.RealtimeEmissive;
     }
 
     public void Reset()
@@ -71,6 +80,7 @@ public class SpectrumManager : MonoBehaviour
         OnColorUnlocked?.Invoke(ObtainedCount);
         ObtainedCount = Mathf.Min(ObtainedCount + 1, ColorUtilities.BANDCOUNT);
     }
+
 
     public void Update()
     {

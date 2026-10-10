@@ -4,7 +4,10 @@ public class SolidShaderManager : MonoBehaviour
 {
     public MaterialSVSet[] MaterialSets;
 
-     private void OnEnable()
+    static readonly int EmissionColorId = Shader.PropertyToID("_EmissionColor");
+    static readonly int ObjectColorId = Shader.PropertyToID("_Object_Color");
+
+    private void OnEnable()
     {
         SpectrumManager.OnColorUpdate += HandleColorUpdate;
     }
@@ -16,16 +19,29 @@ public class SolidShaderManager : MonoBehaviour
 
     void Start()
     {
+        foreach (var set in MaterialSets)
+        {
+            if (set.TargetMaterial == null || !set.Emissive) continue;
+            set.TargetMaterial.EnableKeyword("_EMISSION");
+            set.TargetMaterial.globalIlluminationFlags = MaterialGlobalIlluminationFlags.RealtimeEmissive;
+        }
+
         HandleColorUpdate(SpectrumManager.Instance.HueValue);
     }
 
     private void HandleColorUpdate(float hue)
     {
         Color c = ColorUtilities.FloatToColor(hue);
-        
+
         foreach (var set in MaterialSets)
         {
-            set.TargetMaterial.color = ColorUtilities.Shade(c, set.Saturation, set.Value);
+            if (set.TargetMaterial == null) continue;
+
+            Color shaded = ColorUtilities.Shade(c, set.Saturation, set.Value);
+            set.TargetMaterial.color = shaded;
+
+            if (set.Emissive)
+                set.TargetMaterial.SetColor(ObjectColorId, shaded);
         }
     }
 }
@@ -36,4 +52,6 @@ public class MaterialSVSet
     public Material TargetMaterial;
     public float Saturation;
     public float Value;
+    public bool Emissive;
+    public float EmissionIntensity = 1f;
 }

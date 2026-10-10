@@ -46,6 +46,12 @@ public class SpectrumObject : MonoBehaviour
 
     public bool SecretWall = false;
 
+    private Material _authoredMaterial;
+    private Material _fadeMaterial;
+    private enum Mode { None, Backup, Fade }
+    private Mode _mode = Mode.None;
+
+    private bool _isEmissive;
 
     public void Awake()
     {
@@ -59,9 +65,12 @@ public class SpectrumObject : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
         _grabbableObject = GetComponent<GrabbableObject>();
 
-        if (_renderer != null) _spectrum_material = _renderer.materials[0];
-        if (_renderer != null) _cacheHasColorProperty = _spectrum_material.HasProperty("_Object_Color");
-        if (_renderer != null) _cacheHasEmissionProperty = _spectrum_material.HasProperty("_Emission");
+        _renderer.SetPropertyBlock(null);
+        _authoredMaterial = _renderer.sharedMaterial;
+        _cacheHasColorProperty = _authoredMaterial.HasProperty(ColorId);
+        _cacheHasEmissionProperty = _authoredMaterial.HasProperty(EmissionId);
+
+        _isEmissive = emission != 0 || (_authoredMaterial.HasProperty(EmissionId) && _authoredMaterial.GetFloat(EmissionId) > 0f);
 
         InheritFromParent();
 
@@ -100,6 +109,7 @@ public class SpectrumObject : MonoBehaviour
     public void OnDestroy()
     {
         SpectrumManager.OnColorUpdate -= HandleColorUpdate;
+        if (_fadeMaterial != null) Destroy(_fadeMaterial);
     }
 
     private void HandleColorUpdate(float hue)
@@ -151,14 +161,22 @@ public class SpectrumObject : MonoBehaviour
             _renderer.enabled = visible;
             if (visible)
             {
-                if (SecretWall)_color = ColorUtilities.Shade(ColorUtilities.FloatToColor(_hue), 0.75f, 0.8f);
-                else _color = ColorUtilities.Shade(ColorUtilities.FloatToColor(_hue), 0.95f, 0.8f);
+                if (_actualV >= 0.999f)
+                {
+                    SetMode(Mode.Backup);
+                }
+                else
+                {
+                    SetMode(Mode.Fade);
+                    _color = SecretWall
+                        ? ColorUtilities.Shade(ColorUtilities.FloatToColor(_hue), 0.75f, 0.8f)
+                        : ColorUtilities.Shade(ColorUtilities.FloatToColor(_hue), 0.95f, 0.8f);
 
-                //_color = ColorUtilities.Shade(ColorUtilities.FloatToColor(_hue), 0.95f, 0.8f); // should standardize this with a flag probably!!!
-                _spectrum_material.SetFloat(GhostId, 1 - _actualV);
-                if (_cacheHasColorProperty) _spectrum_material.SetColor(ColorId, _color);
-                else _spectrum_material.color = _color;
-                if (emission != 0 && _cacheHasEmissionProperty) _spectrum_material.SetFloat(EmissionId, emission);
+                    _fadeMaterial.SetFloat(GhostId, 1 - _actualV);
+                    if (_cacheHasColorProperty) _fadeMaterial.SetColor(ColorId, _color);
+                    else _fadeMaterial.color = _color;
+                    if (emission != 0 && _cacheHasEmissionProperty) _fadeMaterial.SetFloat(EmissionId, emission);
+                }
             }
         }
         
@@ -167,9 +185,6 @@ public class SpectrumObject : MonoBehaviour
         {
             _outline_material.color = new Color(0, 0, 0, 1 - _actualV);
         }
-        
-
-        if (_renderer != null) _renderer.enabled = _actualV > 0.001f;
 
         bool newSolid = StrictCollision ? _actualV >= 0.001f : _actualV >= 0.99f;
         if (newSolid == IsSolid) return;
@@ -178,6 +193,30 @@ public class SpectrumObject : MonoBehaviour
         if (_coll != null) _coll.enabled = IsSolid;
         RefreshKinematic();
         OnSolidChanged?.Invoke(IsSolid);
+    }
+
+    private Material GetBackup()
+    {
+        var m = SpectrumManager.Instance;
+        if (SecretWall) return m.BackupSecret;
+        if (_isEmissive) return m.BackupEmissive;
+        return m.BackupSpectrum;
+    }
+
+    private void SetMode(Mode mode)
+    {
+        if (mode == _mode) return;
+        _mode = mode;
+
+        if (mode == Mode.Backup)
+        {
+            _renderer.sharedMaterial = GetBackup();
+        }
+        else
+        {
+            if (_fadeMaterial == null) _fadeMaterial = new Material(_authoredMaterial);
+            _renderer.sharedMaterial = _fadeMaterial;
+        }
     }
 
     public void RefreshKinematic()

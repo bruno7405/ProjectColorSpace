@@ -762,6 +762,9 @@ MonoBehaviour:
   ScrollSpeed: 0.15
   SnapToBands: 1
   turnClip: {fileID: 8300000, guid: 98ef3f45920c19d81a96f383b6409f7c, type: 3}
+  BackupSpectrum: {fileID: 2100000, guid: 42a4929ac064fbd4d8a0f7f65960155d, type: 2}
+  BackupEmissive: {fileID: 2100000, guid: a4129de9b1677e34da40177214929282, type: 2}
+  BackupSecret: {fileID: 2100000, guid: 97c58ad1de0a1574091b211dbf22ba0e, type: 2}
 --- !u!114 &6251785562472391125
 MonoBehaviour:
   m_ObjectHideFlags: 0
