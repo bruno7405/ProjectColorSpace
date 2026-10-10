@@ -190,64 +190,64 @@ public class SpectrumObject : MonoBehaviour
         return Mathf.Clamp01(visibility);
     }
 
-#if UNITY_EDITOR
-    private static MaterialPropertyBlock _previewBlock;
+// #if UNITY_EDITOR
+//     private static MaterialPropertyBlock _previewBlock;
 
-    private void OnValidate()
-    {
-        if (Application.isPlaying) return;
-        ApplyEditorPreview();
-    }
+//     private void OnValidate()
+//     {
+//         if (Application.isPlaying) return;
+//         ApplyEditorPreview();
+//     }
 
-    private void Reset()
-    {
-        ApplyEditorPreview();
-    }
+//     private void Reset()
+//     {
+//         ApplyEditorPreview();
+//     }
 
-    private void OnDisable()
-    {
-        if (!Application.isPlaying)
-        {
-            var r = GetComponent<Renderer>();
-            if (r != null) r.SetPropertyBlock(null);
-        }
-    }
+//     private void OnDisable()
+//     {
+//         if (!Application.isPlaying)
+//         {
+//             var r = GetComponent<Renderer>();
+//             if (r != null) r.SetPropertyBlock(null);
+//         }
+//     }
 
-    private static readonly Color EditorPreviewColor = new Color(0.9f, 0.3f, 0.2f);
+//     private static readonly Color EditorPreviewColor = new Color(0.9f, 0.3f, 0.2f);
 
-    private void ApplyEditorPreview()
-    {
-        var r = GetComponent<Renderer>();
-        if (r == null) return;
+//     private void ApplyEditorPreview()
+//     {
+//         var r = GetComponent<Renderer>();
+//         if (r == null) return;
 
-        _previewBlock ??= new MaterialPropertyBlock();
-        r.GetPropertyBlock(_previewBlock);
+//         _previewBlock ??= new MaterialPropertyBlock();
+//         r.GetPropertyBlock(_previewBlock);
 
-        Color shaded = ColorUtilities.Shade(EditorPreviewColor, saturation, value);
+//         Color shaded = ColorUtilities.Shade(EditorPreviewColor, saturation, value);
 
-        _previewBlock.SetColor("_Object_Color", shaded);
-        _previewBlock.SetColor("_Color", shaded);
-        _previewBlock.SetFloat("_Ghost_Progress", 0f);
+//         _previewBlock.SetColor("_Object_Color", shaded);
+//         _previewBlock.SetColor("_Color", shaded);
+//         _previewBlock.SetFloat("_Ghost_Progress", 0f);
 
-        r.SetPropertyBlock(_previewBlock);
-    }
+//         r.SetPropertyBlock(_previewBlock);
+//     }
 
-    private float GetPreviewHue()
-    {
-        SpectrumObject source = this;
-        while (source.transform.parent != null)
-        {
-            var parent = source.transform.parent.GetComponent<SpectrumObject>();
-            if (parent == null) break;
-            source = parent;
-        }
+//     private float GetPreviewHue()
+//     {
+//         SpectrumObject source = this;
+//         while (source.transform.parent != null)
+//         {
+//             var parent = source.transform.parent.GetComponent<SpectrumObject>();
+//             if (parent == null) break;
+//             source = parent;
+//         }
 
-        for (int i = 0; i < ColorUtilities.Bands.Length; i++)
-        {
-            if ((source._spectrumColor & ColorUtilities.Bands[i]) != 0)
-                return (i + 0.5f) / ColorUtilities.BANDCOUNT;
-        }
-        return -1f;
-    }
-#endif
+//         for (int i = 0; i < ColorUtilities.Bands.Length; i++)
+//         {
+//             if ((source._spectrumColor & ColorUtilities.Bands[i]) != 0)
+//                 return (i + 0.5f) / ColorUtilities.BANDCOUNT;
+//         }
+//         return -1f;
+//     }
+// #endif
 }
