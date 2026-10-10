@@ -14,6 +14,11 @@ public class SolidShaderManager : MonoBehaviour
         SpectrumManager.OnColorUpdate -= HandleColorUpdate;
     }
 
+    void Start()
+    {
+        HandleColorUpdate(SpectrumManager.Instance.HueValue);
+    }
+
     private void HandleColorUpdate(float hue)
     {
         Color c = ColorUtilities.FloatToColor(hue);

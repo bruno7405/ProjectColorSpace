@@ -44,6 +44,8 @@ public class SpectrumObject : MonoBehaviour
     static readonly int EmissionId = Shader.PropertyToID("_Emission");
     private float _hue;
 
+    public bool SecretWall = false;
+
 
     public void Awake()
     {
@@ -149,7 +151,10 @@ public class SpectrumObject : MonoBehaviour
             _renderer.enabled = visible;
             if (visible)
             {
-                _color = ColorUtilities.Shade(ColorUtilities.FloatToColor(_hue), 0.95f, 0.8f); // should standardize this with a flag probably!!!
+                if (SecretWall)_color = ColorUtilities.Shade(ColorUtilities.FloatToColor(_hue), 0.75f, 0.8f);
+                else _color = ColorUtilities.Shade(ColorUtilities.FloatToColor(_hue), 0.95f, 0.8f);
+
+                //_color = ColorUtilities.Shade(ColorUtilities.FloatToColor(_hue), 0.95f, 0.8f); // should standardize this with a flag probably!!!
                 _spectrum_material.SetFloat(GhostId, 1 - _actualV);
                 if (_cacheHasColorProperty) _spectrum_material.SetColor(ColorId, _color);
                 else _spectrum_material.color = _color;
