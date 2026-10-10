@@ -444,6 +444,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (7)
@@ -500,7 +504,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1156,6 +1161,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (16)
@@ -1212,7 +1221,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1351,6 +1361,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -1359,7 +1373,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (110)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3137,6 +3152,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -3145,7 +3164,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (42)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4258,6 +4278,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (3)
@@ -4310,7 +4334,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4404,7 +4429,7 @@ PrefabInstance:
     - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 39efc94ae3c3d0248bbf95b88643241c, type: 2}
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (186)
@@ -4756,6 +4781,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -4764,7 +4793,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (94)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5094,6 +5124,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (6)
@@ -5150,7 +5184,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6079,6 +6114,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -6139,7 +6178,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6450,6 +6490,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -6458,7 +6502,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (138)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6968,6 +7013,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (143)
@@ -7024,7 +7073,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7858,6 +7908,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -7918,7 +7972,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8479,6 +8534,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (5)
@@ -8535,7 +8594,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9323,6 +9383,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -9383,7 +9447,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9643,6 +9708,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -9703,7 +9772,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9726,6 +9796,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (191)
@@ -9782,7 +9856,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10059,6 +10134,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (3)
@@ -10115,7 +10194,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10130,6 +10210,184 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
   m_PrefabInstance: {fileID: 541859870}
   m_PrefabAsset: {fileID: 0}
+--- !u!43 &265606106
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: pb_Mesh416468
+  serializedVersion: 12
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 18
+    localAABB:
+      m_Center: {x: 0.5, y: 0.50000006, z: 0.49999994}
+      m_Extent: {x: 0.5, y: 0.50000006, z: 0.50000006}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 0200010000000500040003000600070008000700090008000a000b000c000b000d000c000e000f0010000f0011001000
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 18
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 864
+    _typelessdata: 202695b20000803fc871c9b3000000000000803f000000b40000803f0000000000000000000080bf202695b2e038da320000803f0000803fc871c9b3000000000000803f000000b40000803f0000000000000000000080bf0000803fe038da320000803f0100803ffeff7f3f000000000000803f000000b40000803f0000000000000000000080bf0000803f0000803f0000803fc03ef0330000803f20269532000080bfc871c933000080bf202695b200000099000080bf000080bf0000803f0000803fe0339b320000000020269532000080bfc871c933000080bf202695b200000099000080bf000080bf916f98240000000000b841300000000020269532000080bfc871c933000080bf202695b200000099000080bfe3b961a3926f98240000803fc03ef0330000803f0000803f000000000000000000000000000000000000803f000080bf0000803fc03ef0330000803fe0339b32000000000000803f000000000000000000000000000000000000803f000080bf00000000e0339b320000803f0100803ffeff7f3f0000803f000000000000000000000000000000000000803f000080bffeff7f3f0100803f0000803f0000803fc871c9b30000803f000000000000000000000000000000000000803f000080bfc871c9b30000803f0000803fe0339b320000000073baea26c871c9b3000080bf0000803f0000000073baea26000080bf0000803fe0339b320000000000b841300000000073ba6a26c871c9b3000080bf0000803f0000000073ba6a26000080bf0000000000b841300000803f0000803fc871c9b373ba6a26c871c9b3000080bf0000803f0000000073ba6a26000080bf0000803f0000803f202695b20000803fc871c9b300000000c871c9b3000080bf0000803f0000000000000000000080bf202695b20000803f0000000000b8413000000000f30435bf44276833f304353ff40435bf00000000f40435bf000080bf0000000000b841300000803fc03ef0330000803ff30435bf4a8c9433f304353ff40435bf00000000f40435bf000080bff304b5bfc03ef033202695b20000803fc871c9b3f30435bf4a8c9433f304353ff40435bf00000000f40435bf000080bf0dcfa8330000803f0000803f0100803ffeff7f3ff30435bff304b533f304353ff40435bf00000000f40435bf000080bff204b5bf0100803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0.5, y: 0.50000006, z: 0.49999994}
+    m_Extent: {x: 0.5, y: 0.50000006, z: 0.50000006}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+  m_MeshLodInfo:
+    serializedVersion: 2
+    m_LodSelectionCurve:
+      serializedVersion: 1
+      m_LodSlope: 0
+      m_LodBias: 0
+    m_NumLevels: 1
+    m_SubMeshes:
+    - serializedVersion: 2
+      m_Levels:
+      - serializedVersion: 1
+        m_IndexStart: 0
+        m_IndexCount: 0
 --- !u!1001 &265773739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10303,6 +10561,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (180)
@@ -10359,7 +10621,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10657,6 +10920,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -10665,7 +10932,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (40)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11057,6 +11325,184 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
   m_PrefabInstance: {fileID: 769416345}
   m_PrefabAsset: {fileID: 0}
+--- !u!43 &288582110
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: pb_Mesh415026
+  serializedVersion: 12
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 18
+    localAABB:
+      m_Center: {x: 0.5, y: 0.50000006, z: 0.49999994}
+      m_Extent: {x: 0.5, y: 0.50000006, z: 0.50000006}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 0200010000000500040003000600070008000700090008000a000b000c000b000d000c000e000f0010000f0011001000
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 18
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 864
+    _typelessdata: 202695b20000803fc871c9b3000000000000803f000000b40000803f0000000000000000000080bf202695b2e038da320000803f0000803fc871c9b3000000000000803f000000b40000803f0000000000000000000080bf0000803fe038da320000803f0100803ffeff7f3f000000000000803f000000b40000803f0000000000000000000080bf0000803f0000803f0000803fc03ef0330000803f20269532000080bfc871c933000080bf202695b200000099000080bf000080bf0000803f0000803fe0339b320000000020269532000080bfc871c933000080bf202695b200000099000080bf000080bf916f98240000000000b841300000000020269532000080bfc871c933000080bf202695b200000099000080bfe3b961a3926f98240000803fc03ef0330000803f0000803f000000000000000000000000000000000000803f000080bf0000803fc03ef0330000803fe0339b32000000000000803f000000000000000000000000000000000000803f000080bf00000000e0339b320000803f0100803ffeff7f3f0000803f000000000000000000000000000000000000803f000080bffeff7f3f0100803f0000803f0000803fc871c9b30000803f000000000000000000000000000000000000803f000080bfc871c9b30000803f0000803fe0339b320000000073baea26c871c9b3000080bf0000803f0000000073baea26000080bf0000803fe0339b320000000000b841300000000073ba6a26c871c9b3000080bf0000803f0000000073ba6a26000080bf0000000000b841300000803f0000803fc871c9b373ba6a26c871c9b3000080bf0000803f0000000073ba6a26000080bf0000803f0000803f202695b20000803fc871c9b300000000c871c9b3000080bf0000803f0000000000000000000080bf202695b20000803f0000000000b8413000000000f30435bf44276833f304353ff40435bf00000000f40435bf000080bf0000000000b841300000803fc03ef0330000803ff30435bf4a8c9433f304353ff40435bf00000000f40435bf000080bff304b5bfc03ef033202695b20000803fc871c9b3f30435bf4a8c9433f304353ff40435bf00000000f40435bf000080bf0dcfa8330000803f0000803f0100803ffeff7f3ff30435bff304b533f304353ff40435bf00000000f40435bf000080bff204b5bf0100803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0.5, y: 0.50000006, z: 0.49999994}
+    m_Extent: {x: 0.5, y: 0.50000006, z: 0.50000006}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+  m_MeshLodInfo:
+    serializedVersion: 2
+    m_LodSelectionCurve:
+      serializedVersion: 1
+      m_LodSlope: 0
+      m_LodBias: 0
+    m_NumLevels: 1
+    m_SubMeshes:
+    - serializedVersion: 2
+      m_Levels:
+      - serializedVersion: 1
+        m_IndexStart: 0
+        m_IndexCount: 0
 --- !u!4 &290582588 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
@@ -11871,6 +12317,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (182)
@@ -11927,7 +12377,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12585,6 +13036,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (19)
@@ -12641,7 +13096,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12961,11 +13417,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
---- !u!4 &324685811 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
-  m_PrefabInstance: {fileID: 1012644641}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &325269797 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5226307252971451312, guid: eb98c07856cea5b42a40df5c21b1fd25, type: 3}
@@ -13145,6 +13596,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (131)
@@ -13201,7 +13656,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13696,7 +14152,7 @@ PrefabInstance:
     - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 39efc94ae3c3d0248bbf95b88643241c, type: 2}
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (22)
@@ -14435,6 +14891,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -14495,7 +14955,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14653,6 +15114,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -14661,7 +15126,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hanging Platform 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
@@ -15144,6 +15610,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -15152,7 +15622,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (98)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16159,6 +16630,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -16167,7 +16642,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hanging Platform 2 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16190,6 +16666,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (179)
@@ -16246,7 +16726,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16604,7 +17085,6 @@ Transform:
   - {fileID: 1069083292}
   - {fileID: 608539112}
   - {fileID: 300941254}
-  - {fileID: 324685811}
   - {fileID: 1928143226}
   - {fileID: 360977265}
   - {fileID: 1255742934}
@@ -17387,6 +17867,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -17395,7 +17879,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (155)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -17582,7 +18067,7 @@ PrefabInstance:
     - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 39efc94ae3c3d0248bbf95b88643241c, type: 2}
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (6)
@@ -17705,6 +18190,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -17713,7 +18202,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (97)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -17733,6 +18223,184 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
   m_PrefabInstance: {fileID: 1363405661}
   m_PrefabAsset: {fileID: 0}
+--- !u!43 &481758135
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: pb_Mesh405188
+  serializedVersion: 12
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 18
+    localAABB:
+      m_Center: {x: 0.5, y: 0.50000006, z: 0.49999994}
+      m_Extent: {x: 0.5, y: 0.50000006, z: 0.50000006}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 0200010000000500040003000600070008000700090008000a000b000c000b000d000c000e000f0010000f0011001000
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 18
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 864
+    _typelessdata: 202695b20000803fc871c9b3000000000000803f000000b40000803f0000000000000000000080bf202695b2e038da320000803f0000803fc871c9b3000000000000803f000000b40000803f0000000000000000000080bf0000803fe038da320000803f0100803ffeff7f3f000000000000803f000000b40000803f0000000000000000000080bf0000803f0000803f0000803fc03ef0330000803f20269532000080bfc871c933000080bf202695b200000099000080bf000080bf0000803f0000803fe0339b320000000020269532000080bfc871c933000080bf202695b200000099000080bf000080bf916f98240000000000b841300000000020269532000080bfc871c933000080bf202695b200000099000080bfe3b961a3926f98240000803fc03ef0330000803f0000803f000000000000000000000000000000000000803f000080bf0000803fc03ef0330000803fe0339b32000000000000803f000000000000000000000000000000000000803f000080bf00000000e0339b320000803f0100803ffeff7f3f0000803f000000000000000000000000000000000000803f000080bffeff7f3f0100803f0000803f0000803fc871c9b30000803f000000000000000000000000000000000000803f000080bfc871c9b30000803f0000803fe0339b320000000073baea26c871c9b3000080bf0000803f0000000073baea26000080bf0000803fe0339b320000000000b841300000000073ba6a26c871c9b3000080bf0000803f0000000073ba6a26000080bf0000000000b841300000803f0000803fc871c9b373ba6a26c871c9b3000080bf0000803f0000000073ba6a26000080bf0000803f0000803f202695b20000803fc871c9b300000000c871c9b3000080bf0000803f0000000000000000000080bf202695b20000803f0000000000b8413000000000f30435bf44276833f304353ff40435bf00000000f40435bf000080bf0000000000b841300000803fc03ef0330000803ff30435bf4a8c9433f304353ff40435bf00000000f40435bf000080bff304b5bfc03ef033202695b20000803fc871c9b3f30435bf4a8c9433f304353ff40435bf00000000f40435bf000080bf0dcfa8330000803f0000803f0100803ffeff7f3ff30435bff304b533f304353ff40435bf00000000f40435bf000080bff204b5bf0100803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0.5, y: 0.50000006, z: 0.49999994}
+    m_Extent: {x: 0.5, y: 0.50000006, z: 0.50000006}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+  m_MeshLodInfo:
+    serializedVersion: 2
+    m_LodSelectionCurve:
+      serializedVersion: 1
+      m_LodSlope: 0
+      m_LodBias: 0
+    m_NumLevels: 1
+    m_SubMeshes:
+    - serializedVersion: 2
+      m_Levels:
+      - serializedVersion: 1
+        m_IndexStart: 0
+        m_IndexCount: 0
 --- !u!1001 &482038589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17741,6 +18409,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (12)
@@ -17797,7 +18469,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18128,6 +18801,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (185)
@@ -18184,7 +18861,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -19387,6 +20065,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (2)
@@ -19443,7 +20125,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -20382,7 +21065,7 @@ PrefabInstance:
     - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: e5dd7539a3e751948a3985765306a8ba, type: 2}
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (187)
@@ -21589,6 +22272,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -21649,7 +22336,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -22263,6 +22951,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -22271,7 +22963,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (146)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -22609,6 +23302,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube
@@ -22665,7 +23362,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -23159,6 +23857,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -23167,7 +23869,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (148)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -24369,6 +25072,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (1)
@@ -24425,7 +25132,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -24438,6 +25146,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 452645962}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: value
       value: 1
@@ -24502,7 +25214,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -24803,6 +25516,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -24811,7 +25528,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (151)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -24876,6 +25594,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: saturation
       value: 0.85
@@ -24888,7 +25610,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (45)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -25037,6 +25760,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -25045,7 +25772,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hanging Platform 1 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -25115,6 +25843,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -25123,7 +25855,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (65)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -25229,6 +25962,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (9)
@@ -25285,7 +26022,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -25720,6 +26458,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (10)
@@ -25776,7 +26518,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -25789,6 +26532,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -25849,7 +26596,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -26002,6 +26750,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -26010,7 +26762,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (100)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -26121,6 +26874,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -26181,7 +26938,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -26609,6 +27367,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -26669,7 +27431,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -27193,7 +27956,7 @@ PrefabInstance:
     - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 39efc94ae3c3d0248bbf95b88643241c, type: 2}
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (54)
@@ -28045,6 +28808,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -28105,7 +28872,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -28987,6 +29755,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: saturation
       value: 0.85
@@ -28999,7 +29771,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (90)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -29231,6 +30004,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -29239,7 +30016,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hanging Platform 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
@@ -29678,6 +30456,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -29738,7 +30520,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -29808,6 +30591,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -29816,7 +30603,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (147)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -29829,6 +30617,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -29889,7 +30681,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -30133,6 +30926,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: saturation
       value: 0.85
@@ -30145,7 +30942,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (89)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -31506,6 +32304,184 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
   m_PrefabInstance: {fileID: 449745642}
   m_PrefabAsset: {fileID: 0}
+--- !u!43 &852527602
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: pb_Mesh403518
+  serializedVersion: 12
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 18
+    localAABB:
+      m_Center: {x: 0.5, y: 0.50000006, z: 0.49999994}
+      m_Extent: {x: 0.5, y: 0.50000006, z: 0.50000006}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 0200010000000500040003000600070008000700090008000a000b000c000b000d000c000e000f0010000f0011001000
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 18
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 864
+    _typelessdata: 202695b20000803fc871c9b3000000000000803f000000b40000803f0000000000000000000080bf202695b2e038da320000803f0000803fc871c9b3000000000000803f000000b40000803f0000000000000000000080bf0000803fe038da320000803f0100803ffeff7f3f000000000000803f000000b40000803f0000000000000000000080bf0000803f0000803f0000803fc03ef0330000803f20269532000080bfc871c933000080bf202695b200000099000080bf000080bf0000803f0000803fe0339b320000000020269532000080bfc871c933000080bf202695b200000099000080bf000080bf916f98240000000000b841300000000020269532000080bfc871c933000080bf202695b200000099000080bfe3b961a3926f98240000803fc03ef0330000803f0000803f000000000000000000000000000000000000803f000080bf0000803fc03ef0330000803fe0339b32000000000000803f000000000000000000000000000000000000803f000080bf00000000e0339b320000803f0100803ffeff7f3f0000803f000000000000000000000000000000000000803f000080bffeff7f3f0100803f0000803f0000803fc871c9b30000803f000000000000000000000000000000000000803f000080bfc871c9b30000803f0000803fe0339b320000000073baea26c871c9b3000080bf0000803f0000000073baea26000080bf0000803fe0339b320000000000b841300000000073ba6a26c871c9b3000080bf0000803f0000000073ba6a26000080bf0000000000b841300000803f0000803fc871c9b373ba6a26c871c9b3000080bf0000803f0000000073ba6a26000080bf0000803f0000803f202695b20000803fc871c9b300000000c871c9b3000080bf0000803f0000000000000000000080bf202695b20000803f0000000000b8413000000000f30435bf44276833f304353ff40435bf00000000f40435bf000080bf0000000000b841300000803fc03ef0330000803ff30435bf4a8c9433f304353ff40435bf00000000f40435bf000080bff304b5bfc03ef033202695b20000803fc871c9b3f30435bf4a8c9433f304353ff40435bf00000000f40435bf000080bf0dcfa8330000803f0000803f0100803ffeff7f3ff30435bff304b533f304353ff40435bf00000000f40435bf000080bff204b5bf0100803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0.5, y: 0.50000006, z: 0.49999994}
+    m_Extent: {x: 0.5, y: 0.50000006, z: 0.50000006}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+  m_MeshLodInfo:
+    serializedVersion: 2
+    m_LodSelectionCurve:
+      serializedVersion: 1
+      m_LodSlope: 0
+      m_LodBias: 0
+    m_NumLevels: 1
+    m_SubMeshes:
+    - serializedVersion: 2
+      m_Levels:
+      - serializedVersion: 1
+        m_IndexStart: 0
+        m_IndexCount: 0
 --- !u!4 &853360787 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2056096865230749514, guid: 4d8ce4a93d068414e91a89d6a353dad5, type: 3}
@@ -31749,6 +32725,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -31809,7 +32789,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -31971,6 +32952,9 @@ MonoBehaviour:
   - TargetMaterial: {fileID: 2100000, guid: b983eca9a6ece184db1c5fee060860ce, type: 2}
     Saturation: 1
     Value: 1
+  - TargetMaterial: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
+    Saturation: 0.8
+    Value: 0.7
 --- !u!4 &861948301 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5226307252971451312, guid: eb98c07856cea5b42a40df5c21b1fd25, type: 3}
@@ -32067,6 +33051,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (1)
@@ -32123,7 +33111,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -32136,6 +33125,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (159)
@@ -32192,7 +33185,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -33610,6 +34604,184 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+--- !u!43 &894715076
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: pb_Mesh410774
+  serializedVersion: 12
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 18
+    localAABB:
+      m_Center: {x: 0.5, y: 0.50000006, z: 0.49999994}
+      m_Extent: {x: 0.5, y: 0.50000006, z: 0.50000006}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 0200010000000500040003000600070008000700090008000a000b000c000b000d000c000e000f0010000f0011001000
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 18
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 864
+    _typelessdata: 202695b20000803fc871c9b3000000000000803f000000b40000803f0000000000000000000080bf202695b2e038da320000803f0000803fc871c9b3000000000000803f000000b40000803f0000000000000000000080bf0000803fe038da320000803f0100803ffeff7f3f000000000000803f000000b40000803f0000000000000000000080bf0000803f0000803f0000803fc03ef0330000803f20269532000080bfc871c933000080bf202695b200000099000080bf000080bf0000803f0000803fe0339b320000000020269532000080bfc871c933000080bf202695b200000099000080bf000080bf916f98240000000000b841300000000020269532000080bfc871c933000080bf202695b200000099000080bfe3b961a3926f98240000803fc03ef0330000803f0000803f000000000000000000000000000000000000803f000080bf0000803fc03ef0330000803fe0339b32000000000000803f000000000000000000000000000000000000803f000080bf00000000e0339b320000803f0100803ffeff7f3f0000803f000000000000000000000000000000000000803f000080bffeff7f3f0100803f0000803f0000803fc871c9b30000803f000000000000000000000000000000000000803f000080bfc871c9b30000803f0000803fe0339b320000000073baea26c871c9b3000080bf0000803f0000000073baea26000080bf0000803fe0339b320000000000b841300000000073ba6a26c871c9b3000080bf0000803f0000000073ba6a26000080bf0000000000b841300000803f0000803fc871c9b373ba6a26c871c9b3000080bf0000803f0000000073ba6a26000080bf0000803f0000803f202695b20000803fc871c9b300000000c871c9b3000080bf0000803f0000000000000000000080bf202695b20000803f0000000000b8413000000000f30435bf44276833f304353ff40435bf00000000f40435bf000080bf0000000000b841300000803fc03ef0330000803ff30435bf4a8c9433f304353ff40435bf00000000f40435bf000080bff304b5bfc03ef033202695b20000803fc871c9b3f30435bf4a8c9433f304353ff40435bf00000000f40435bf000080bf0dcfa8330000803f0000803f0100803ffeff7f3ff30435bff304b533f304353ff40435bf00000000f40435bf000080bff204b5bf0100803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0.5, y: 0.50000006, z: 0.49999994}
+    m_Extent: {x: 0.5, y: 0.50000006, z: 0.50000006}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+  m_MeshLodInfo:
+    serializedVersion: 2
+    m_LodSelectionCurve:
+      serializedVersion: 1
+      m_LodSlope: 0
+      m_LodBias: 0
+    m_NumLevels: 1
+    m_SubMeshes:
+    - serializedVersion: 2
+      m_Levels:
+      - serializedVersion: 1
+        m_IndexStart: 0
+        m_IndexCount: 0
 --- !u!1001 &895698577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33691,6 +34863,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 452645962}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: value
       value: 1
@@ -33755,7 +34931,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -34148,6 +35325,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -34208,7 +35389,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -34961,6 +36143,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -35021,7 +36207,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -35050,7 +36237,11 @@ PrefabInstance:
     - target: {fileID: 1398657694947878424, guid: b2f1e8a8615a87a478b18241874bbb2a, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1363189678}
+      objectReference: {fileID: 288582110}
+    - target: {fileID: 1499926230007007246, guid: b2f1e8a8615a87a478b18241874bbb2a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3832222665455058405, guid: b2f1e8a8615a87a478b18241874bbb2a, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -35114,12 +36305,13 @@ PrefabInstance:
     - target: {fileID: 9030461654484964987, guid: b2f1e8a8615a87a478b18241874bbb2a, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1363189678}
+      objectReference: {fileID: 288582110}
     - target: {fileID: 9030461654484964987, guid: b2f1e8a8615a87a478b18241874bbb2a, type: 3}
       propertyPath: m_VersionIndex
       value: 43
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 696491607223571622, guid: b2f1e8a8615a87a478b18241874bbb2a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -35444,6 +36636,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (4)
@@ -35496,7 +36692,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -35514,6 +36711,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (14)
@@ -35570,7 +36771,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -35770,6 +36972,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (8)
@@ -35826,7 +37032,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -35935,7 +37142,7 @@ PrefabInstance:
     - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 39efc94ae3c3d0248bbf95b88643241c, type: 2}
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (129)
@@ -36244,6 +37451,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -36304,7 +37515,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -37443,6 +38655,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (13)
@@ -37499,7 +38715,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -37914,79 +39131,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
   m_PrefabInstance: {fileID: 1010521129}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1012644641
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 452645962}
-    m_Modifications:
-    - target: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -36.125004
-      objectReference: {fileID: 0}
-    - target: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 10.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -48.874992
-      objectReference: {fileID: 0}
-    - target: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.00000035762784
-      objectReference: {fileID: 0}
-    - target: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
-      propertyPath: _spectrumColor
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6216473540915898884, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
-      propertyPath: m_Name
-      value: Shifter Cube (12)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
 --- !u!1001 &1013253558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39164,6 +40308,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -39224,7 +40372,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -39490,6 +40639,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -39550,7 +40703,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -39801,6 +40955,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -39861,7 +41019,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -39879,6 +41038,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 452645962}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: value
       value: 1
@@ -39943,7 +41106,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -40091,6 +41255,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -40099,7 +41267,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (109)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -40112,6 +41281,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (158)
@@ -40168,7 +41341,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -40421,6 +41595,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -40429,7 +41607,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (99)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -40850,6 +42029,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -40858,7 +42041,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (111)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -40996,6 +42180,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -41004,7 +42192,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (153)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -41069,6 +42258,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -41077,7 +42270,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (149)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -41480,6 +42674,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -41488,7 +42686,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (150)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -42215,6 +43414,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -42223,7 +43426,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (44)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -42993,7 +44197,11 @@ PrefabInstance:
     - target: {fileID: 1398657694947878424, guid: cc5bf9683cd87914f8452c7e658db838, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 206773917}
+      objectReference: {fileID: 481758135}
+    - target: {fileID: 1499926230007007246, guid: cc5bf9683cd87914f8452c7e658db838, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3832222665455058405, guid: cc5bf9683cd87914f8452c7e658db838, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -43057,12 +44265,13 @@ PrefabInstance:
     - target: {fileID: 9030461654484964987, guid: cc5bf9683cd87914f8452c7e658db838, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 206773917}
+      objectReference: {fileID: 481758135}
     - target: {fileID: 9030461654484964987, guid: cc5bf9683cd87914f8452c7e658db838, type: 3}
       propertyPath: m_VersionIndex
       value: 43
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 696491607223571622, guid: cc5bf9683cd87914f8452c7e658db838, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -43148,6 +44357,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (11)
@@ -43204,7 +44417,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -43742,7 +44956,11 @@ PrefabInstance:
     - target: {fileID: 1398657694947878424, guid: cc5bf9683cd87914f8452c7e658db838, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 681400426}
+      objectReference: {fileID: 1467574935}
+    - target: {fileID: 1499926230007007246, guid: cc5bf9683cd87914f8452c7e658db838, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3832222665455058405, guid: cc5bf9683cd87914f8452c7e658db838, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -43802,12 +45020,13 @@ PrefabInstance:
     - target: {fileID: 9030461654484964987, guid: cc5bf9683cd87914f8452c7e658db838, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 681400426}
+      objectReference: {fileID: 1467574935}
     - target: {fileID: 9030461654484964987, guid: cc5bf9683cd87914f8452c7e658db838, type: 3}
       propertyPath: m_VersionIndex
       value: 43
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 696491607223571622, guid: cc5bf9683cd87914f8452c7e658db838, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -44397,6 +45616,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -44457,7 +45680,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -44635,6 +45859,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (144)
@@ -44691,7 +45919,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -44836,6 +46065,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -44844,7 +46077,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (157)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -44857,6 +46091,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (10)
@@ -44913,7 +46151,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -45030,6 +46269,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -45090,7 +46333,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -45268,6 +46512,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (184)
@@ -45324,7 +46572,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -45698,6 +46947,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -45758,7 +47011,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -45940,7 +47194,7 @@ PrefabInstance:
     - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 39efc94ae3c3d0248bbf95b88643241c, type: 2}
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (10)
@@ -46140,6 +47394,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -46148,7 +47406,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (142)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -46293,6 +47552,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: saturation
       value: 0.75
@@ -46353,7 +47616,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -46374,7 +47638,7 @@ PrefabInstance:
     - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 39efc94ae3c3d0248bbf95b88643241c, type: 2}
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (142)
@@ -48080,6 +49344,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -48140,7 +49408,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -48402,6 +49671,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -48410,7 +49683,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hanging Platform 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
@@ -48430,7 +49704,7 @@ PrefabInstance:
       addedObject: {fileID: 672464112}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6216473540915898884, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
-      insertIndex: 4
+      insertIndex: -1
       addedObject: {fileID: 2136721652}
   m_SourcePrefab: {fileID: 100100000, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
 --- !u!4 &1271427326 stripped
@@ -48863,7 +50137,11 @@ PrefabInstance:
     - target: {fileID: 1398657694947878424, guid: b2f1e8a8615a87a478b18241874bbb2a, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1446617698}
+      objectReference: {fileID: 894715076}
+    - target: {fileID: 1499926230007007246, guid: b2f1e8a8615a87a478b18241874bbb2a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3832222665455058405, guid: b2f1e8a8615a87a478b18241874bbb2a, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -48923,12 +50201,13 @@ PrefabInstance:
     - target: {fileID: 9030461654484964987, guid: b2f1e8a8615a87a478b18241874bbb2a, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1446617698}
+      objectReference: {fileID: 894715076}
     - target: {fileID: 9030461654484964987, guid: b2f1e8a8615a87a478b18241874bbb2a, type: 3}
       propertyPath: m_VersionIndex
       value: 43
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 696491607223571622, guid: b2f1e8a8615a87a478b18241874bbb2a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -49515,6 +50794,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (178)
@@ -49571,7 +50854,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -50812,6 +52096,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (15)
@@ -50868,7 +52156,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -52325,6 +53614,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -52385,7 +53678,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -54432,6 +55726,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -54440,7 +55738,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (47)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -54860,6 +56159,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -54868,7 +56171,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hanging Platform 3 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -54968,6 +56272,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2105888054}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (47)
@@ -54978,15 +56286,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 1.4691
       objectReference: {fileID: 0}
     - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 1.62195
       objectReference: {fileID: 0}
     - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.75
+      value: 11.696
       objectReference: {fileID: 0}
     - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -54994,7 +56302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -27.25
+      value: -27.311
       objectReference: {fileID: 0}
     - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -55024,7 +56332,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -55685,6 +56994,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (5)
@@ -55741,7 +57054,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -55988,6 +57302,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (176)
@@ -56044,7 +57362,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -56330,7 +57649,7 @@ PrefabInstance:
     - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 39efc94ae3c3d0248bbf95b88643241c, type: 2}
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (9)
@@ -56588,6 +57907,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (2)
@@ -56644,7 +57967,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -56654,6 +57978,184 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
   m_PrefabInstance: {fileID: 2072225779}
   m_PrefabAsset: {fileID: 0}
+--- !u!43 &1467574935
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: pb_Mesh417438
+  serializedVersion: 12
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 18
+    localAABB:
+      m_Center: {x: 0.5, y: 0.50000006, z: 0.49999994}
+      m_Extent: {x: 0.5, y: 0.50000006, z: 0.50000006}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 0200010000000500040003000600070008000700090008000a000b000c000b000d000c000e000f0010000f0011001000
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 18
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 864
+    _typelessdata: 202695b20000803fc871c9b3000000000000803f000000b40000803f0000000000000000000080bf202695b2e038da320000803f0000803fc871c9b3000000000000803f000000b40000803f0000000000000000000080bf0000803fe038da320000803f0100803ffeff7f3f000000000000803f000000b40000803f0000000000000000000080bf0000803f0000803f0000803fc03ef0330000803f20269532000080bfc871c933000080bf202695b200000099000080bf000080bf0000803f0000803fe0339b320000000020269532000080bfc871c933000080bf202695b200000099000080bf000080bf916f98240000000000b841300000000020269532000080bfc871c933000080bf202695b200000099000080bfe3b961a3926f98240000803fc03ef0330000803f0000803f000000000000000000000000000000000000803f000080bf0000803fc03ef0330000803fe0339b32000000000000803f000000000000000000000000000000000000803f000080bf00000000e0339b320000803f0100803ffeff7f3f0000803f000000000000000000000000000000000000803f000080bffeff7f3f0100803f0000803f0000803fc871c9b30000803f000000000000000000000000000000000000803f000080bfc871c9b30000803f0000803fe0339b320000000073baea26c871c9b3000080bf0000803f0000000073baea26000080bf0000803fe0339b320000000000b841300000000073ba6a26c871c9b3000080bf0000803f0000000073ba6a26000080bf0000000000b841300000803f0000803fc871c9b373ba6a26c871c9b3000080bf0000803f0000000073ba6a26000080bf0000803f0000803f202695b20000803fc871c9b300000000c871c9b3000080bf0000803f0000000000000000000080bf202695b20000803f0000000000b8413000000000f30435bf44276833f304353ff40435bf00000000f40435bf000080bf0000000000b841300000803fc03ef0330000803ff30435bf4a8c9433f304353ff40435bf00000000f40435bf000080bff304b5bfc03ef033202695b20000803fc871c9b3f30435bf4a8c9433f304353ff40435bf00000000f40435bf000080bf0dcfa8330000803f0000803f0100803ffeff7f3ff30435bff304b533f304353ff40435bf00000000f40435bf000080bff204b5bf0100803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0.5, y: 0.50000006, z: 0.49999994}
+    m_Extent: {x: 0.5, y: 0.50000006, z: 0.50000006}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+  m_MeshLodInfo:
+    serializedVersion: 2
+    m_LodSelectionCurve:
+      serializedVersion: 1
+      m_LodSlope: 0
+      m_LodBias: 0
+    m_NumLevels: 1
+    m_SubMeshes:
+    - serializedVersion: 2
+      m_Levels:
+      - serializedVersion: 1
+        m_IndexStart: 0
+        m_IndexCount: 0
 --- !u!4 &1470615675 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1682302287506258877, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
@@ -56741,6 +58243,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube
@@ -56797,7 +58303,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -57112,6 +58619,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (18)
@@ -57168,7 +58679,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -57398,6 +58910,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -57406,7 +58922,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -57954,6 +59471,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -57962,7 +59483,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (95)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -58153,6 +59675,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (1)
@@ -58209,7 +59735,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -58234,7 +59761,11 @@ PrefabInstance:
     - target: {fileID: 1398657694947878424, guid: cc5bf9683cd87914f8452c7e658db838, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 579135505}
+      objectReference: {fileID: 265606106}
+    - target: {fileID: 1499926230007007246, guid: cc5bf9683cd87914f8452c7e658db838, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3832222665455058405, guid: cc5bf9683cd87914f8452c7e658db838, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -58294,12 +59825,13 @@ PrefabInstance:
     - target: {fileID: 9030461654484964987, guid: cc5bf9683cd87914f8452c7e658db838, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 579135505}
+      objectReference: {fileID: 265606106}
     - target: {fileID: 9030461654484964987, guid: cc5bf9683cd87914f8452c7e658db838, type: 3}
       propertyPath: m_VersionIndex
       value: 43
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 696491607223571622, guid: cc5bf9683cd87914f8452c7e658db838, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -58711,7 +60243,7 @@ PrefabInstance:
     - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 39efc94ae3c3d0248bbf95b88643241c, type: 2}
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (8)
@@ -59146,6 +60678,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -59154,7 +60690,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (24)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -59714,6 +61251,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (130)
@@ -59770,7 +61311,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -60022,6 +61564,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -60082,7 +61628,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -62889,6 +64436,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -62897,7 +64448,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (154)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -62989,6 +64541,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (177)
@@ -63045,7 +64601,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -63216,75 +64773,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5226307252971451312, guid: eb98c07856cea5b42a40df5c21b1fd25, type: 3}
   m_PrefabInstance: {fileID: 46663213}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1630813458
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
-      propertyPath: m_Name
-      value: Terrain Cube
-      objectReference: {fileID: 0}
-    - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 8.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 22
-      objectReference: {fileID: 0}
-    - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
 --- !u!1001 &1631022639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63371,6 +64859,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -63431,7 +64923,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -63474,6 +64967,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 452645962}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: value
       value: 1
@@ -63538,7 +65035,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -63554,7 +65052,7 @@ PrefabInstance:
     - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 39efc94ae3c3d0248bbf95b88643241c, type: 2}
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (128)
@@ -64691,6 +66189,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (2)
@@ -64747,7 +66249,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -64869,6 +66372,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -64929,7 +66436,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -65083,6 +66591,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -65091,7 +66603,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (41)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -65112,7 +66625,11 @@ PrefabInstance:
     - target: {fileID: 1398657694947878424, guid: b2f1e8a8615a87a478b18241874bbb2a, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 2143569921}
+      objectReference: {fileID: 852527602}
+    - target: {fileID: 1499926230007007246, guid: b2f1e8a8615a87a478b18241874bbb2a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3832222665455058405, guid: b2f1e8a8615a87a478b18241874bbb2a, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -65176,12 +66693,13 @@ PrefabInstance:
     - target: {fileID: 9030461654484964987, guid: b2f1e8a8615a87a478b18241874bbb2a, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 2143569921}
+      objectReference: {fileID: 852527602}
     - target: {fileID: 9030461654484964987, guid: b2f1e8a8615a87a478b18241874bbb2a, type: 3}
       propertyPath: m_VersionIndex
       value: 43
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 696491607223571622, guid: b2f1e8a8615a87a478b18241874bbb2a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -66384,6 +67902,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -66444,7 +67966,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -66561,7 +68084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6862403920059117050, guid: 5ee14952765b92c4c943eb59a24acaa8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -67612,7 +69135,7 @@ PrefabInstance:
     - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 39efc94ae3c3d0248bbf95b88643241c, type: 2}
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (3)
@@ -68139,7 +69662,7 @@ PrefabInstance:
     - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 39efc94ae3c3d0248bbf95b88643241c, type: 2}
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (141)
@@ -68608,6 +70131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (181)
@@ -68664,7 +70191,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -68682,6 +70210,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (13)
@@ -68738,7 +70270,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -68756,6 +70289,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2105888054}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (46)
@@ -68766,15 +70303,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 1.4691
       objectReference: {fileID: 0}
     - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 1.62195
       objectReference: {fileID: 0}
     - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.5
+      value: 6.554
       objectReference: {fileID: 0}
     - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -68782,7 +70319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -27.25
+      value: -27.311
       objectReference: {fileID: 0}
     - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -68812,7 +70349,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -69097,6 +70635,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (12)
@@ -69153,7 +70695,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -70226,6 +71769,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -70286,7 +71833,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -70438,6 +71986,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -70446,7 +71998,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (46)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -71437,6 +72990,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (4)
@@ -71493,7 +73050,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -71511,6 +73069,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (1)
@@ -71567,7 +73129,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -71682,6 +73245,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (17)
@@ -71738,7 +73305,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -71761,13 +73329,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2105888054}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (45)
       objectReference: {fileID: 0}
     - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 6.75
+      value: 6.61095
       objectReference: {fileID: 0}
     - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_LocalScale.y
@@ -71775,7 +73347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 1.62195
       objectReference: {fileID: 0}
     - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -71787,7 +73359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -27.25
+      value: -27.311
       objectReference: {fileID: 0}
     - target: {fileID: 8482842883292216519, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -71817,7 +73389,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -71962,6 +73535,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -71970,7 +73547,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (43)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -72383,6 +73961,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -72443,7 +74025,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -74031,6 +75614,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (161)
@@ -74087,7 +75674,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -74909,6 +76497,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -74969,7 +76561,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -75163,6 +76756,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 452645962}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: value
       value: 1
@@ -75227,7 +76824,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -76495,6 +78093,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (160)
@@ -76551,7 +78153,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -77387,6 +78990,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -77395,7 +79002,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (96)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -77538,6 +79146,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5550001846695310728, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
       propertyPath: _spectrumColor
       value: -1
@@ -77546,7 +79158,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shifter Cube (152)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6007009898688083259, guid: 6d9be2e084f3a48438189bf388e928fe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -77559,6 +79172,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884636683}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (9)
@@ -77615,7 +79232,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -79547,6 +81165,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 43580821}
     m_Modifications:
+    - target: {fileID: 3450936999756641010, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 05a3af68a517f8d43a56bc4abd1f5e74, type: 2}
     - target: {fileID: 3793429547351682430, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
       propertyPath: m_Name
       value: Terrain Cube (183)
@@ -79603,7 +81225,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3583895541751804481, guid: 00a1d2eba6dbd5c46a567da46a0a361e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -80803,5 +82426,4 @@ SceneRoots:
   - {fileID: 2105888054}
   - {fileID: 7521261032235993579}
   - {fileID: 1697811313}
-  - {fileID: 1630813458}
   - {fileID: 452645962}

@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -38,6 +40,8 @@ public class SpectrumManager : MonoBehaviour
     public float HueValue { get; private set; }
 
     public AudioClip turnClip;
+
+    public static Dictionary<SpectrumColor, float> ColorVisibility = new();
     
     public void Awake()
     {
@@ -201,5 +205,20 @@ public static class SpectrumColorExtensions
         else if (color.HasFlag(SpectrumColor.Violet))    c = 6;
         
         return (c + 0.5f) / ColorUtilities.BANDCOUNT;
+    }
+
+    public static float CalculateVisibility(this SpectrumColor color, float hue)
+    {
+        float visibility = 0;
+
+        for (int i = 0; i < ColorUtilities.Bands.Length; i++)
+        {
+            if ((color & ColorUtilities.Bands[i]) == 0) continue;
+
+            float center = (i + 0.5f) / ColorUtilities.BANDCOUNT;
+            visibility += ColorUtilities.Visibility(hue, center);
+        }
+
+        return Mathf.Clamp01(visibility);
     }
 }
