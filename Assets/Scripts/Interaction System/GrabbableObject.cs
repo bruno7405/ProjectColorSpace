@@ -16,6 +16,10 @@ public class GrabbableObject : MonoBehaviour
     private Rigidbody _rb;
     private bool _isGrabbed;
 
+    float regrabCooldown = 0.5f;
+
+    private float _nextGrabTime;
+
     protected virtual void Awake()
     {
         _spectrumObject = GetComponent<SpectrumObject>();
@@ -33,11 +37,17 @@ public class GrabbableObject : MonoBehaviour
         if (_rb != null) _rb.isKinematic = true;
     }
 
+    public bool CanBeGrabbed()
+    {
+        return !_isGrabbed && Time.time >= _nextGrabTime;
+    }
+
     public void Dropped()
     {
         OnDropped.Invoke();
         _isGrabbed = false; // must be false before refreshing kinematic state
         gameObject.layer = _grabbableLayer;
+        _nextGrabTime = Time.time + regrabCooldown;
 
         if (_spectrumObject != null) _spectrumObject.RefreshKinematic();
         else if (_rb != null) _rb.isKinematic = false;

@@ -141,6 +141,7 @@ public class PlayerGrabController : MonoBehaviour
         }
 
         if (_hoveredGrabbable == null) return;
+        if (!_hoveredGrabbable.CanBeGrabbed()) return;
 
         // Pick up item
         _heldGrabbable = _hoveredGrabbable;

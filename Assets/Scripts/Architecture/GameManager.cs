@@ -82,11 +82,11 @@ public class GameManager : MonoBehaviour
         ChangeState(GameState.Playing);
     }
 
-    public void ChangeScene(string scene)
+    public void ChangeScene(string scene, bool speedrun = false)
     {
         if (Transitioner != null && Transitioner.isActiveAndEnabled)
         {
-            Transitioner.LoadScene(scene);
+            Transitioner.LoadScene(scene, speedrun);
         } 
         else
         {
@@ -97,7 +97,7 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         ChangeState(GameState.Playing);
-        ChangeScene(LevelScene);
+        ChangeScene(LevelScene, GameSettings.SpeedrunMode);
     }
 
     public void ReturnToMenu()
@@ -124,9 +124,15 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(5f);
-
-        QuitGame();
+        if (GameSettings.SpeedrunMode)
+        {
+            ReturnToMenu();
+            GameSettings.SaturationOverride = 1;
+        } else
+        {
+            yield return new WaitForSeconds(5f);
+            QuitGame();
+        }
     }
 
     public void QuitGame()

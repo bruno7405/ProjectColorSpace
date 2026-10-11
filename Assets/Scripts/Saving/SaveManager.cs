@@ -62,7 +62,8 @@ public class SaveManager : MonoBehaviour
                     saturation = 1f,
                     musicVolume = 0.75f,
                     sfxVolume = 0.75f,
-                    unlockedColors = 1
+                    unlockedColors = 1,
+                    speedrunMode = false
                 };
             } else
             {    
@@ -79,6 +80,7 @@ public class SaveManager : MonoBehaviour
         GameSettings.Saturation = data.saturation;
         GameSettings.MusicVolume = data.musicVolume;
         GameSettings.SFXVolume = data.sfxVolume;
+        GameSettings.SpeedrunMode = data.speedrunMode;
     }
 
     private void SaveData()
@@ -87,6 +89,7 @@ public class SaveManager : MonoBehaviour
         CurrentSave.saturation = GameSettings.Saturation;
         CurrentSave.musicVolume = GameSettings.MusicVolume;
         CurrentSave.sfxVolume = GameSettings.SFXVolume;
+        CurrentSave.speedrunMode = GameSettings.SpeedrunMode;
     }
 
     void OnDestroy()

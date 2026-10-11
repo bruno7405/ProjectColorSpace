@@ -23,6 +23,7 @@ public class FinalPrismScript : MonoBehaviour
 
     public void StartDestroyPrism()
     {
+        SpeedrunTimer.Instance.FinishRun();
         startCountdown = true;
         CollectibleObject interactor = GetComponent<CollectibleObject>();
         Destroy(interactor);

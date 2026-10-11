@@ -17,10 +17,10 @@ public class SceneTransition : MonoBehaviour
         Void.gameObject.SetActive(false);
     }
 
-    public void LoadScene(string scene)
+    public void LoadScene(string scene, bool startsRun = false)
     {
         AudioBus.Instance.PlaySFX(transitionClip);
-        StartCoroutine(Run(scene));
+        StartCoroutine(Run(scene, startsRun));
     }
 
     public void QuitOut()
@@ -29,7 +29,7 @@ public class SceneTransition : MonoBehaviour
         StartCoroutine(RunQuit());
     }
     
-    IEnumerator Run(string scene)
+    IEnumerator Run(string scene, bool startsRun)
     {
         Overlay.gameObject.SetActive(false);
         yield return new WaitForEndOfFrame();
@@ -54,6 +54,8 @@ public class SceneTransition : MonoBehaviour
 
         Overlay.gameObject.SetActive(false);
         Destroy(snapshot);
+
+        if (startsRun) SpeedrunTimer.Instance?.StartRun();
     }
 
     IEnumerator RunQuit()

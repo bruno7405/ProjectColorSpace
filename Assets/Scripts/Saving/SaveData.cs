@@ -11,6 +11,7 @@ public class SaveData
     public float sfxVolume;
 
     public int unlockedColors;
+    public bool speedrunMode;
 
     // TODO
 }

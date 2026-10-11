@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public static class GameSettings
@@ -8,4 +9,7 @@ public static class GameSettings
     public static float SFXVolume = 1.0f;
 
     public static float SaturationOverride = 1f;
+    public static bool SpeedrunMode = false;
+
+    public static Action OnSettingsChanged;
 }
